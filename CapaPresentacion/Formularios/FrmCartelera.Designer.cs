@@ -29,8 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCartelera));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pnlBF = new System.Windows.Forms.Panel();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.rdbFechaEstreno = new System.Windows.Forms.RadioButton();
+            this.rdbCodCartelera = new System.Windows.Forms.RadioButton();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.pnlBT = new System.Windows.Forms.Panel();
             this.dgvLista = new System.Windows.Forms.DataGridView();
+            this.cmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -43,25 +54,22 @@
             this.dtpFechaEstreno = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.rdbFechaEstreno = new System.Windows.Forms.RadioButton();
-            this.rdbCodCartelera = new System.Windows.Forms.RadioButton();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.txtBusqueda = new System.Windows.Forms.TextBox();
-            this.cmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
+            this.pnlBF.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.pnlBT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
+            this.cmsOpciones.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.pnlDatos.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.cmsOpciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.groupBox5);
             this.groupBox3.Controls.Add(this.dgvLista);
             this.groupBox3.Location = new System.Drawing.Point(382, -1);
@@ -70,6 +78,83 @@
             this.groupBox3.TabIndex = 23;
             this.groupBox3.TabStop = false;
             // 
+            // pnlBF
+            // 
+            this.pnlBF.BackgroundImage = global::CapaPresentacion.Properties.Resources.calendarioNuevo;
+            this.pnlBF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBF.Controls.Add(this.dtpFecha);
+            this.pnlBF.Location = new System.Drawing.Point(283, 19);
+            this.pnlBF.Name = "pnlBF";
+            this.pnlBF.Size = new System.Drawing.Size(295, 61);
+            this.pnlBF.TabIndex = 27;
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(61, 14);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(178, 20);
+            this.dtpFecha.TabIndex = 21;
+            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.rdbFechaEstreno);
+            this.groupBox5.Controls.Add(this.rdbCodCartelera);
+            this.groupBox5.Controls.Add(this.pnlBF);
+            this.groupBox5.Controls.Add(this.pnlBT);
+            this.groupBox5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(12, 19);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(566, 75);
+            this.groupBox5.TabIndex = 24;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Búsqueda por:";
+            // 
+            // rdbFechaEstreno
+            // 
+            this.rdbFechaEstreno.AutoSize = true;
+            this.rdbFechaEstreno.Checked = true;
+            this.rdbFechaEstreno.Location = new System.Drawing.Point(13, 26);
+            this.rdbFechaEstreno.Name = "rdbFechaEstreno";
+            this.rdbFechaEstreno.Size = new System.Drawing.Size(131, 27);
+            this.rdbFechaEstreno.TabIndex = 15;
+            this.rdbFechaEstreno.TabStop = true;
+            this.rdbFechaEstreno.Text = "Fecha Estreno";
+            this.rdbFechaEstreno.UseVisualStyleBackColor = true;
+            this.rdbFechaEstreno.CheckedChanged += new System.EventHandler(this.rdbFechaEstreno_CheckedChanged);
+            // 
+            // rdbCodCartelera
+            // 
+            this.rdbCodCartelera.AutoSize = true;
+            this.rdbCodCartelera.Location = new System.Drawing.Point(150, 27);
+            this.rdbCodCartelera.Name = "rdbCodCartelera";
+            this.rdbCodCartelera.Size = new System.Drawing.Size(134, 27);
+            this.rdbCodCartelera.TabIndex = 14;
+            this.rdbCodCartelera.Text = "Cod. Cartelera";
+            this.rdbCodCartelera.UseVisualStyleBackColor = true;
+            this.rdbCodCartelera.CheckedChanged += new System.EventHandler(this.rdbCodCartelera_CheckedChanged);
+            // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(43, 12);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(219, 20);
+            this.txtBusqueda.TabIndex = 19;
+            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
+            // 
+            // pnlBT
+            // 
+            this.pnlBT.BackgroundImage = global::CapaPresentacion.Properties.Resources.boton_para_fondo_de_busqueda;
+            this.pnlBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBT.Controls.Add(this.txtBusqueda);
+            this.pnlBT.Location = new System.Drawing.Point(283, 17);
+            this.pnlBT.Name = "pnlBT";
+            this.pnlBT.Size = new System.Drawing.Size(295, 61);
+            this.pnlBT.TabIndex = 26;
+            // 
             // dgvLista
             // 
             this.dgvLista.AllowUserToAddRows = false;
@@ -77,16 +162,38 @@
             this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLista.ContextMenuStrip = this.cmsOpciones;
-            this.dgvLista.Location = new System.Drawing.Point(12, 87);
+            this.dgvLista.Location = new System.Drawing.Point(12, 103);
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.ReadOnly = true;
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLista.Size = new System.Drawing.Size(566, 291);
+            this.dgvLista.Size = new System.Drawing.Size(566, 284);
             this.dgvLista.TabIndex = 13;
+            // 
+            // cmsOpciones
+            // 
+            this.cmsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editarToolStripMenuItem,
+            this.eliminarToolStripMenuItem});
+            this.cmsOpciones.Name = "cmsOpciones";
+            this.cmsOpciones.Size = new System.Drawing.Size(118, 48);
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.editarToolStripMenuItem.Text = "Editar";
+            this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
+            // 
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.btnActualizar);
             this.groupBox2.Controls.Add(this.btnNuevo);
             this.groupBox2.Controls.Add(this.btnCancelar);
@@ -139,7 +246,7 @@
             // 
             // pnlDatos
             // 
-            this.pnlDatos.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pnlDatos.BackColor = System.Drawing.Color.Transparent;
             this.pnlDatos.Controls.Add(this.txtCartelera);
             this.pnlDatos.Controls.Add(this.dtpFechaFinal);
             this.pnlDatos.Controls.Add(this.label1);
@@ -171,9 +278,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 74);
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.Size = new System.Drawing.Size(113, 23);
             this.label1.TabIndex = 4;
             this.label1.Text = "Fecha Estreno";
             // 
@@ -188,118 +296,77 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 108);
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(35, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.Size = new System.Drawing.Size(93, 23);
             this.label2.TabIndex = 6;
             this.label2.Text = "Fecha Final";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 40);
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(36, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 13);
+            this.label3.Size = new System.Drawing.Size(116, 23);
             this.label3.TabIndex = 8;
             this.label3.Text = "Cod. Cartelera";
             // 
-            // rdbFechaEstreno
+            // pictureBox1
             // 
-            this.rdbFechaEstreno.AutoSize = true;
-            this.rdbFechaEstreno.Checked = true;
-            this.rdbFechaEstreno.Location = new System.Drawing.Point(13, 26);
-            this.rdbFechaEstreno.Name = "rdbFechaEstreno";
-            this.rdbFechaEstreno.Size = new System.Drawing.Size(94, 17);
-            this.rdbFechaEstreno.TabIndex = 15;
-            this.rdbFechaEstreno.TabStop = true;
-            this.rdbFechaEstreno.Text = "Fecha Estreno";
-            this.rdbFechaEstreno.UseVisualStyleBackColor = true;
-            this.rdbFechaEstreno.CheckedChanged += new System.EventHandler(this.rdbFechaEstreno_CheckedChanged);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::CapaPresentacion.Properties.Resources.estrella;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(18, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(90, 80);
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
             // 
-            // rdbCodCartelera
+            // label4
             // 
-            this.rdbCodCartelera.AutoSize = true;
-            this.rdbCodCartelera.Location = new System.Drawing.Point(255, 25);
-            this.rdbCodCartelera.Name = "rdbCodCartelera";
-            this.rdbCodCartelera.Size = new System.Drawing.Size(92, 17);
-            this.rdbCodCartelera.TabIndex = 14;
-            this.rdbCodCartelera.Text = "Cod. Cartelera";
-            this.rdbCodCartelera.UseVisualStyleBackColor = true;
-            this.rdbCodCartelera.CheckedChanged += new System.EventHandler(this.rdbCodCartelera_CheckedChanged);
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.dtpFecha);
-            this.groupBox5.Controls.Add(this.rdbFechaEstreno);
-            this.groupBox5.Controls.Add(this.rdbCodCartelera);
-            this.groupBox5.Controls.Add(this.txtBusqueda);
-            this.groupBox5.Location = new System.Drawing.Point(12, 19);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(566, 56);
-            this.groupBox5.TabIndex = 24;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Búsqueda por:";
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(119, 25);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(98, 20);
-            this.dtpFecha.TabIndex = 21;
-            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
-            // 
-            // txtBusqueda
-            // 
-            this.txtBusqueda.Enabled = false;
-            this.txtBusqueda.Location = new System.Drawing.Point(353, 23);
-            this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(195, 20);
-            this.txtBusqueda.TabIndex = 19;
-            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
-            // 
-            // cmsOpciones
-            // 
-            this.cmsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editarToolStripMenuItem,
-            this.eliminarToolStripMenuItem});
-            this.cmsOpciones.Name = "cmsOpciones";
-            this.cmsOpciones.Size = new System.Drawing.Size(118, 48);
-            // 
-            // editarToolStripMenuItem
-            // 
-            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.editarToolStripMenuItem.Text = "Editar";
-            this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
-            // 
-            // eliminarToolStripMenuItem
-            // 
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
-            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(135, 41);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(137, 38);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Cartelera";
             // 
             // FrmCartelera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Captura_de_pantalla__69_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(990, 395);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pnlDatos);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCartelera";
             this.Text = "Gestión Cartelera";
             this.Load += new System.EventHandler(this.FrmCartelera_Load);
             this.groupBox3.ResumeLayout(false);
+            this.pnlBF.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.pnlBT.ResumeLayout(false);
+            this.pnlBT.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
+            this.cmsOpciones.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.cmsOpciones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -327,5 +394,9 @@
         private System.Windows.Forms.ContextMenuStrip cmsOpciones;
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel pnlBT;
+        private System.Windows.Forms.Panel pnlBF;
     }
 }

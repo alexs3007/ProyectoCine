@@ -148,15 +148,15 @@ namespace CapaPresentacion
 
         private void rdbFechaEstreno_CheckedChanged(object sender, EventArgs e)
         {
-            dtpFecha.Enabled = true;
-            txtBusqueda.Enabled = false;
+            pnlBF.Visible = true;
+            pnlBT.Visible = false;
             ListadoCartelera();
         }
 
         private void rdbCodCartelera_CheckedChanged(object sender, EventArgs e)
         {
-            dtpFecha.Enabled = false;
-            txtBusqueda.Enabled = true;
+            pnlBF.Visible = false;
+            pnlBT.Visible = true;
             ListadoCartelera();
         }
 

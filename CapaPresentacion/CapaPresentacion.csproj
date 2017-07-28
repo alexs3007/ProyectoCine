@@ -34,6 +34,12 @@
   <PropertyGroup>
     <StartupObject>CapaPresentacion.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LOGOCINE3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -215,6 +221,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Movie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla %2869%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estrella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton para fondo de busqueda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarioNuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LOGOCINE3.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
