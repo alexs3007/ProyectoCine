@@ -1,0 +1,15 @@
+C:\Users\usuario\Desktop\CinemaEvolution\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\usuario\Desktop\CinemaEvolution\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\usuario\Desktop\CinemaEvolution\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\usuario\Desktop\CinemaEvolution\CapaEntidades\obj\Debug\CapaEntidades.pdb
+C:\Users\usuario\Desktop\CinemaEvolution\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
+C:\Users\Owner User\Desktop\II PERIODO 2017\CIENTIFICA II\III p\CinemaEvolution\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\Owner User\Desktop\II PERIODO 2017\CIENTIFICA II\III p\CinemaEvolution\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\Owner User\Desktop\II PERIODO 2017\CIENTIFICA II\III p\CinemaEvolution\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
+C:\Users\Owner User\Desktop\II PERIODO 2017\CIENTIFICA II\III p\CinemaEvolution\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\Owner User\Desktop\II PERIODO 2017\CIENTIFICA II\III p\CinemaEvolution\CapaEntidades\obj\Debug\CapaEntidades.pdb
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\CinemaEvolution\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\CinemaEvolution\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\CinemaEvolution\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\CinemaEvolution\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\CinemaEvolution\CapaEntidades\obj\Debug\CapaEntidades.pdb
