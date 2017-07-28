@@ -7,21 +7,20 @@ using System.Data;
 using System.Data.SqlClient;
 using CapaEntidades;
 
-
 namespace CapaDatos
 {
-   public class CDPeliculaHorario:Conexion
+    public class CDPeliculaHorario:Conexion
     {
         public int InsertarPeliculaHorario(CEPeliculaHorario objPH)
         {
-            int resultado=0;
+            int resultado = 0;
             try
             {
                 SqlCommand cmd = new SqlCommand("Sp_InsertarPeliculaHorario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@IdPelicula", SqlDbType.Int).Value = objPH.IdPelicula;
                 cmd.Parameters.Add("@IdHorario", SqlDbType.Int).Value = objPH.IdHorario;
-                
+
                 ConectarBD();
                 resultado = cmd.ExecuteNonQuery();
                 cmd.Dispose();
@@ -38,7 +37,7 @@ namespace CapaDatos
         }
         public int ActualizarPeliculaHorario(CEPeliculaHorario objPH)
         {
-            int resultado=0;
+            int resultado = 0;
             try
             {
                 SqlCommand cmd = new SqlCommand("Sp_ActualizarPeliculaHorario", cn);
@@ -163,7 +162,7 @@ namespace CapaDatos
                 ConectarBD();
                 da = new SqlDataAdapter("Sp_MostrarPeliculaHorarioporPelicula", cn);
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
-                da.SelectCommand.Parameters.Add("@Pelicula", SqlDbType.NVarChar,100).Value = objPH.Pelicula;
+                da.SelectCommand.Parameters.Add("@Pelicula", SqlDbType.NVarChar, 100).Value = objPH.Pelicula;
                 da.Fill(ds, "PeliculaHorarioP");
                 return ds;
             }
@@ -202,6 +201,6 @@ namespace CapaDatos
             }
         }
 
-        
+
     }
 }

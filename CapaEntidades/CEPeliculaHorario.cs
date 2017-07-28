@@ -12,5 +12,6 @@ namespace CapaEntidades
         public int IdHorario { get; set; }
         public string Pelicula { get; set; }
         public string Horario { get; set; }
+
     }
 }

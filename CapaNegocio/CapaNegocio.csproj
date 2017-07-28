@@ -47,6 +47,7 @@
     <Compile Include="CNLogAuditoria.cs" />
     <Compile Include="CNLogin.cs" />
     <Compile Include="CNPelicula.cs" />
+    <Compile Include="CNPeliculaHorario.cs" />
     <Compile Include="CNPeliculaTecnologia.cs" />
     <Compile Include="CNUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -47,6 +47,7 @@
     <Compile Include="CELogAuditoria.cs" />
     <Compile Include="CELogin.cs" />
     <Compile Include="CEPelicula.cs" />
+    <Compile Include="CEPeliculaHorario.cs" />
     <Compile Include="CEPeliculaTecnologia.cs" />
     <Compile Include="CEUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

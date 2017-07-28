@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
@@ -35,20 +36,24 @@
             this.rdbHorario = new System.Windows.Forms.RadioButton();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BtnActualizar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pnlDatos = new System.Windows.Forms.GroupBox();
             this.cboHorario = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cboPelicula = new System.Windows.Forms.ComboBox();
+            this.cmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.pnlDatos.SuspendLayout();
+            this.cmsOpciones.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -79,10 +84,12 @@
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(355, 20);
             this.txtBusqueda.TabIndex = 16;
+            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
             // 
             // rdbPelicula
             // 
             this.rdbPelicula.AutoSize = true;
+            this.rdbPelicula.Checked = true;
             this.rdbPelicula.Location = new System.Drawing.Point(7, 20);
             this.rdbPelicula.Name = "rdbPelicula";
             this.rdbPelicula.Size = new System.Drawing.Size(64, 17);
@@ -104,15 +111,22 @@
             // 
             // dgvLista
             // 
+            this.dgvLista.AllowUserToAddRows = false;
+            this.dgvLista.AllowUserToDeleteRows = false;
+            this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLista.ContextMenuStrip = this.cmsOpciones;
             this.dgvLista.Location = new System.Drawing.Point(10, 73);
             this.dgvLista.Name = "dgvLista";
+            this.dgvLista.ReadOnly = true;
+            this.dgvLista.RowHeadersVisible = false;
+            this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLista.Size = new System.Drawing.Size(566, 289);
             this.dgvLista.TabIndex = 13;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.BtnActualizar);
+            this.groupBox2.Controls.Add(this.btnActualizar);
             this.groupBox2.Controls.Add(this.btnNuevo);
             this.groupBox2.Controls.Add(this.btnCancelar);
             this.groupBox2.Controls.Add(this.btnGuardar);
@@ -122,14 +136,15 @@
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             // 
-            // BtnActualizar
+            // btnActualizar
             // 
-            this.BtnActualizar.Location = new System.Drawing.Point(169, 42);
-            this.BtnActualizar.Name = "BtnActualizar";
-            this.BtnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.BtnActualizar.TabIndex = 18;
-            this.BtnActualizar.Text = "Actualizar";
-            this.BtnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Location = new System.Drawing.Point(169, 42);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 18;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnNuevo
             // 
@@ -139,6 +154,7 @@
             this.btnNuevo.TabIndex = 14;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnCancelar
             // 
@@ -148,6 +164,7 @@
             this.btnCancelar.TabIndex = 17;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -157,18 +174,19 @@
             this.btnGuardar.TabIndex = 16;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // groupBox1
+            // pnlDatos
             // 
-            this.groupBox1.Controls.Add(this.cboHorario);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.cboPelicula);
-            this.groupBox1.Location = new System.Drawing.Point(12, 100);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(339, 140);
-            this.groupBox1.TabIndex = 23;
-            this.groupBox1.TabStop = false;
+            this.pnlDatos.Controls.Add(this.cboHorario);
+            this.pnlDatos.Controls.Add(this.label1);
+            this.pnlDatos.Controls.Add(this.label2);
+            this.pnlDatos.Controls.Add(this.cboPelicula);
+            this.pnlDatos.Location = new System.Drawing.Point(12, 100);
+            this.pnlDatos.Name = "pnlDatos";
+            this.pnlDatos.Size = new System.Drawing.Size(339, 140);
+            this.pnlDatos.TabIndex = 23;
+            this.pnlDatos.TabStop = false;
             // 
             // cboHorario
             // 
@@ -206,6 +224,28 @@
             this.cboPelicula.Size = new System.Drawing.Size(202, 21);
             this.cboPelicula.TabIndex = 1;
             // 
+            // cmsOpciones
+            // 
+            this.cmsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editarToolStripMenuItem,
+            this.eliminarToolStripMenuItem});
+            this.cmsOpciones.Name = "cmsOpciones";
+            this.cmsOpciones.Size = new System.Drawing.Size(118, 48);
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editarToolStripMenuItem.Text = "Editar";
+            this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
+            // 
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
+            // 
             // FrmPelicula_Horario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -213,16 +253,18 @@
             this.ClientSize = new System.Drawing.Size(970, 385);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.pnlDatos);
             this.Name = "FrmPelicula_Horario";
             this.Text = "Gestión de Horario de Película";
+            this.Load += new System.EventHandler(this.FrmPelicula_Horario_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.pnlDatos.ResumeLayout(false);
+            this.pnlDatos.PerformLayout();
+            this.cmsOpciones.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -236,14 +278,17 @@
         private System.Windows.Forms.RadioButton rdbHorario;
         private System.Windows.Forms.DataGridView dgvLista;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button BtnActualizar;
+        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox pnlDatos;
         private System.Windows.Forms.ComboBox cboHorario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cboPelicula;
+        private System.Windows.Forms.ContextMenuStrip cmsOpciones;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
     }
 }
