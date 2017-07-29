@@ -154,7 +154,7 @@ namespace CapaDatos
                 ConectarBD();
                 da = new SqlDataAdapter("MostrarTodoPorEmpleado", cn);
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
-                da.SelectCommand.Parameters.Add("@NombreEmpleado", SqlDbType.NVarChar, 20).Value = ObjU.NombreEmpleado;
+                da.SelectCommand.Parameters.Add("@NombreEmpleado", SqlDbType.NVarChar, 50).Value = ObjU.NombreEmpleado;
                 da.Fill(ds, "NombreEmpleado");
                 return ds;
 

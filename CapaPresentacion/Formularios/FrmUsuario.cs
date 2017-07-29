@@ -138,7 +138,7 @@ namespace CapaPresentacion.Formularios
             CNUsuario objU = new CNUsuario();
             CEUsuario objUsuario = new CEUsuario();
             objUsuario.NombreUsuario = NombreUsuario;
-            dgvLista.DataSource = objU.ListadoUsuarioPorUsuario(objUsuario).Tables["Usuario"];
+            dgvLista.DataSource = objU.ListadoUsuarioPorUsuario(objUsuario).Tables["NombreUsuario"];
             
         }
 
@@ -147,7 +147,7 @@ namespace CapaPresentacion.Formularios
             CNUsuario objU = new CNUsuario();
             CEUsuario objUsuario = new CEUsuario();
             objUsuario.NombreEmpleado = Empleado;
-            dgvLista.DataSource = objU.ListadoUsuarioPorEmpleado(objUsuario).Tables["Usuario"];
+            dgvLista.DataSource = objU.ListadoUsuarioPorEmpleado(objUsuario).Tables["NombreEmpleado"];
 
         }
 
@@ -252,8 +252,8 @@ namespace CapaPresentacion.Formularios
             txtContraseña.Text = dgvLista.SelectedRows[0].Cells[2].FormattedValue.ToString();
             CargarComboBoxEmpleado();
             CargarComboBoxTipoUsuario();
-            cboEmpleado.Text = dgvLista.SelectedRows[0].Cells[4].Value.ToString();
-            cboTipoUsuario.Text = dgvLista.SelectedRows[0].Cells[6].Value.ToString();
+            cboEmpleado.Text = dgvLista.SelectedRows[0].Cells[3].Value.ToString();
+            cboTipoUsuario.Text = dgvLista.SelectedRows[0].Cells[5].Value.ToString();
 
         }
 

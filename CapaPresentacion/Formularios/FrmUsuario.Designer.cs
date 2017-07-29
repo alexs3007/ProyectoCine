@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pnlBT = new System.Windows.Forms.Panel();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.rdbCodUsuario = new System.Windows.Forms.RadioButton();
             this.rdbEmpleado = new System.Windows.Forms.RadioButton();
@@ -54,16 +55,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pnlBT = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.pnlBT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.cmsOpciones.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.pnlDatos.SuspendLayout();
-            this.pnlBT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,6 +90,16 @@
             this.groupBox4.TabIndex = 18;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Búsqueda por:";
+            // 
+            // pnlBT
+            // 
+            this.pnlBT.BackgroundImage = global::CapaPresentacion.Properties.Resources.boton_para_fondo_de_busqueda;
+            this.pnlBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBT.Controls.Add(this.txtBusqueda);
+            this.pnlBT.Location = new System.Drawing.Point(214, 12);
+            this.pnlBT.Name = "pnlBT";
+            this.pnlBT.Size = new System.Drawing.Size(344, 61);
+            this.pnlBT.TabIndex = 28;
             // 
             // txtBusqueda
             // 
@@ -286,6 +296,7 @@
             // 
             // txtCodUSuario
             // 
+            this.txtCodUSuario.Enabled = false;
             this.txtCodUSuario.Location = new System.Drawing.Point(124, 31);
             this.txtCodUSuario.Name = "txtCodUSuario";
             this.txtCodUSuario.Size = new System.Drawing.Size(132, 20);
@@ -320,16 +331,6 @@
             this.label3.Size = new System.Drawing.Size(119, 23);
             this.label3.TabIndex = 8;
             this.label3.Text = "Código Usuario";
-            // 
-            // pnlBT
-            // 
-            this.pnlBT.BackgroundImage = global::CapaPresentacion.Properties.Resources.boton_para_fondo_de_busqueda;
-            this.pnlBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlBT.Controls.Add(this.txtBusqueda);
-            this.pnlBT.Location = new System.Drawing.Point(214, 12);
-            this.pnlBT.Name = "pnlBT";
-            this.pnlBT.Size = new System.Drawing.Size(344, 61);
-            this.pnlBT.TabIndex = 28;
             // 
             // label6
             // 
@@ -372,13 +373,13 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.pnlBT.ResumeLayout(false);
+            this.pnlBT.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.cmsOpciones.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();
-            this.pnlBT.ResumeLayout(false);
-            this.pnlBT.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
