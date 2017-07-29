@@ -236,6 +236,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LOGOCINE3.ico" />
+    <None Include="Resources\image_remove1.png" />
+    <None Include="Resources\image_add1.png" />
     <None Include="Resources\LOGOCINE3.png" />
     <None Include="Resources\Captura de pantalla %2868%29.png" />
     <None Include="Resources\Loginn.png" />

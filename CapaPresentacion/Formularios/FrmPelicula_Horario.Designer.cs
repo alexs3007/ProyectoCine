@@ -35,6 +35,9 @@
             this.rdbPelicula = new System.Windows.Forms.RadioButton();
             this.rdbHorario = new System.Windows.Forms.RadioButton();
             this.dgvLista = new System.Windows.Forms.DataGridView();
+            this.cmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -45,19 +48,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cboPelicula = new System.Windows.Forms.ComboBox();
-            this.cmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnlBT = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
+            this.cmsOpciones.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.pnlDatos.SuspendLayout();
-            this.cmsOpciones.SuspendLayout();
+            this.pnlBT.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.groupBox4);
             this.groupBox3.Controls.Add(this.dgvLista);
             this.groupBox3.Location = new System.Drawing.Point(368, 4);
@@ -68,21 +74,23 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.txtBusqueda);
             this.groupBox4.Controls.Add(this.rdbPelicula);
+            this.groupBox4.Controls.Add(this.pnlBT);
             this.groupBox4.Controls.Add(this.rdbHorario);
+            this.groupBox4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(8, 16);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(576, 51);
+            this.groupBox4.Size = new System.Drawing.Size(576, 74);
             this.groupBox4.TabIndex = 18;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Búsqueda por:";
             // 
             // txtBusqueda
             // 
-            this.txtBusqueda.Location = new System.Drawing.Point(216, 19);
+            this.txtBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(52, 13);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(355, 20);
+            this.txtBusqueda.Size = new System.Drawing.Size(257, 20);
             this.txtBusqueda.TabIndex = 16;
             this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
             // 
@@ -90,9 +98,9 @@
             // 
             this.rdbPelicula.AutoSize = true;
             this.rdbPelicula.Checked = true;
-            this.rdbPelicula.Location = new System.Drawing.Point(7, 20);
+            this.rdbPelicula.Location = new System.Drawing.Point(14, 31);
             this.rdbPelicula.Name = "rdbPelicula";
-            this.rdbPelicula.Size = new System.Drawing.Size(64, 17);
+            this.rdbPelicula.Size = new System.Drawing.Size(83, 27);
             this.rdbPelicula.TabIndex = 14;
             this.rdbPelicula.TabStop = true;
             this.rdbPelicula.Text = "Película";
@@ -101,9 +109,9 @@
             // rdbHorario
             // 
             this.rdbHorario.AutoSize = true;
-            this.rdbHorario.Location = new System.Drawing.Point(105, 20);
+            this.rdbHorario.Location = new System.Drawing.Point(112, 31);
             this.rdbHorario.Name = "rdbHorario";
-            this.rdbHorario.Size = new System.Drawing.Size(59, 17);
+            this.rdbHorario.Size = new System.Drawing.Size(85, 27);
             this.rdbHorario.TabIndex = 15;
             this.rdbHorario.TabStop = true;
             this.rdbHorario.Text = "Horario";
@@ -116,16 +124,39 @@
             this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLista.ContextMenuStrip = this.cmsOpciones;
-            this.dgvLista.Location = new System.Drawing.Point(10, 73);
+            this.dgvLista.Location = new System.Drawing.Point(10, 96);
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.ReadOnly = true;
             this.dgvLista.RowHeadersVisible = false;
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLista.Size = new System.Drawing.Size(566, 289);
+            this.dgvLista.Size = new System.Drawing.Size(566, 266);
             this.dgvLista.TabIndex = 13;
+            // 
+            // cmsOpciones
+            // 
+            this.cmsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editarToolStripMenuItem,
+            this.eliminarToolStripMenuItem});
+            this.cmsOpciones.Name = "cmsOpciones";
+            this.cmsOpciones.Size = new System.Drawing.Size(118, 48);
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.editarToolStripMenuItem.Text = "Editar";
+            this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
+            // 
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.btnActualizar);
             this.groupBox2.Controls.Add(this.btnNuevo);
             this.groupBox2.Controls.Add(this.btnCancelar);
@@ -178,6 +209,7 @@
             // 
             // pnlDatos
             // 
+            this.pnlDatos.BackColor = System.Drawing.Color.Transparent;
             this.pnlDatos.Controls.Add(this.cboHorario);
             this.pnlDatos.Controls.Add(this.label1);
             this.pnlDatos.Controls.Add(this.label2);
@@ -191,8 +223,9 @@
             // cboHorario
             // 
             this.cboHorario.BackColor = System.Drawing.Color.White;
+            this.cboHorario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboHorario.FormattingEnabled = true;
-            this.cboHorario.Location = new System.Drawing.Point(117, 82);
+            this.cboHorario.Location = new System.Drawing.Point(142, 82);
             this.cboHorario.Name = "cboHorario";
             this.cboHorario.Size = new System.Drawing.Size(172, 21);
             this.cboHorario.TabIndex = 3;
@@ -200,60 +233,78 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 44);
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(10, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.Size = new System.Drawing.Size(128, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre Película";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 85);
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(10, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.Size = new System.Drawing.Size(67, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Horario";
             // 
             // cboPelicula
             // 
             this.cboPelicula.BackColor = System.Drawing.Color.White;
+            this.cboPelicula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPelicula.FormattingEnabled = true;
-            this.cboPelicula.Location = new System.Drawing.Point(117, 41);
+            this.cboPelicula.Location = new System.Drawing.Point(141, 41);
             this.cboPelicula.Name = "cboPelicula";
-            this.cboPelicula.Size = new System.Drawing.Size(202, 21);
+            this.cboPelicula.Size = new System.Drawing.Size(192, 21);
             this.cboPelicula.TabIndex = 1;
             // 
-            // cmsOpciones
+            // pnlBT
             // 
-            this.cmsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editarToolStripMenuItem,
-            this.eliminarToolStripMenuItem});
-            this.cmsOpciones.Name = "cmsOpciones";
-            this.cmsOpciones.Size = new System.Drawing.Size(118, 48);
+            this.pnlBT.BackgroundImage = global::CapaPresentacion.Properties.Resources.boton_para_fondo_de_busqueda;
+            this.pnlBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBT.Controls.Add(this.txtBusqueda);
+            this.pnlBT.Location = new System.Drawing.Point(210, 19);
+            this.pnlBT.Name = "pnlBT";
+            this.pnlBT.Size = new System.Drawing.Size(344, 61);
+            this.pnlBT.TabIndex = 27;
             // 
-            // editarToolStripMenuItem
+            // label4
             // 
-            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.editarToolStripMenuItem.Text = "Editar";
-            this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(131, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(231, 85);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Horario de Peliculas";
             // 
-            // eliminarToolStripMenuItem
+            // pictureBox1
             // 
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
-            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::CapaPresentacion.Properties.Resources.estrella;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(90, 80);
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmPelicula_Horario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Captura_de_pantalla__69_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(970, 385);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pnlDatos);
+            this.DoubleBuffered = true;
             this.Name = "FrmPelicula_Horario";
             this.Text = "Gestión de Horario de Película";
             this.Load += new System.EventHandler(this.FrmPelicula_Horario_Load);
@@ -261,10 +312,13 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
+            this.cmsOpciones.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();
-            this.cmsOpciones.ResumeLayout(false);
+            this.pnlBT.ResumeLayout(false);
+            this.pnlBT.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -290,5 +344,8 @@
         private System.Windows.Forms.ContextMenuStrip cmsOpciones;
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
+        private System.Windows.Forms.Panel pnlBT;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
