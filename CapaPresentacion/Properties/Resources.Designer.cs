@@ -83,6 +83,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla__68_ {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla (68)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla__69_ {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla (69)", resourceCulture);
@@ -96,6 +106,26 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap estrella {
             get {
                 object obj = ResourceManager.GetObject("estrella", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Loginn {
+            get {
+                object obj = ResourceManager.GetObject("Loginn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LOGOCINE3 {
+            get {
+                object obj = ResourceManager.GetObject("LOGOCINE3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

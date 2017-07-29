@@ -62,16 +62,16 @@ namespace CapaPresentacion.Formularios
 
         private void rdbFecha_CheckedChanged_1(object sender, EventArgs e)
         {
-            txtBusqueda.Enabled = false;
-            dtpFecha.Enabled = true;
+            pnlBF.Visible = true;
+            pnlBT.Visible = false;
             CargarLog();
         }
 
         private void rdbUsuario_CheckedChanged_1(object sender, EventArgs e)
         {
+            pnlBF.Visible = false;
+            pnlBT.Visible = true;
             CargarLog();
-            txtBusqueda.Enabled = true;
-            dtpFecha.Enabled = false;
         }
 
         private void dtpFecha_ValueChanged_1(object sender, EventArgs e)
