@@ -179,5 +179,15 @@ namespace CapaPresentacion.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2017_07_29_at_2_12_11_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2017-07-29 at 2.12.11 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
