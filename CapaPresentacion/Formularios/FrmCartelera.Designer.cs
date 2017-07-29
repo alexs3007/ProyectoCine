@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCartelera));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.pnlBF = new System.Windows.Forms.Panel();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.rdbFechaEstreno = new System.Windows.Forms.RadioButton();
             this.rdbCodCartelera = new System.Windows.Forms.RadioButton();
-            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.pnlBF = new System.Windows.Forms.Panel();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.pnlBT = new System.Windows.Forms.Panel();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.cmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,8 +57,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
-            this.pnlBF.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.pnlBF.SuspendLayout();
             this.pnlBT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.cmsOpciones.SuspendLayout();
@@ -77,26 +77,6 @@
             this.groupBox3.Size = new System.Drawing.Size(596, 396);
             this.groupBox3.TabIndex = 23;
             this.groupBox3.TabStop = false;
-            // 
-            // pnlBF
-            // 
-            this.pnlBF.BackgroundImage = global::CapaPresentacion.Properties.Resources.calendarioNuevo;
-            this.pnlBF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlBF.Controls.Add(this.dtpFecha);
-            this.pnlBF.Location = new System.Drawing.Point(283, 19);
-            this.pnlBF.Name = "pnlBF";
-            this.pnlBF.Size = new System.Drawing.Size(295, 61);
-            this.pnlBF.TabIndex = 27;
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(61, 14);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(178, 20);
-            this.dtpFecha.TabIndex = 21;
-            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
             // 
             // groupBox5
             // 
@@ -136,14 +116,25 @@
             this.rdbCodCartelera.UseVisualStyleBackColor = true;
             this.rdbCodCartelera.CheckedChanged += new System.EventHandler(this.rdbCodCartelera_CheckedChanged);
             // 
-            // txtBusqueda
+            // pnlBF
             // 
-            this.txtBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusqueda.Location = new System.Drawing.Point(43, 12);
-            this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(219, 20);
-            this.txtBusqueda.TabIndex = 19;
-            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
+            this.pnlBF.BackgroundImage = global::CapaPresentacion.Properties.Resources.calendarioNuevo;
+            this.pnlBF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBF.Controls.Add(this.dtpFecha);
+            this.pnlBF.Location = new System.Drawing.Point(283, 19);
+            this.pnlBF.Name = "pnlBF";
+            this.pnlBF.Size = new System.Drawing.Size(295, 61);
+            this.pnlBF.TabIndex = 27;
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(61, 14);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(178, 20);
+            this.dtpFecha.TabIndex = 21;
+            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
             // 
             // pnlBT
             // 
@@ -154,6 +145,15 @@
             this.pnlBT.Name = "pnlBT";
             this.pnlBT.Size = new System.Drawing.Size(295, 61);
             this.pnlBT.TabIndex = 26;
+            // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(43, 12);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(219, 20);
+            this.txtBusqueda.TabIndex = 19;
+            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
             // 
             // dgvLista
             // 
@@ -354,9 +354,9 @@
             this.Text = "Gestión Cartelera";
             this.Load += new System.EventHandler(this.FrmCartelera_Load);
             this.groupBox3.ResumeLayout(false);
-            this.pnlBF.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.pnlBF.ResumeLayout(false);
             this.pnlBT.ResumeLayout(false);
             this.pnlBT.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
