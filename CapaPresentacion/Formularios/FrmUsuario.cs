@@ -129,7 +129,7 @@ namespace CapaPresentacion.Formularios
         {
             CNUsuario objP = new CNUsuario();
             dgvLista.DataSource = objP.ListadoUsuario().Tables["Usuario"];
-            
+            dgvLista.Columns[0].Visible = false;
         }
 
 
@@ -139,7 +139,7 @@ namespace CapaPresentacion.Formularios
             CEUsuario objUsuario = new CEUsuario();
             objUsuario.NombreUsuario = NombreUsuario;
             dgvLista.DataSource = objU.ListadoUsuarioPorUsuario(objUsuario).Tables["NombreUsuario"];
-            
+            dgvLista.Columns[0].Visible = false;
         }
 
         private void ListadoUsuarioPorEmpleado(string Empleado)
@@ -148,7 +148,7 @@ namespace CapaPresentacion.Formularios
             CEUsuario objUsuario = new CEUsuario();
             objUsuario.NombreEmpleado = Empleado;
             dgvLista.DataSource = objU.ListadoUsuarioPorEmpleado(objUsuario).Tables["NombreEmpleado"];
-
+            dgvLista.Columns[0].Visible = false;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
