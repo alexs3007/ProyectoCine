@@ -172,15 +172,15 @@ namespace CapaPresentacion.Formularios
 
         private void rdbFechaEstreno_CheckedChanged(object sender, EventArgs e)
         {
-            txtBusqueda.Enabled = false;
-            dtpFecha.Enabled = true;
+            pnlBF.Visible = true;
+            pnlBT.Visible = false;
             ListadoCarteleraPelicula();
         }
 
         private void rdbPelicula_CheckedChanged(object sender, EventArgs e)
         {
-            txtBusqueda.Enabled = true;
-            dtpFecha.Enabled = false;
+            pnlBF.Visible = false;
+            pnlBT.Visible = true;
             ListadoCarteleraPelicula();
         }
 

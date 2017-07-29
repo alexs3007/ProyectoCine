@@ -49,43 +49,53 @@
             this.cboPelicula = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pnlBF = new System.Windows.Forms.Panel();
+            this.pnlBT = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.cmsOpciones.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.pnlDatos.SuspendLayout();
+            this.pnlBF.SuspendLayout();
+            this.pnlBT.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.groupBox5);
             this.groupBox3.Controls.Add(this.dgvLista);
             this.groupBox3.Location = new System.Drawing.Point(370, -2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(593, 398);
+            this.groupBox3.Size = new System.Drawing.Size(593, 385);
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.dtpFecha);
             this.groupBox5.Controls.Add(this.rdbFechaEstreno);
             this.groupBox5.Controls.Add(this.rdbPelicula);
-            this.groupBox5.Controls.Add(this.txtBusqueda);
-            this.groupBox5.Location = new System.Drawing.Point(12, 19);
+            this.groupBox5.Controls.Add(this.pnlBF);
+            this.groupBox5.Controls.Add(this.pnlBT);
+            this.groupBox5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(12, 14);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(566, 56);
+            this.groupBox5.Size = new System.Drawing.Size(566, 74);
             this.groupBox5.TabIndex = 25;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Búsqueda por:";
             // 
             // dtpFecha
             // 
+            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(119, 25);
+            this.dtpFecha.Location = new System.Drawing.Point(65, 14);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(98, 20);
+            this.dtpFecha.Size = new System.Drawing.Size(179, 20);
             this.dtpFecha.TabIndex = 21;
             this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
             // 
@@ -93,9 +103,9 @@
             // 
             this.rdbFechaEstreno.AutoSize = true;
             this.rdbFechaEstreno.Checked = true;
-            this.rdbFechaEstreno.Location = new System.Drawing.Point(13, 26);
+            this.rdbFechaEstreno.Location = new System.Drawing.Point(13, 30);
             this.rdbFechaEstreno.Name = "rdbFechaEstreno";
-            this.rdbFechaEstreno.Size = new System.Drawing.Size(94, 17);
+            this.rdbFechaEstreno.Size = new System.Drawing.Size(131, 27);
             this.rdbFechaEstreno.TabIndex = 15;
             this.rdbFechaEstreno.TabStop = true;
             this.rdbFechaEstreno.Text = "Fecha Estreno";
@@ -105,9 +115,9 @@
             // rdbPelicula
             // 
             this.rdbPelicula.AutoSize = true;
-            this.rdbPelicula.Location = new System.Drawing.Point(269, 24);
+            this.rdbPelicula.Location = new System.Drawing.Point(153, 29);
             this.rdbPelicula.Name = "rdbPelicula";
-            this.rdbPelicula.Size = new System.Drawing.Size(64, 17);
+            this.rdbPelicula.Size = new System.Drawing.Size(83, 27);
             this.rdbPelicula.TabIndex = 15;
             this.rdbPelicula.TabStop = true;
             this.rdbPelicula.Text = "Película";
@@ -116,8 +126,8 @@
             // 
             // txtBusqueda
             // 
-            this.txtBusqueda.Enabled = false;
-            this.txtBusqueda.Location = new System.Drawing.Point(353, 23);
+            this.txtBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(54, 13);
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(195, 20);
             this.txtBusqueda.TabIndex = 19;
@@ -130,11 +140,11 @@
             this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLista.ContextMenuStrip = this.cmsOpciones;
-            this.dgvLista.Location = new System.Drawing.Point(12, 79);
+            this.dgvLista.Location = new System.Drawing.Point(12, 99);
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.ReadOnly = true;
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLista.Size = new System.Drawing.Size(566, 291);
+            this.dgvLista.Size = new System.Drawing.Size(566, 271);
             this.dgvLista.TabIndex = 13;
             // 
             // cmsOpciones
@@ -161,6 +171,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.btnActualizar);
             this.groupBox2.Controls.Add(this.btnNuevo);
             this.groupBox2.Controls.Add(this.btnCancelar);
@@ -213,6 +224,7 @@
             // 
             // pnlDatos
             // 
+            this.pnlDatos.BackColor = System.Drawing.Color.Transparent;
             this.pnlDatos.Controls.Add(this.cboCartelera);
             this.pnlDatos.Controls.Add(this.cboPelicula);
             this.pnlDatos.Controls.Add(this.label1);
@@ -244,29 +256,78 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 40);
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(18, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(80, 23);
             this.label1.TabIndex = 4;
             this.label1.Text = "Cartelera";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 81);
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(18, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.Size = new System.Drawing.Size(65, 23);
             this.label2.TabIndex = 6;
             this.label2.Text = "Película";
+            // 
+            // pnlBF
+            // 
+            this.pnlBF.BackgroundImage = global::CapaPresentacion.Properties.Resources.calendarioNuevo;
+            this.pnlBF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBF.Controls.Add(this.dtpFecha);
+            this.pnlBF.Location = new System.Drawing.Point(271, 20);
+            this.pnlBF.Name = "pnlBF";
+            this.pnlBF.Size = new System.Drawing.Size(295, 61);
+            this.pnlBF.TabIndex = 29;
+            // 
+            // pnlBT
+            // 
+            this.pnlBT.BackgroundImage = global::CapaPresentacion.Properties.Resources.boton_para_fondo_de_busqueda;
+            this.pnlBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBT.Controls.Add(this.txtBusqueda);
+            this.pnlBT.Location = new System.Drawing.Point(271, 21);
+            this.pnlBT.Name = "pnlBT";
+            this.pnlBT.Size = new System.Drawing.Size(295, 61);
+            this.pnlBT.TabIndex = 28;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(140, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(214, 80);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Cartelera de Peliculas";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::CapaPresentacion.Properties.Resources.estrella;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(90, 80);
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmCartelera_Pelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Captura_de_pantalla__69_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(978, 395);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pnlDatos);
+            this.DoubleBuffered = true;
             this.Name = "FrmCartelera_Pelicula";
             this.Text = "Gestión de Película en Cartelera";
             this.Load += new System.EventHandler(this.FrmCartelera_Pelicula_Load);
@@ -278,6 +339,10 @@
             this.groupBox2.ResumeLayout(false);
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();
+            this.pnlBF.ResumeLayout(false);
+            this.pnlBT.ResumeLayout(false);
+            this.pnlBT.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -304,5 +369,9 @@
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.RadioButton rdbFechaEstreno;
         private System.Windows.Forms.TextBox txtBusqueda;
+        private System.Windows.Forms.Panel pnlBF;
+        private System.Windows.Forms.Panel pnlBT;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -17,7 +17,7 @@ namespace CapaPresentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCartelera());
+            Application.Run(new FrmCartelera_Pelicula());
         }
     }
 }
