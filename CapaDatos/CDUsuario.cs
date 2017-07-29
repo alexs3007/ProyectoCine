@@ -19,10 +19,10 @@ namespace CapaDatos
             {
                 SqlCommand cmd = new SqlCommand("Sp_InsertarUsuario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@NombreUsuario", SqlDbType.NVarChar,20);
-                cmd.Parameters.Add("@Contraseña", SqlDbType.NVarChar, 20);
-                cmd.Parameters.Add("@CodEmpleado", SqlDbType.NVarChar, 15);
-                cmd.Parameters.Add("@IdTipoUsuario", SqlDbType.Int);
+                cmd.Parameters.Add("@NombreUsuario", SqlDbType.NVarChar,20).Value=ObjU.NombreUsuario;
+                cmd.Parameters.Add("@Contraseña", SqlDbType.NVarChar, 20).Value = ObjU.Contraseña; 
+                cmd.Parameters.Add("@CodEmpleado", SqlDbType.NVarChar, 15).Value = ObjU.CodEmpleado; 
+                cmd.Parameters.Add("@IdTipoUsuario", SqlDbType.Int).Value = ObjU.IdTipoUsuario;
 
                 ConectarBD();
                 resultado = cmd.ExecuteNonQuery();
@@ -47,11 +47,12 @@ namespace CapaDatos
             {
                 SqlCommand cmd = new SqlCommand("ActualizarUsuario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@IdUsuario", SqlDbType.Int);
-                cmd.Parameters.Add("@NombreUsuario", SqlDbType.NVarChar, 20);
-                cmd.Parameters.Add("@Contraseña", SqlDbType.NVarChar, 20);
-                cmd.Parameters.Add("@CodEmpleado", SqlDbType.NVarChar, 15);
-                cmd.Parameters.Add("@IdTipoUsuario", SqlDbType.Int);
+                cmd.Parameters.Add("@IdUsuario", SqlDbType.Int).Value=ObjU.IdUsuario;
+                cmd.Parameters.Add("@NombreUsuario", SqlDbType.NVarChar, 20).Value = ObjU.NombreUsuario;
+                cmd.Parameters.Add("@Contraseña", SqlDbType.NVarChar, 20).Value = ObjU.Contraseña;
+                cmd.Parameters.Add("@CodEmpleado", SqlDbType.NVarChar, 15).Value = ObjU.CodEmpleado;
+                cmd.Parameters.Add("@IdTipoUsuario", SqlDbType.Int).Value = ObjU.IdTipoUsuario;
+
 
                 ConectarBD();
                 resultado = cmd.ExecuteNonQuery();
@@ -76,7 +77,7 @@ namespace CapaDatos
             {
                 SqlCommand cmd = new SqlCommand("EliminarUsuario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@IdUsuario", SqlDbType.Int);
+                cmd.Parameters.Add("@IdUsuario", SqlDbType.Int).Value=ObjU.IdUsuario;
 
                 ConectarBD();
                 resultado = cmd.ExecuteNonQuery();
@@ -143,11 +144,7 @@ namespace CapaDatos
             }
 
         }
-
-
-
-
-            public DataSet ListadoUsuarioPorEmpleado(CEUsuario ObjU)
+        public DataSet ListadoUsuarioPorEmpleado(CEUsuario ObjU)
         {
             DataSet ds = new DataSet();
             SqlDataAdapter da;
@@ -155,9 +152,9 @@ namespace CapaDatos
             try
             {
                 ConectarBD();
-                da = new SqlDataAdapter("Sp_MostrarTodoPorEmpleado", cn);
+                da = new SqlDataAdapter("MostrarTodoPorEmpleado", cn);
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
-                da.SelectCommand.Parameters.Add("@NombreEmpleado", SqlDbType.NVarChar, 20).Value = ObjU.NombreUsuario;
+                da.SelectCommand.Parameters.Add("@NombreEmpleado", SqlDbType.NVarChar, 20).Value = ObjU.NombreEmpleado;
                 da.Fill(ds, "NombreEmpleado");
                 return ds;
 
@@ -175,5 +172,51 @@ namespace CapaDatos
         }
 
 
+        public DataSet ListadoEmpleado()
+        {
+            DataSet ds = new DataSet();
+            SqlDataAdapter da;
+
+            try
+            {
+                ConectarBD();
+                da = new SqlDataAdapter("Sp_DecripcionEmpleado", cn);
+                da.Fill(ds, "Empleado");
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al solicitar los datos de los empleados", ex);
+            }
+            finally
+            {
+                CerrarBD();
+                ds.Dispose();
+            }
+
+        }
+        public DataSet ListadoTipoUsuario()
+        {
+            DataSet ds = new DataSet();
+            SqlDataAdapter da;
+
+            try
+            {
+                ConectarBD();
+                da = new SqlDataAdapter("Sp_DecripcionTipoAcceso", cn);
+                da.Fill(ds, "TipoUsuario");
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al solicitar los datos de los tipos de usuarios", ex);
+            }
+            finally
+            {
+                CerrarBD();
+                ds.Dispose();
+            }
+
+        }
     }
 }

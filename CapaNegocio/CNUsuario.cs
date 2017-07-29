@@ -34,6 +34,16 @@ namespace CapaNegocio
             return ObjU.ListadoUsuario();
         }
 
+        public DataSet ListadoEmpleado()
+        {
+            return ObjU.ListadoEmpleado();
+        }
+
+        public DataSet ListadoTipoUsuario()
+        {
+            return ObjU.ListadoTipoUsuario();
+        }
+
         public DataSet ListadoUsuarioPorUsuario(CEUsuario objUsuario)
         {
             return ObjU.ListadoUsuarioPorUsuario(objUsuario);

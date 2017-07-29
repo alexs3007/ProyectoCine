@@ -41,19 +41,26 @@ namespace CapaPresentacion.Formularios
             txtCodUSuario.Clear();
             txtContraseña.Clear();
             txtNombre.Clear();
-            cboEmpleado.Text = "";
-            cboTipoUsuario.Text = "";
+            cboEmpleado.DataSource=null;
+            cboTipoUsuario.DataSource=null;
 
         }
 
         private void CargarComboBoxTipoUsuario()
         {
             CNUsuario objUsuario = new CNUsuario();
-            cboTipoUsuario.DataSource = objUsuario.ListadoUsuario().Tables["TipoUsuario"];
+            cboTipoUsuario.DataSource = objUsuario.ListadoTipoUsuario().Tables["TipoUsuario"];
             cboTipoUsuario.DisplayMember = "TipoUsuario";
             cboTipoUsuario.ValueMember = "IdTipoUsuario";
         }
 
+        private void CargarComboBoxEmpleado()
+        {
+            CNUsuario objUsuario = new CNUsuario();
+            cboEmpleado.DataSource = objUsuario.ListadoEmpleado().Tables["Empleado"];
+            cboEmpleado.DisplayMember = "Empleado";
+            cboEmpleado.ValueMember = "CodEmpleado";
+        }
 
         private void InsertarUsuario()
         {
@@ -122,8 +129,7 @@ namespace CapaPresentacion.Formularios
         {
             CNUsuario objP = new CNUsuario();
             dgvLista.DataSource = objP.ListadoUsuario().Tables["Usuario"];
-            dgvLista.Columns[7].Visible = false;
-            dgvLista.Columns[9].Visible = false;
+            
         }
 
 
@@ -133,18 +139,16 @@ namespace CapaPresentacion.Formularios
             CEUsuario objUsuario = new CEUsuario();
             objUsuario.NombreUsuario = NombreUsuario;
             dgvLista.DataSource = objU.ListadoUsuarioPorUsuario(objUsuario).Tables["Usuario"];
-            dgvLista.Columns[7].Visible = false;
-            dgvLista.Columns[9].Visible = false;
+            
         }
 
-        private void ListadoUsuarioPorEmpleado(string CodEmpleado)
+        private void ListadoUsuarioPorEmpleado(string Empleado)
         {
             CNUsuario objU = new CNUsuario();
             CEUsuario objUsuario = new CEUsuario();
-            objUsuario.CodEmpleado = CodEmpleado;
+            objUsuario.NombreEmpleado = Empleado;
             dgvLista.DataSource = objU.ListadoUsuarioPorEmpleado(objUsuario).Tables["Usuario"];
-            dgvLista.Columns[7].Visible = false;
-            dgvLista.Columns[9].Visible = false;
+
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -214,6 +218,7 @@ namespace CapaPresentacion.Formularios
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             txtCodUSuario.Focus();
+            CargarComboBoxEmpleado();
             CargarComboBoxTipoUsuario();
             HabilitarControles(true, false, true, false, true);
         }
@@ -245,9 +250,30 @@ namespace CapaPresentacion.Formularios
             txtCodUSuario.Text = dgvLista.SelectedRows[0].Cells[0].Value.ToString();
             txtNombre.Text = dgvLista.SelectedRows[0].Cells[1].FormattedValue.ToString();
             txtContraseña.Text = dgvLista.SelectedRows[0].Cells[2].FormattedValue.ToString();
-            cboEmpleado.Text = dgvLista.SelectedRows[0].Cells[3].Value.ToString();
-            cboTipoUsuario.Text = dgvLista.SelectedRows[0].Cells[4].Value.ToString();
+            CargarComboBoxEmpleado();
+            CargarComboBoxTipoUsuario();
+            cboEmpleado.Text = dgvLista.SelectedRows[0].Cells[4].Value.ToString();
+            cboTipoUsuario.Text = dgvLista.SelectedRows[0].Cells[6].Value.ToString();
 
+        }
+
+        private void txtBusqueda_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBusqueda.Text.Equals(""))
+            {
+                ListadoUsuario();
+            }
+            else
+            {
+                if (rdbCodUsuario.Checked == true)
+                {
+                    ListadoUsuarioPorUsuario(txtBusqueda.Text);
+                }
+                else
+                {
+                    ListadoUsuarioPorEmpleado(txtBusqueda.Text);
+                }
+            }
         }
     }
 }
