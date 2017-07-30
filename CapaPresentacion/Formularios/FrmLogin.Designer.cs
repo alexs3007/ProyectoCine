@@ -34,6 +34,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pnlcerrar = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -54,7 +55,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(342, 240);
+            this.btnAceptar.Location = new System.Drawing.Point(344, 265);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 2;
@@ -64,7 +65,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(451, 240);
+            this.btnCancelar.Location = new System.Drawing.Point(457, 265);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 3;
@@ -90,6 +91,17 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "label2";
             // 
+            // pnlcerrar
+            // 
+            this.pnlcerrar.BackColor = System.Drawing.Color.Transparent;
+            this.pnlcerrar.BackgroundImage = global::CapaPresentacion.Properties.Resources.X;
+            this.pnlcerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlcerrar.Location = new System.Drawing.Point(572, 12);
+            this.pnlcerrar.Name = "pnlcerrar";
+            this.pnlcerrar.Size = new System.Drawing.Size(25, 22);
+            this.pnlcerrar.TabIndex = 6;
+            this.pnlcerrar.Click += new System.EventHandler(this.pnlcerrar_Click);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -97,6 +109,7 @@
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Loginn;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(609, 334);
+            this.Controls.Add(this.pnlcerrar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancelar);
@@ -104,7 +117,9 @@
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
@@ -120,5 +135,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel pnlcerrar;
     }
 }

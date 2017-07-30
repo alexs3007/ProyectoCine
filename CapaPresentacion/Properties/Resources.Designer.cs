@@ -63,6 +63,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bordesuperior {
+            get {
+                object obj = ResourceManager.GetObject("bordesuperior", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boton_para_fondo_de_busqueda {
             get {
                 object obj = ResourceManager.GetObject("boton para fondo de busqueda", resourceCulture);
@@ -96,6 +106,26 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap Captura_de_pantalla__69_ {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla (69)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cartelera {
+            get {
+                object obj = ResourceManager.GetObject("cartelera", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cartelera1 {
+            get {
+                object obj = ResourceManager.GetObject("cartelera1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,6 +193,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logout_icon_150x150 {
+            get {
+                object obj = ResourceManager.GetObject("logout-icon-150x150", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Movie {
             get {
                 object obj = ResourceManager.GetObject("Movie", resourceCulture);
@@ -196,6 +236,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap WhatsApp_Image_2017_07_29_at_2_12_11_PM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2017-07-29 at 2.12.11 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap X {
+            get {
+                object obj = ResourceManager.GetObject("X", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -55,5 +55,10 @@ namespace CapaPresentacion.Formularios
         {
             this.Close();
         }
+
+        private void pnlcerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

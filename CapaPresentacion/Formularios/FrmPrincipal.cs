@@ -95,5 +95,40 @@ namespace CapaPresentacion.Formularios
                 childForm.Close();
             }
         }
+
+        private void pnlcerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pnlCambioUsuario_Click(object sender, EventArgs e)
+        {
+            
+            FrmLogin frm = new FrmLogin();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void pnlCartelera_MouseHover(object sender, EventArgs e)
+        {
+            pnlCartelera.BackgroundImage = CapaPresentacion.Properties.Resources.cartelera1;
+        }
+
+        private void pnlCartelera_MouseLeave(object sender, EventArgs e)
+        {
+            pnlCartelera.BackgroundImage = CapaPresentacion.Properties.Resources.cartelera;
+        }
+
+        //private void pnlCartelera_Click(object sender, EventArgs e)
+        //{
+        //    FrmCartelera frm = new FrmCartelera();
+        //    frm.Show();
+        //}
+
+        private void pnlCartelera_MouseClick(object sender, MouseEventArgs e)
+        {
+            FrmCartelera frm = new FrmCartelera();
+            frm.Show();
+        }
     }
 }

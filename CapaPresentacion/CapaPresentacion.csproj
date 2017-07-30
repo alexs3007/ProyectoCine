@@ -236,6 +236,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LOGOCINE3.ico" />
+    <None Include="Resources\cartelera1.png" />
+    <None Include="Resources\cartelera.png" />
+    <None Include="Resources\bordesuperior.png" />
+    <None Include="Resources\logout-icon-150x150.png" />
+    <None Include="Resources\X.png" />
     <None Include="Resources\Imagen1.jpg" />
     <None Include="Resources\WhatsApp Image 2017-07-29 at 2.12.11 PM.jpeg" />
     <None Include="Resources\image_remove1.png" />
