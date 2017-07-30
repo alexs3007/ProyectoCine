@@ -19,3 +19,10 @@ C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\CinemaEvolution\CapaDatos\
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\CinemaEvolution\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\CinemaEvolution\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\CinemaEvolution\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Johan Chevez\Desktop\cine\PCINEMAEVOLUTIONS\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Johan Chevez\Desktop\cine\PCINEMAEVOLUTIONS\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Johan Chevez\Desktop\cine\PCINEMAEVOLUTIONS\CapaDatos\bin\Debug\CapaEntidades.dll
+C:\Users\Johan Chevez\Desktop\cine\PCINEMAEVOLUTIONS\CapaDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\Johan Chevez\Desktop\cine\PCINEMAEVOLUTIONS\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Johan Chevez\Desktop\cine\PCINEMAEVOLUTIONS\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Johan Chevez\Desktop\cine\PCINEMAEVOLUTIONS\CapaDatos\obj\Debug\CapaDatos.pdb

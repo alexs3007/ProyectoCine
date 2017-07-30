@@ -55,7 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.WhatsApp_Image_2017_07_29_at_2_12_11_PM;
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Imagen1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.statusStrip);
