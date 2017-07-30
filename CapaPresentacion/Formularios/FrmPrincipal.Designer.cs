@@ -92,16 +92,16 @@
             // 
             // pnlCartelera
             // 
-            this.pnlCartelera.BackgroundImage = global::CapaPresentacion.Properties.Resources.cartelera;
-            this.pnlCartelera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlCartelera.Location = new System.Drawing.Point(36, 6);
-            this.pnlCartelera.Name = "pnlCartelera";
-            this.pnlCartelera.Size = new System.Drawing.Size(145, 43);
-            this.pnlCartelera.TabIndex = 6;
-            this.pnlCartelera.Click += new System.EventHandler(this.pnlCartelera_Click);
-            this.pnlCartelera.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlCartelera_MouseClick);
-            this.pnlCartelera.MouseLeave += new System.EventHandler(this.pnlCartelera_MouseLeave);
-            this.pnlCartelera.MouseHover += new System.EventHandler(this.pnlCartelera_MouseHover);
+            //this.pnlCartelera.BackgroundImage = global::CapaPresentacion.Properties.Resources.cartelera;
+            //this.pnlCartelera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            //this.pnlCartelera.Location = new System.Drawing.Point(36, 6);
+            //this.pnlCartelera.Name = "pnlCartelera";
+            //this.pnlCartelera.Size = new System.Drawing.Size(145, 43);
+            //this.pnlCartelera.TabIndex = 6;
+            ////this.pnlCartelera.Click += new System.EventHandler(this.pnlCartelera_Click);
+            //this.pnlCartelera.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlCartelera_MouseClick);
+            //this.pnlCartelera.MouseLeave += new System.EventHandler(this.pnlCartelera_MouseLeave);
+            //this.pnlCartelera.MouseHover += new System.EventHandler(this.pnlCartelera_MouseHover);
             // 
             // FrmPrincipal
             // 
