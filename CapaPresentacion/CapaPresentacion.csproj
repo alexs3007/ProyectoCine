@@ -236,6 +236,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LOGOCINE3.ico" />
+    <None Include="Resources\carterleracirculo.png" />
     <None Include="Resources\cartelera1.png" />
     <None Include="Resources\cartelera.png" />
     <None Include="Resources\bordesuperior.png" />

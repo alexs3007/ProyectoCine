@@ -36,6 +36,7 @@
             this.pnlCambioUsuario = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlCartelera = new System.Windows.Forms.Panel();
+            this.pnlCarteleraS = new System.Windows.Forms.Panel();
             this.statusStrip.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -82,9 +83,9 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BackgroundImage = global::CapaPresentacion.Properties.Resources.bordesuperior;
+            this.panel1.Controls.Add(this.pnlcerrar);
             this.panel1.Controls.Add(this.pnlCartelera);
             this.panel1.Controls.Add(this.pnlCambioUsuario);
-            this.panel1.Controls.Add(this.pnlcerrar);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1363, 45);
@@ -92,25 +93,31 @@
             // 
             // pnlCartelera
             // 
-            //this.pnlCartelera.BackgroundImage = global::CapaPresentacion.Properties.Resources.cartelera;
-            //this.pnlCartelera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            //this.pnlCartelera.Location = new System.Drawing.Point(36, 6);
-            //this.pnlCartelera.Name = "pnlCartelera";
-            //this.pnlCartelera.Size = new System.Drawing.Size(145, 43);
-            //this.pnlCartelera.TabIndex = 6;
-            ////this.pnlCartelera.Click += new System.EventHandler(this.pnlCartelera_Click);
-            //this.pnlCartelera.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlCartelera_MouseClick);
-            //this.pnlCartelera.MouseLeave += new System.EventHandler(this.pnlCartelera_MouseLeave);
-            //this.pnlCartelera.MouseHover += new System.EventHandler(this.pnlCartelera_MouseHover);
+            this.pnlCartelera.Location = new System.Drawing.Point(0, 0);
+            this.pnlCartelera.Name = "pnlCartelera";
+            this.pnlCartelera.Size = new System.Drawing.Size(200, 42);
+            this.pnlCartelera.TabIndex = 0;
+            // 
+            // pnlCarteleraS
+            // 
+            this.pnlCarteleraS.BackColor = System.Drawing.Color.Transparent;
+            this.pnlCarteleraS.BackgroundImage = global::CapaPresentacion.Properties.Resources.carterleracirculo;
+            this.pnlCarteleraS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlCarteleraS.Location = new System.Drawing.Point(0, 45);
+            this.pnlCarteleraS.Name = "pnlCarteleraS";
+            this.pnlCarteleraS.Size = new System.Drawing.Size(100, 100);
+            this.pnlCarteleraS.TabIndex = 9;
+            this.pnlCarteleraS.Click += new System.EventHandler(this.pnlCarteleraS_Click);
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Imagen1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.pnlCarteleraS);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -134,6 +141,7 @@
         private System.Windows.Forms.Panel pnlCambioUsuario;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlCartelera;
+        private System.Windows.Forms.Panel pnlCarteleraS;
     }
 }
 

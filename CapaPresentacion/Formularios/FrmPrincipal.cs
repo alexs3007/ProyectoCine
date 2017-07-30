@@ -109,15 +109,15 @@ namespace CapaPresentacion.Formularios
             this.Hide();
         }
 
-        private void pnlCartelera_MouseHover(object sender, EventArgs e)
-        {
-            pnlCartelera.BackgroundImage = CapaPresentacion.Properties.Resources.cartelera1;
-        }
+        //private void pnlCartelera_MouseHover(object sender, EventArgs e)
+        //{
+        //    pnlCartelera.BackgroundImage = CapaPresentacion.Properties.Resources.cartelera1;
+        //}
 
-        private void pnlCartelera_MouseLeave(object sender, EventArgs e)
-        {
-            pnlCartelera.BackgroundImage = CapaPresentacion.Properties.Resources.cartelera;
-        }
+        //private void pnlCartelera_MouseLeave(object sender, EventArgs e)
+        //{
+        //    pnlCartelera.BackgroundImage = CapaPresentacion.Properties.Resources.cartelera;
+        //}
 
         //private void pnlCartelera_Click(object sender, EventArgs e)
         //{
@@ -129,6 +129,13 @@ namespace CapaPresentacion.Formularios
         {
             FrmCartelera frm = new FrmCartelera();
             frm.Show();
+        }
+
+        private void pnlCarteleraS_Click(object sender, EventArgs e)
+        {
+            FrmCartelera frm = new FrmCartelera();
+            frm.Show();
+            frm.Location = new Point(200, 200);
         }
     }
 }
