@@ -87,21 +87,7 @@ namespace CapaPresentacion
             }
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            InsertarPelicula();
-            LimpiarControles();
-            HabilitarControles(false, true, false, false, false);
-            ListadoCartelera();
-        }
-
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-            ActualizarCartelera();
-            LimpiarControles();
-            HabilitarControles(false, true, false, false, false);
-            ListadoCartelera();
-        }
+        
 
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -196,6 +182,35 @@ namespace CapaPresentacion
                     MessageBox.Show("Ingrese un valor valido", "CinemaEvolution", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
+        }
+
+     
+        private void btnNuevo_Click_3(object sender, EventArgs e)
+        {
+            HabilitarControles(true, false, true, false, true);
+            dtpFechaEstreno.Focus();
+        }
+
+        private void btnGuardar_Click_3(object sender, EventArgs e)
+        {
+            InsertarPelicula();
+            LimpiarControles();
+            HabilitarControles(false, true, false, false, false);
+            ListadoCartelera();
+        }
+
+        private void btnActualizar_Click_2(object sender, EventArgs e)
+        {
+            ActualizarCartelera();
+            LimpiarControles();
+            HabilitarControles(false, true, false, false, false);
+            ListadoCartelera();
+        }
+
+        private void btnCancelar_Click_2(object sender, EventArgs e)
+        {
+            LimpiarControles();
+            HabilitarControles(false, true, false, false, false);
         }
     }
 }

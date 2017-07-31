@@ -151,84 +151,6 @@ namespace CapaPresentacion.Formularios
             dgvLista.Columns[0].Visible = false;
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            if (txtNombre.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese el nombre del Usuario", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtContraseña.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese la contraseña del usuario", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (cboEmpleado.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Seleccione el nombre del empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (cboTipoUsuario.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Seleccione el Tipo de Usuario", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-
-            }
-
-            InsertarUsuario();
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
-            ListadoUsuario();
-        }
-
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-            if (txtNombre.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese el nombre del Usuario", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtContraseña.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese la contraseña del usuario", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (cboEmpleado.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Seleccione el nombre del empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (cboTipoUsuario.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Seleccione el Tipo de Usuario", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-
-            }
-
-            ActualizarUsuario();
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
-            ListadoUsuario();
-        }
-
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            txtCodUSuario.Focus();
-            CargarComboBoxEmpleado();
-            CargarComboBoxTipoUsuario();
-            HabilitarControles(true, false, true, false, true);
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
-        }
-
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FilaSeleccionada();
@@ -274,6 +196,84 @@ namespace CapaPresentacion.Formularios
                     ListadoUsuarioPorEmpleado(txtBusqueda.Text);
                 }
             }
+        }
+
+        private void btnNuevo_Click_1(object sender, EventArgs e)
+        {
+            txtCodUSuario.Focus();
+            CargarComboBoxEmpleado();
+            CargarComboBoxTipoUsuario();
+            HabilitarControles(true, false, true, false, true);
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+            if (txtNombre.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese el nombre del Usuario", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtContraseña.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese la contraseña del usuario", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (cboEmpleado.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Seleccione el nombre del empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (cboTipoUsuario.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Seleccione el Tipo de Usuario", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+
+            }
+
+            InsertarUsuario();
+            Limpiar();
+            HabilitarControles(false, true, false, false, false);
+            ListadoUsuario();
+        }
+
+        private void btnActualizar_Click_1(object sender, EventArgs e)
+        {
+            if (txtNombre.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese el nombre del Usuario", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtContraseña.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese la contraseña del usuario", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (cboEmpleado.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Seleccione el nombre del empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (cboTipoUsuario.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Seleccione el Tipo de Usuario", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+
+            }
+
+            ActualizarUsuario();
+            Limpiar();
+            HabilitarControles(false, true, false, false, false);
+            ListadoUsuario();
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            Limpiar();
+            HabilitarControles(false, true, false, false, false);
         }
     }
 }

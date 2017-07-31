@@ -33,3 +33,10 @@ C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\Nueva carpeta\PCINEMAEVOLU
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\Nueva carpeta\PCINEMAEVOLUTIONS\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\Nueva carpeta\PCINEMAEVOLUTIONS\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\Nueva carpeta\PCINEMAEVOLUTIONS\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaDatos\bin\Debug\CapaEntidades.dll
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaDatos\obj\Debug\CapaDatos.pdb

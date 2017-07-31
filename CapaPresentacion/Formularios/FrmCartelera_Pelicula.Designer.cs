@@ -31,9 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.rdbFechaEstreno = new System.Windows.Forms.RadioButton();
             this.rdbPelicula = new System.Windows.Forms.RadioButton();
+            this.pnlBF = new System.Windows.Forms.Panel();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.pnlBT = new System.Windows.Forms.Panel();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.cmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -49,18 +51,16 @@
             this.cboPelicula = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pnlBF = new System.Windows.Forms.Panel();
-            this.pnlBT = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.pnlBF.SuspendLayout();
+            this.pnlBT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.cmsOpciones.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.pnlDatos.SuspendLayout();
-            this.pnlBF.SuspendLayout();
-            this.pnlBT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,16 +89,6 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Búsqueda por:";
             // 
-            // dtpFecha
-            // 
-            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(65, 14);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(179, 20);
-            this.dtpFecha.TabIndex = 21;
-            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
-            // 
             // rdbFechaEstreno
             // 
             this.rdbFechaEstreno.AutoSize = true;
@@ -123,6 +113,36 @@
             this.rdbPelicula.Text = "Película";
             this.rdbPelicula.UseVisualStyleBackColor = true;
             this.rdbPelicula.CheckedChanged += new System.EventHandler(this.rdbPelicula_CheckedChanged);
+            // 
+            // pnlBF
+            // 
+            this.pnlBF.BackgroundImage = global::CapaPresentacion.Properties.Resources.calendarioNuevo;
+            this.pnlBF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBF.Controls.Add(this.dtpFecha);
+            this.pnlBF.Location = new System.Drawing.Point(271, 20);
+            this.pnlBF.Name = "pnlBF";
+            this.pnlBF.Size = new System.Drawing.Size(295, 61);
+            this.pnlBF.TabIndex = 29;
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(65, 14);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(179, 20);
+            this.dtpFecha.TabIndex = 21;
+            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
+            // 
+            // pnlBT
+            // 
+            this.pnlBT.BackgroundImage = global::CapaPresentacion.Properties.Resources.boton_para_fondo_de_busqueda;
+            this.pnlBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBT.Controls.Add(this.txtBusqueda);
+            this.pnlBT.Location = new System.Drawing.Point(271, 21);
+            this.pnlBT.Name = "pnlBT";
+            this.pnlBT.Size = new System.Drawing.Size(295, 61);
+            this.pnlBT.TabIndex = 28;
             // 
             // txtBusqueda
             // 
@@ -184,41 +204,57 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(169, 42);
+            this.btnActualizar.BackgroundImage = global::CapaPresentacion.Properties.Resources.azul;
+            this.btnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnActualizar.FlatAppearance.BorderSize = 0;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.Image = global::CapaPresentacion.Properties.Resources.actualizaricon;
+            this.btnActualizar.Location = new System.Drawing.Point(168, 27);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.Size = new System.Drawing.Size(75, 53);
             this.btnActualizar.TabIndex = 18;
-            this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(7, 42);
+            this.btnNuevo.BackgroundImage = global::CapaPresentacion.Properties.Resources.azul;
+            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNuevo.FlatAppearance.BorderSize = 0;
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.Image = global::CapaPresentacion.Properties.Resources.nuevoicon23;
+            this.btnNuevo.Location = new System.Drawing.Point(6, 27);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
+            this.btnNuevo.Size = new System.Drawing.Size(75, 53);
             this.btnNuevo.TabIndex = 14;
-            this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(250, 42);
+            this.btnCancelar.BackgroundImage = global::CapaPresentacion.Properties.Resources.azul;
+            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Image = global::CapaPresentacion.Properties.Resources.cancelaricon;
+            this.btnCancelar.Location = new System.Drawing.Point(249, 27);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(75, 53);
             this.btnCancelar.TabIndex = 17;
-            this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(88, 42);
+            this.btnGuardar.BackgroundImage = global::CapaPresentacion.Properties.Resources.azul;
+            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Image = global::CapaPresentacion.Properties.Resources.guardaricon23;
+            this.btnGuardar.Location = new System.Drawing.Point(87, 27);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.Size = new System.Drawing.Size(75, 53);
             this.btnGuardar.TabIndex = 16;
-            this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
@@ -273,26 +309,6 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Película";
             // 
-            // pnlBF
-            // 
-            this.pnlBF.BackgroundImage = global::CapaPresentacion.Properties.Resources.calendarioNuevo;
-            this.pnlBF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlBF.Controls.Add(this.dtpFecha);
-            this.pnlBF.Location = new System.Drawing.Point(271, 20);
-            this.pnlBF.Name = "pnlBF";
-            this.pnlBF.Size = new System.Drawing.Size(295, 61);
-            this.pnlBF.TabIndex = 29;
-            // 
-            // pnlBT
-            // 
-            this.pnlBT.BackgroundImage = global::CapaPresentacion.Properties.Resources.boton_para_fondo_de_busqueda;
-            this.pnlBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlBT.Controls.Add(this.txtBusqueda);
-            this.pnlBT.Location = new System.Drawing.Point(271, 21);
-            this.pnlBT.Name = "pnlBT";
-            this.pnlBT.Size = new System.Drawing.Size(295, 61);
-            this.pnlBT.TabIndex = 28;
-            // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
@@ -334,14 +350,14 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.pnlBF.ResumeLayout(false);
+            this.pnlBT.ResumeLayout(false);
+            this.pnlBT.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.cmsOpciones.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();
-            this.pnlBF.ResumeLayout(false);
-            this.pnlBT.ResumeLayout(false);
-            this.pnlBT.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -120,6 +120,12 @@
     <Compile Include="Formularios\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmSinopsis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmSinopsis.Designer.cs">
+      <DependentUpon>FrmSinopsis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmSplah.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,12 @@
     </Compile>
     <Compile Include="Formularios\FrmUsuario.Designer.cs">
       <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmReportes.Designer.cs">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -167,11 +179,17 @@
     <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmSinopsis.resx">
+      <DependentUpon>FrmSinopsis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmSplah.resx">
       <DependentUpon>FrmSplah.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmUsuario.resx">
       <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmReportes.resx">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -236,6 +254,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LOGOCINE3.ico" />
+    <None Include="Resources\cancelaricon.png" />
+    <None Include="Resources\actualizaricon.png" />
+    <None Include="Resources\guardaricon23.png" />
+    <None Include="Resources\guardaricon1.png" />
+    <None Include="Resources\guardaricon.png" />
+    <None Include="Resources\nuevoicon23.png" />
+    <None Include="Resources\nuevoicon2.png" />
+    <None Include="Resources\azul.png" />
+    <None Include="Resources\nuevoicon1.png" />
+    <None Include="Resources\nuevoicon.png" />
+    <None Include="Resources\cancelargris.png" />
+    <None Include="Resources\actualizargris.png" />
+    <None Include="Resources\guardargris.png" />
+    <None Include="Resources\nuevogris.png" />
+    <None Include="Resources\cancelar.png" />
+    <None Include="Resources\actualizar.png" />
+    <None Include="Resources\guardar.png" />
+    <None Include="Resources\NUEVO.png" />
     <None Include="Resources\carterleracirculo.png" />
     <None Include="Resources\cartelera1.png" />
     <None Include="Resources\cartelera.png" />

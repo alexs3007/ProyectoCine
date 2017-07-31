@@ -149,48 +149,9 @@ namespace CapaPresentacion.Formularios
             }
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            HabilitarControles(true, false, true, false, true);
-            txtCodEmpleado.Focus();
-        }
+        
 
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            if (txtCodEmpleado.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese el Código del Empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtNombre.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese el Nombre del Empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtApellido.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese el Apellido del Empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtDireccion.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese la dirección del Empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtCorreo.Text != "")
-            {
-                if (ComprobarFormatoEmail(txtCorreo.Text) == false)
-                {
-                    MessageBox.Show(null, "Ingrese un correo correpto", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtCorreo.Focus();
-                    return;
-                }
-            }
-            InsertarEmpleado();
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
-            ListadoEmpleado();
-        }
+       
 
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -198,13 +159,46 @@ namespace CapaPresentacion.Formularios
             HabilitarControles(true, false, false, true, true);
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+       
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            string CodiEmpleado;
+            CodiEmpleado = (dgvLista.SelectedRows[0].Cells[0].Value.ToString());
+            EliminarEmpleado(CodiEmpleado);
+            ListadoEmpleado();
             Limpiar();
             HabilitarControles(false, true, false, false, false);
         }
+    
+        private void txtBusqueda_TextChanged(object sender, EventArgs e)
+        {
+            if (!txtBusqueda.Text.Equals(""))
+            {
+                if (rdbCodEmpleado.Checked == true)
+                {
+                    ListadoEmpleadoporCodigo(txtBusqueda.Text);
+                }
+                else
+                {
+                    ListadoEmpleadoporNombre(txtBusqueda.Text);
+                }
+            }
+            else
+            {
+                ListadoEmpleado();
+            }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
+        }
+
+        private void FrmEmpleado_Load(object sender, EventArgs e)
+        {
+            HabilitarControles(false, true, false, false, false);
+            ListadoEmpleado();
+
+        }
+
+        private void btnActualizar_Click_1(object sender, EventArgs e)
         {
             if (txtCodEmpleado.Text.Equals(""))
             {
@@ -242,41 +236,53 @@ namespace CapaPresentacion.Formularios
             ListadoEmpleado();
         }
 
-        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnNuevo_Click_1(object sender, EventArgs e)
         {
-            string CodiEmpleado;
-            CodiEmpleado = (dgvLista.SelectedRows[0].Cells[0].Value.ToString());
-            EliminarEmpleado(CodiEmpleado);
-            ListadoEmpleado();
+            HabilitarControles(true, false, true, false, true);
+            txtCodEmpleado.Focus();
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+            if (txtCodEmpleado.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese el Código del Empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtNombre.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese el Nombre del Empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtApellido.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese el Apellido del Empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtDireccion.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese la dirección del Empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtCorreo.Text != "")
+            {
+                if (ComprobarFormatoEmail(txtCorreo.Text) == false)
+                {
+                    MessageBox.Show(null, "Ingrese un correo correpto", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtCorreo.Focus();
+                    return;
+                }
+            }
+            InsertarEmpleado();
             Limpiar();
             HabilitarControles(false, true, false, false, false);
-        }
-    
-        private void txtBusqueda_TextChanged(object sender, EventArgs e)
-        {
-            if (!txtBusqueda.Text.Equals(""))
-            {
-                if (rdbCodEmpleado.Checked == true)
-                {
-                    ListadoEmpleadoporCodigo(txtBusqueda.Text);
-                }
-                else
-                {
-                    ListadoEmpleadoporNombre(txtBusqueda.Text);
-                }
-            }
-            else
-            {
-                ListadoEmpleado();
-            }
-
-        }
-
-        private void FrmEmpleado_Load(object sender, EventArgs e)
-        {
-            HabilitarControles(false, true, false, false, false);
             ListadoEmpleado();
+        }
 
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            Limpiar();
+            HabilitarControles(false, true, false, false, false);
         }
     }
 }

@@ -139,34 +139,7 @@ namespace CapaPresentacion.Formularios
 
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            HabilitarControles(true, false, true, false, true);
-            CargarComboBoxHorario();
-            CargarComboBoxPelicula();
-        }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            InsertarPeliculaHorario();
-            LimpiarControles();
-            HabilitarControles(false, true, false, false, false);
-            ListadoPeliculaHorario();
-        }
-
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-            ActualizarPeliculaHorario();
-            LimpiarControles();
-            HabilitarControles(false, true, false, false, false);
-            ListadoPeliculaHorario();
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            LimpiarControles();
-            HabilitarControles(false, true, false, false, false);
-        }
+       
 
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -204,6 +177,35 @@ namespace CapaPresentacion.Formularios
                 ListadoPeliculaHorario();
             }
 
+        }
+
+        private void btnNuevo_Click_1(object sender, EventArgs e)
+        {
+            HabilitarControles(true, false, true, false, true);
+            CargarComboBoxHorario();
+            CargarComboBoxPelicula();
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+            InsertarPeliculaHorario();
+            LimpiarControles();
+            HabilitarControles(false, true, false, false, false);
+            ListadoPeliculaHorario();
+        }
+
+        private void btnActualizar_Click_1(object sender, EventArgs e)
+        {
+            ActualizarPeliculaHorario();
+            LimpiarControles();
+            HabilitarControles(false, true, false, false, false);
+            ListadoPeliculaHorario();
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            LimpiarControles();
+            HabilitarControles(false, true, false, false, false);
         }
     }
 }

@@ -43,3 +43,12 @@ C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\Nueva carpeta\PCINEMAEVOLU
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\Nueva carpeta\PCINEMAEVOLUTIONS\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\Nueva carpeta\PCINEMAEVOLUTIONS\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\Nueva carpeta\PCINEMAEVOLUTIONS\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaNegocio\bin\Debug\CapaEntidades.dll
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaNegocio\bin\Debug\CapaEntidades.pdb
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\PCINEMAEVOLUTIONS\CapaNegocio\obj\Debug\CapaNegocio.pdb

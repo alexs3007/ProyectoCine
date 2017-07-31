@@ -151,89 +151,7 @@ namespace CapaPresentacion.Formularios
             objFactura.NombrePelicula = Pelicula;
             dgvLista.DataSource = objF.ListadoFacturaPorPelicula(objFactura).Tables["Factura"];
         }
-
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            HabilitarControles(true, false, true, false, true);
-            txtIdFactura.Focus();
-            CargarComboBoxPelicula();
-            CargarComboBoxTecnologia();
-        }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            if(cboPelicula.Text == null)
-            {
-                MessageBox.Show(null, "Seleccione la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (cboTecnologia.Text == null)
-            {
-                MessageBox.Show(null, "Seleccione la Tecnologia", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            int cantidadBoletos;
-            if(!int.TryParse(txtCantidad.Text, out cantidadBoletos))
-            {
-                MessageBox.Show(null, "Ingrese la cantidad de boletos correcta", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            double precioBoletos;
-            if (!double.TryParse(txtPrecio.Text, out precioBoletos))
-            {
-                MessageBox.Show(null, "Ingrese el precio  de boletos correcto", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            InsertarFactura();
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
-            ListadoFactura();
-        }
-
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-            
-            if (cboPelicula.Text == null)
-            {
-                MessageBox.Show(null, "Seleccione la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (cboTecnologia.Text == null)
-            {
-                MessageBox.Show(null, "Seleccione la Tecnologia", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            int cantidadBoletos;
-            if (!int.TryParse(txtCantidad.Text, out cantidadBoletos))
-            {
-                MessageBox.Show(null, "Ingrese la cantidad de boletos correcta", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            double precioBoletos;
-            if (!double.TryParse(txtPrecio.Text, out precioBoletos))
-            {
-                MessageBox.Show(null, "Ingrese el precio  de boletos correcto", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            ActualizarFactura();
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
-            ListadoFactura();
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
-        }
+ 
 
         private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -283,6 +201,88 @@ namespace CapaPresentacion.Formularios
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnNuevo_Click_1(object sender, EventArgs e)
+        {
+            HabilitarControles(true, false, true, false, true);
+            txtIdFactura.Focus();
+            CargarComboBoxPelicula();
+            CargarComboBoxTecnologia();
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+            if (cboPelicula.Text == null)
+            {
+                MessageBox.Show(null, "Seleccione la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (cboTecnologia.Text == null)
+            {
+                MessageBox.Show(null, "Seleccione la Tecnologia", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            int cantidadBoletos;
+            if (!int.TryParse(txtCantidad.Text, out cantidadBoletos))
+            {
+                MessageBox.Show(null, "Ingrese la cantidad de boletos correcta", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            double precioBoletos;
+            if (!double.TryParse(txtPrecio.Text, out precioBoletos))
+            {
+                MessageBox.Show(null, "Ingrese el precio  de boletos correcto", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            InsertarFactura();
+            Limpiar();
+            HabilitarControles(false, true, false, false, false);
+            ListadoFactura();
+        }
+
+        private void btnActualizar_Click_1(object sender, EventArgs e)
+        {
+            if (cboPelicula.Text == null)
+            {
+                MessageBox.Show(null, "Seleccione la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (cboTecnologia.Text == null)
+            {
+                MessageBox.Show(null, "Seleccione la Tecnologia", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            int cantidadBoletos;
+            if (!int.TryParse(txtCantidad.Text, out cantidadBoletos))
+            {
+                MessageBox.Show(null, "Ingrese la cantidad de boletos correcta", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            double precioBoletos;
+            if (!double.TryParse(txtPrecio.Text, out precioBoletos))
+            {
+                MessageBox.Show(null, "Ingrese el precio  de boletos correcto", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            ActualizarFactura();
+            Limpiar();
+            HabilitarControles(false, true, false, false, false);
+            ListadoFactura();
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            Limpiar();
+            HabilitarControles(false, true, false, false, false);
         }
     }
 }

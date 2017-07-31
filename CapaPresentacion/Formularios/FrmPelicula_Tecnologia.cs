@@ -30,14 +30,7 @@ namespace CapaPresentacion.Formularios
             btnCancelar.Enabled = cancelar;
         }
 
-        private void BtnActualizar_Click(object sender, EventArgs e)
-        {
-            ActualizarPeliculaTecnologia();
-            LimpiarControles();
-            HabilitarControles(false, true, false, false, false);
-            ListadoPeliculaTecnologia();
-        }
-
+       
         private void FrmPelicula_Tecnologia_Load(object sender, EventArgs e)
         {
             HabilitarControles(false, true, false, false, false);
@@ -66,13 +59,7 @@ namespace CapaPresentacion.Formularios
             cboTecnología.ValueMember = "IdTecnologia";
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            HabilitarControles(true, false, true, false, true);
-            cboPelicula.Focus();        
-            CargarComboBoxPelicula();
-            CargarComboBoxTecnologia();
-        }
+       
 
         private void GuardarCarteleraPelicula()
         {
@@ -92,22 +79,7 @@ namespace CapaPresentacion.Formularios
             }
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            if(txtPrecio.Text.Equals(""))
-            {
-                MessageBox.Show("Ingrese el precio correspondiente", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtPrecio.Focus();
-                return;
-            }else
-            {
-                GuardarCarteleraPelicula();
-                ListadoPeliculaTecnologia();
-                LimpiarControles();
-                HabilitarControles(false, true, false, false, false);
-            }
-            
-        }
+       
 
         private void LimpiarControles()
         {
@@ -131,11 +103,7 @@ namespace CapaPresentacion.Formularios
             txtPrecio.Text = dgvLista.SelectedRows[0].Cells[4].Value.ToString();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            LimpiarControles();
-            HabilitarControles(false, true, false, false, false);
-        }
+     
 
         private void ActualizarPeliculaTecnologia()
         {
@@ -221,6 +189,46 @@ namespace CapaPresentacion.Formularios
             dgvLista.DataSource = objPT.ListadoPeliculaTecnologiaporTecnologia(objPeT).Tables["PeliculaTecnologiaT"];
             dgvLista.Columns[0].Visible = false;
             dgvLista.Columns[1].Visible = false;
+        }
+
+        private void btnNuevo_Click_1(object sender, EventArgs e)
+        {
+            HabilitarControles(true, false, true, false, true);
+            cboPelicula.Focus();
+            CargarComboBoxPelicula();
+            CargarComboBoxTecnologia();
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+            if (txtPrecio.Text.Equals(""))
+            {
+                MessageBox.Show("Ingrese el precio correspondiente", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtPrecio.Focus();
+                return;
+            }
+            else
+            {
+                GuardarCarteleraPelicula();
+                ListadoPeliculaTecnologia();
+                LimpiarControles();
+                HabilitarControles(false, true, false, false, false);
+            }
+
+        }
+
+        private void btnActualizar_Click_1(object sender, EventArgs e)
+        {
+            ActualizarPeliculaTecnologia();
+            LimpiarControles();
+            HabilitarControles(false, true, false, false, false);
+            ListadoPeliculaTecnologia();
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            LimpiarControles();
+            HabilitarControles(false, true, false, false, false);
         }
     }
 }

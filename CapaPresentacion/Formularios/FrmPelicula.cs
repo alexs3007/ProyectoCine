@@ -213,98 +213,7 @@ namespace CapaPresentacion.Formularios
             pbPelicula.Image = null;
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            HabilitarControles(true, false, true, false, true);
-            txtCodPelicula.Focus();
-            CargarComboBoxGenero();
-            CargarComboBoxClasificacion();
-        }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            if(txtNombrePelicula.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese el nombre la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtSinopsis.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese la sinopsis la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtLanzamiento.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese la fecha de lanzamiento la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (cboGenero.Text == null)
-            {
-                MessageBox.Show(null, "Seleccione el genero de la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (cboClasificacion.Text == null)
-            {
-                MessageBox.Show(null, "Seleccione la clasificación de la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtURL.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese el URL de la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            InsertarPelicula();
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
-            ListadoPelicula();
-        }
-
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-            if (txtNombrePelicula.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese el nombre la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtSinopsis.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese la sinopsis la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtLanzamiento.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese la fecha de lanzamiento la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (cboGenero.Text == null)
-            {
-                MessageBox.Show(null, "Seleccione el genero de la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (cboClasificacion.Text == null)
-            {
-                MessageBox.Show(null, "Seleccione la clasificación de la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (txtURL.Text.Equals(""))
-            {
-                MessageBox.Show(null, "Ingrese el URL de la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            ActualizarPelicula();
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
-            ListadoPelicula();
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
-        }
-
+      
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FilaSeleccionada();
@@ -346,6 +255,98 @@ namespace CapaPresentacion.Formularios
             {
                 ListadoPelicula();
             }
+        }
+
+        private void btnNuevo_Click_1(object sender, EventArgs e)
+        {
+            HabilitarControles(true, false, true, false, true);
+            txtCodPelicula.Focus();
+            CargarComboBoxGenero();
+            CargarComboBoxClasificacion();
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+            if (txtNombrePelicula.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese el nombre la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtSinopsis.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese la sinopsis la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtLanzamiento.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese la fecha de lanzamiento la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (cboGenero.Text == null)
+            {
+                MessageBox.Show(null, "Seleccione el genero de la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (cboClasificacion.Text == null)
+            {
+                MessageBox.Show(null, "Seleccione la clasificación de la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtURL.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese el URL de la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            InsertarPelicula();
+            Limpiar();
+            HabilitarControles(false, true, false, false, false);
+            ListadoPelicula();
+        }
+
+        private void btnActualizar_Click_1(object sender, EventArgs e)
+        {
+            if (txtNombrePelicula.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese el nombre la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtSinopsis.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese la sinopsis la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtLanzamiento.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese la fecha de lanzamiento la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (cboGenero.Text == null)
+            {
+                MessageBox.Show(null, "Seleccione el genero de la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (cboClasificacion.Text == null)
+            {
+                MessageBox.Show(null, "Seleccione la clasificación de la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtURL.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Ingrese el URL de la Pelicula", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            ActualizarPelicula();
+            Limpiar();
+            HabilitarControles(false, true, false, false, false);
+            ListadoPelicula();
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            Limpiar();
+            HabilitarControles(false, true, false, false, false);
         }
     }
 }

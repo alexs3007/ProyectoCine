@@ -32,11 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFactura));
             this.tbcFactura = new System.Windows.Forms.TabControl();
             this.tbpDatosFactura = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlDatos = new System.Windows.Forms.GroupBox();
             this.txtIdUsuario = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -55,6 +52,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pnlBT = new System.Windows.Forms.Panel();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.rdbCodFactura = new System.Windows.Forms.RadioButton();
             this.rdbPelicula = new System.Windows.Forms.RadioButton();
@@ -62,20 +60,22 @@
             this.cmsOpciones = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.elliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnlBT = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.tbcFactura.SuspendLayout();
             this.tbpDatosFactura.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlDatos.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.pnlBT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.cmsOpciones.SuspendLayout();
-            this.pnlBT.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbcFactura
@@ -92,9 +92,9 @@
             // 
             this.tbpDatosFactura.BackgroundImage = global::CapaPresentacion.Properties.Resources.Captura_de_pantalla__69_;
             this.tbpDatosFactura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tbpDatosFactura.Controls.Add(this.groupBox2);
             this.tbpDatosFactura.Controls.Add(this.label8);
             this.tbpDatosFactura.Controls.Add(this.pictureBox1);
-            this.tbpDatosFactura.Controls.Add(this.groupBox2);
             this.tbpDatosFactura.Controls.Add(this.pnlDatos);
             this.tbpDatosFactura.Location = new System.Drawing.Point(4, 22);
             this.tbpDatosFactura.Name = "tbpDatosFactura";
@@ -104,58 +104,28 @@
             this.tbpDatosFactura.Text = "Facturar";
             this.tbpDatosFactura.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // label8
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.btnActualizar);
-            this.groupBox2.Controls.Add(this.btnNuevo);
-            this.groupBox2.Controls.Add(this.btnGuardar);
-            this.groupBox2.Controls.Add(this.btnCancelar);
-            this.groupBox2.Location = new System.Drawing.Point(131, 302);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(339, 78);
-            this.groupBox2.TabIndex = 20;
-            this.groupBox2.TabStop = false;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(105, 4);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(115, 38);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Factura";
             // 
-            // btnActualizar
+            // pictureBox1
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(173, 29);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 19;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Location = new System.Drawing.Point(12, 29);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
-            this.btnNuevo.TabIndex = 18;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(92, 29);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 14;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(253, 29);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 17;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::CapaPresentacion.Properties.Resources.estrella;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(90, 80);
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
             // 
             // pnlDatos
             // 
@@ -344,6 +314,16 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Búsqueda por:";
             // 
+            // pnlBT
+            // 
+            this.pnlBT.BackgroundImage = global::CapaPresentacion.Properties.Resources.boton_para_fondo_de_busqueda;
+            this.pnlBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBT.Controls.Add(this.txtBusqueda);
+            this.pnlBT.Location = new System.Drawing.Point(251, 20);
+            this.pnlBT.Name = "pnlBT";
+            this.pnlBT.Size = new System.Drawing.Size(349, 61);
+            this.pnlBT.TabIndex = 27;
+            // 
             // txtBusqueda
             // 
             this.txtBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -413,38 +393,74 @@
             this.elliminarToolStripMenuItem.Text = "Eliminar";
             this.elliminarToolStripMenuItem.Click += new System.EventHandler(this.elliminarToolStripMenuItem_Click);
             // 
-            // pnlBT
+            // groupBox2
             // 
-            this.pnlBT.BackgroundImage = global::CapaPresentacion.Properties.Resources.boton_para_fondo_de_busqueda;
-            this.pnlBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlBT.Controls.Add(this.txtBusqueda);
-            this.pnlBT.Location = new System.Drawing.Point(251, 20);
-            this.pnlBT.Name = "pnlBT";
-            this.pnlBT.Size = new System.Drawing.Size(349, 61);
-            this.pnlBT.TabIndex = 27;
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.btnActualizar);
+            this.groupBox2.Controls.Add(this.btnNuevo);
+            this.groupBox2.Controls.Add(this.btnCancelar);
+            this.groupBox2.Controls.Add(this.btnGuardar);
+            this.groupBox2.Location = new System.Drawing.Point(131, 305);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(339, 76);
+            this.groupBox2.TabIndex = 32;
+            this.groupBox2.TabStop = false;
             // 
-            // pictureBox1
+            // btnActualizar
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::CapaPresentacion.Properties.Resources.estrella;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(90, 80);
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
+            this.btnActualizar.BackgroundImage = global::CapaPresentacion.Properties.Resources.azul;
+            this.btnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnActualizar.FlatAppearance.BorderSize = 0;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.Image = global::CapaPresentacion.Properties.Resources.actualizaricon;
+            this.btnActualizar.Location = new System.Drawing.Point(168, 21);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 53);
+            this.btnActualizar.TabIndex = 18;
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click_1);
             // 
-            // label8
+            // btnNuevo
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(105, 4);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(115, 38);
-            this.label8.TabIndex = 26;
-            this.label8.Text = "Factura";
+            this.btnNuevo.BackgroundImage = global::CapaPresentacion.Properties.Resources.azul;
+            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNuevo.FlatAppearance.BorderSize = 0;
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.Image = global::CapaPresentacion.Properties.Resources.nuevoicon23;
+            this.btnNuevo.Location = new System.Drawing.Point(6, 21);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(75, 53);
+            this.btnNuevo.TabIndex = 14;
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click_1);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackgroundImage = global::CapaPresentacion.Properties.Resources.azul;
+            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Image = global::CapaPresentacion.Properties.Resources.cancelaricon;
+            this.btnCancelar.Location = new System.Drawing.Point(249, 21);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 53);
+            this.btnCancelar.TabIndex = 17;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackgroundImage = global::CapaPresentacion.Properties.Resources.azul;
+            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Image = global::CapaPresentacion.Properties.Resources.guardaricon23;
+            this.btnGuardar.Location = new System.Drawing.Point(87, 21);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 53);
+            this.btnGuardar.TabIndex = 16;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
             // FrmFactura
             // 
@@ -461,18 +477,18 @@
             this.tbcFactura.ResumeLayout(false);
             this.tbpDatosFactura.ResumeLayout(false);
             this.tbpDatosFactura.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
-            this.cmsOpciones.ResumeLayout(false);
             this.pnlBT.ResumeLayout(false);
             this.pnlBT.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
+            this.cmsOpciones.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -481,10 +497,6 @@
 
         private System.Windows.Forms.TabControl tbcFactura;
         private System.Windows.Forms.TabPage tbpDatosFactura;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.GroupBox pnlDatos;
         private System.Windows.Forms.TextBox txtIdUsuario;
         private System.Windows.Forms.TextBox txtPrecio;
@@ -507,12 +519,16 @@
         private System.Windows.Forms.RadioButton rdbCodFactura;
         private System.Windows.Forms.RadioButton rdbPelicula;
         private System.Windows.Forms.DataGridView dgvLista;
-        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.ContextMenuStrip cmsOpciones;
         private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem elliminarToolStripMenuItem;
         private System.Windows.Forms.Panel pnlBT;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }
