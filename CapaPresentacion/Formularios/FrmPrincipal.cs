@@ -134,8 +134,17 @@ namespace CapaPresentacion.Formularios
         private void pnlCarteleraS_Click(object sender, EventArgs e)
         {
             FrmCartelera frm = new FrmCartelera();
+            frm.MdiParent = this;
             frm.Show();
             frm.Location = new Point(200, 200);
+        }
+
+        private void pnlFactura_Click(object sender, EventArgs e)
+        {
+            FrmFactura frm = new FrmFactura();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Location = new Point(320, 180);
         }
     }
 }

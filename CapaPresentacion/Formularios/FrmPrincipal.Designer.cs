@@ -35,8 +35,9 @@
             this.pnlcerrar = new System.Windows.Forms.Panel();
             this.pnlCambioUsuario = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlCartelera = new System.Windows.Forms.Panel();
+            this.pnlFactura = new System.Windows.Forms.Panel();
             this.pnlCarteleraS = new System.Windows.Forms.Panel();
+            this.pnlCartelera = new System.Windows.Forms.Panel();
             this.statusStrip.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -83,31 +84,42 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BackgroundImage = global::CapaPresentacion.Properties.Resources.bordesuperior;
+            this.panel1.Controls.Add(this.pnlFactura);
+            this.panel1.Controls.Add(this.pnlCarteleraS);
             this.panel1.Controls.Add(this.pnlcerrar);
-            this.panel1.Controls.Add(this.pnlCartelera);
             this.panel1.Controls.Add(this.pnlCambioUsuario);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1363, 45);
+            this.panel1.Size = new System.Drawing.Size(1363, 58);
             this.panel1.TabIndex = 7;
             // 
-            // pnlCartelera
+            // pnlFactura
             // 
-            this.pnlCartelera.Location = new System.Drawing.Point(0, 0);
-            this.pnlCartelera.Name = "pnlCartelera";
-            this.pnlCartelera.Size = new System.Drawing.Size(200, 42);
-            this.pnlCartelera.TabIndex = 0;
+            this.pnlFactura.BackgroundImage = global::CapaPresentacion.Properties.Resources.factura;
+            this.pnlFactura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlFactura.Location = new System.Drawing.Point(135, 4);
+            this.pnlFactura.Name = "pnlFactura";
+            this.pnlFactura.Size = new System.Drawing.Size(50, 50);
+            this.pnlFactura.TabIndex = 10;
+            this.pnlFactura.Click += new System.EventHandler(this.pnlFactura_Click);
             // 
             // pnlCarteleraS
             // 
             this.pnlCarteleraS.BackColor = System.Drawing.Color.Transparent;
             this.pnlCarteleraS.BackgroundImage = global::CapaPresentacion.Properties.Resources.carterleracirculo;
             this.pnlCarteleraS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlCarteleraS.Location = new System.Drawing.Point(0, 45);
+            this.pnlCarteleraS.Location = new System.Drawing.Point(78, 4);
             this.pnlCarteleraS.Name = "pnlCarteleraS";
-            this.pnlCarteleraS.Size = new System.Drawing.Size(100, 100);
+            this.pnlCarteleraS.Size = new System.Drawing.Size(50, 50);
             this.pnlCarteleraS.TabIndex = 9;
             this.pnlCarteleraS.Click += new System.EventHandler(this.pnlCarteleraS_Click);
+            // 
+            // pnlCartelera
+            // 
+            this.pnlCartelera.Location = new System.Drawing.Point(42, 194);
+            this.pnlCartelera.Name = "pnlCartelera";
+            this.pnlCartelera.Size = new System.Drawing.Size(0, 0);
+            this.pnlCartelera.TabIndex = 0;
             // 
             // FrmPrincipal
             // 
@@ -117,7 +129,7 @@
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Imagen1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1362, 741);
-            this.Controls.Add(this.pnlCarteleraS);
+            this.Controls.Add(this.pnlCartelera);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -142,6 +154,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlCartelera;
         private System.Windows.Forms.Panel pnlCarteleraS;
+        private System.Windows.Forms.Panel pnlFactura;
     }
 }
 

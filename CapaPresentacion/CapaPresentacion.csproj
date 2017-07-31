@@ -254,6 +254,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LOGOCINE3.ico" />
+    <None Include="Resources\factura.png" />
     <None Include="Resources\cancelaricon.png" />
     <None Include="Resources\actualizaricon.png" />
     <None Include="Resources\guardaricon23.png" />
