@@ -133,6 +133,7 @@ namespace CapaPresentacion.Formularios
 
         private void pnlCarteleraS_Click(object sender, EventArgs e)
         {
+            panel2.Visible = false;
             FrmCartelera frm = new FrmCartelera();
             frm.MdiParent = this;
             frm.Show();
@@ -141,10 +142,87 @@ namespace CapaPresentacion.Formularios
 
         private void pnlFactura_Click(object sender, EventArgs e)
         {
+            panel2.Visible = false;
             FrmFactura frm = new FrmFactura();
             frm.MdiParent = this;
             frm.Show();
             frm.Location = new Point(320, 180);
+        }
+
+        private void pnlPelicula_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            FrmPelicula frm = new FrmPelicula();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Location = new Point(100, 100);
+        }
+
+        private void pnlTecnologia_Click(object sender, EventArgs e)
+        {
+            FrmPelicula_Tecnologia frm = new FrmPelicula_Tecnologia();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Location = new Point(200, 180);
+        }
+
+        private void pnlEmpleado_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            FrmEmpleado frm = new FrmEmpleado();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Location = new Point(180, 180);
+        }
+
+        private void pnlCarteleraS_MouseHover(object sender, EventArgs e)
+        {
+            lblCartelera.Visible = true;
+        }
+
+        private void pnlCarteleraS_MouseLeave(object sender, EventArgs e)
+        {
+            lblCartelera.Visible = false;
+        }
+
+        private void pnlFactura_MouseHover(object sender, EventArgs e)
+        {
+            lblFactura.Visible = true;
+        }
+
+        private void pnlFactura_MouseLeave(object sender, EventArgs e)
+        {
+            lblFactura.Visible = false;
+        }
+
+        private void pnlPelicula_MouseHover(object sender, EventArgs e)
+        {
+            lblPelicula.Visible = true;
+        }
+
+        private void pnlPelicula_MouseLeave(object sender, EventArgs e)
+        {
+            lblPelicula.Visible = false;
+        }
+
+        private void pnlTecnologia_MouseHover(object sender, EventArgs e)
+        {
+            lblTecnologia.Visible = true;
+        }
+
+        private void pnlTecnologia_MouseLeave(object sender, EventArgs e)
+        {
+            lblTecnologia.Visible = false;
+        }
+
+        private void pnlEmpleado_MouseHover(object sender, EventArgs e)
+        {
+            lblEmpleado.Visible = true;
+        }
+
+        private void pnlEmpleado_MouseLeave(object sender, EventArgs e)
+        {
+            lblEmpleado.Visible = false;
         }
     }
 }
