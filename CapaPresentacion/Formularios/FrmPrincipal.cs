@@ -133,7 +133,7 @@ namespace CapaPresentacion.Formularios
 
         private void pnlCarteleraS_Click(object sender, EventArgs e)
         {
-            panel2.Visible = false;
+           
             FrmCartelera frm = new FrmCartelera();
             frm.MdiParent = this;
             frm.Show();
@@ -142,7 +142,6 @@ namespace CapaPresentacion.Formularios
 
         private void pnlFactura_Click(object sender, EventArgs e)
         {
-            panel2.Visible = false;
             FrmFactura frm = new FrmFactura();
             frm.MdiParent = this;
             frm.Show();
@@ -151,7 +150,7 @@ namespace CapaPresentacion.Formularios
 
         private void pnlPelicula_Click(object sender, EventArgs e)
         {
-            panel2.Visible = false;
+       
             FrmPelicula frm = new FrmPelicula();
             frm.MdiParent = this;
             frm.Show();
@@ -168,7 +167,7 @@ namespace CapaPresentacion.Formularios
 
         private void pnlEmpleado_Click(object sender, EventArgs e)
         {
-            panel2.Visible = false;
+        
             FrmEmpleado frm = new FrmEmpleado();
             frm.MdiParent = this;
             frm.Show();

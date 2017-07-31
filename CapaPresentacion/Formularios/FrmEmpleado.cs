@@ -195,7 +195,7 @@ namespace CapaPresentacion.Formularios
         {
             HabilitarControles(false, true, false, false, false);
             ListadoEmpleado();
-
+            
         }
 
         private void btnActualizar_Click_1(object sender, EventArgs e)
@@ -283,6 +283,16 @@ namespace CapaPresentacion.Formularios
         {
             Limpiar();
             HabilitarControles(false, true, false, false, false);
+        }
+
+        private void FrmEmpleado_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+        }
+
+        private void FrmEmpleado_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
         }
     }
 }

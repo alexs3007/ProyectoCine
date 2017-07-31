@@ -403,6 +403,8 @@
             this.DoubleBuffered = true;
             this.Name = "FrmEmpleado";
             this.Text = "Gestion de Empleado";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmEmpleado_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmEmpleado_FormClosed);
             this.Load += new System.EventHandler(this.FrmEmpleado_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);

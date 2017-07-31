@@ -42,16 +42,12 @@
             this.pnlCarteleraS = new System.Windows.Forms.Panel();
             this.pnlCartelera = new System.Windows.Forms.Panel();
             this.lblCartelera = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblFactura = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblPelicula = new System.Windows.Forms.Label();
-            this.lblTecnologia = new System.Windows.Forms.Label();
             this.lblEmpleado = new System.Windows.Forms.Label();
+            this.lblTecnologia = new System.Windows.Forms.Label();
+            this.lblPelicula = new System.Windows.Forms.Label();
+            this.lblFactura = new System.Windows.Forms.Label();
             this.statusStrip.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip
@@ -96,7 +92,12 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BackgroundImage = global::CapaPresentacion.Properties.Resources.bordesuperior;
+            this.panel1.Controls.Add(this.lblTecnologia);
+            this.panel1.Controls.Add(this.lblPelicula);
+            this.panel1.Controls.Add(this.lblEmpleado);
+            this.panel1.Controls.Add(this.lblFactura);
             this.panel1.Controls.Add(this.pnlEmpleado);
+            this.panel1.Controls.Add(this.lblCartelera);
             this.panel1.Controls.Add(this.pnlTecnologia);
             this.panel1.Controls.Add(this.pnlPelicula);
             this.panel1.Controls.Add(this.pnlFactura);
@@ -105,7 +106,7 @@
             this.panel1.Controls.Add(this.pnlCambioUsuario);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1363, 58);
+            this.panel1.Size = new System.Drawing.Size(1363, 87);
             this.panel1.TabIndex = 7;
             // 
             // pnlEmpleado
@@ -181,108 +182,65 @@
             this.lblCartelera.AutoSize = true;
             this.lblCartelera.BackColor = System.Drawing.Color.Transparent;
             this.lblCartelera.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCartelera.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCartelera.Location = new System.Drawing.Point(61, 4);
+            this.lblCartelera.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCartelera.Location = new System.Drawing.Point(63, 63);
             this.lblCartelera.Name = "lblCartelera";
             this.lblCartelera.Size = new System.Drawing.Size(84, 14);
             this.lblCartelera.TabIndex = 9;
             this.lblCartelera.Text = "CARTELERA";
             this.lblCartelera.Visible = false;
             // 
-            // panel2
+            // lblEmpleado
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = global::CapaPresentacion.Properties.Resources.Imagen1;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.lblEmpleado);
-            this.panel2.Controls.Add(this.lblTecnologia);
-            this.panel2.Controls.Add(this.lblPelicula);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.lblFactura);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.lblCartelera);
-            this.panel2.Location = new System.Drawing.Point(1, 57);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1361, 659);
-            this.panel2.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(638, 322);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 14);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "CARTELERA";
-            this.label1.Visible = false;
-            // 
-            // lblFactura
-            // 
-            this.lblFactura.AutoSize = true;
-            this.lblFactura.BackColor = System.Drawing.Color.Transparent;
-            this.lblFactura.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFactura.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblFactura.Location = new System.Drawing.Point(151, 4);
-            this.lblFactura.Name = "lblFactura";
-            this.lblFactura.Size = new System.Drawing.Size(66, 14);
-            this.lblFactura.TabIndex = 14;
-            this.lblFactura.Text = "FACTURA";
-            this.lblFactura.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(646, 330);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 14);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "CARTELERA";
-            this.label2.Visible = false;
-            // 
-            // lblPelicula
-            // 
-            this.lblPelicula.AutoSize = true;
-            this.lblPelicula.BackColor = System.Drawing.Color.Transparent;
-            this.lblPelicula.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPelicula.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblPelicula.Location = new System.Drawing.Point(237, 4);
-            this.lblPelicula.Name = "lblPelicula";
-            this.lblPelicula.Size = new System.Drawing.Size(71, 14);
-            this.lblPelicula.TabIndex = 15;
-            this.lblPelicula.Text = "PELICULA";
-            this.lblPelicula.Visible = false;
+            this.lblEmpleado.AutoSize = true;
+            this.lblEmpleado.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmpleado.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpleado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblEmpleado.Location = new System.Drawing.Point(407, 63);
+            this.lblEmpleado.Name = "lblEmpleado";
+            this.lblEmpleado.Size = new System.Drawing.Size(77, 14);
+            this.lblEmpleado.TabIndex = 16;
+            this.lblEmpleado.Text = "EMPLEADO";
+            this.lblEmpleado.Visible = false;
             // 
             // lblTecnologia
             // 
             this.lblTecnologia.AutoSize = true;
             this.lblTecnologia.BackColor = System.Drawing.Color.Transparent;
             this.lblTecnologia.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTecnologia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTecnologia.Location = new System.Drawing.Point(312, 4);
+            this.lblTecnologia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTecnologia.Location = new System.Drawing.Point(314, 63);
             this.lblTecnologia.Name = "lblTecnologia";
             this.lblTecnologia.Size = new System.Drawing.Size(87, 14);
             this.lblTecnologia.TabIndex = 16;
             this.lblTecnologia.Text = "TECNOLOGIA";
             this.lblTecnologia.Visible = false;
             // 
-            // lblEmpleado
+            // lblPelicula
             // 
-            this.lblEmpleado.AutoSize = true;
-            this.lblEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmpleado.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpleado.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblEmpleado.Location = new System.Drawing.Point(405, 4);
-            this.lblEmpleado.Name = "lblEmpleado";
-            this.lblEmpleado.Size = new System.Drawing.Size(77, 14);
-            this.lblEmpleado.TabIndex = 16;
-            this.lblEmpleado.Text = "EMPLEADO";
-            this.lblEmpleado.Visible = false;
+            this.lblPelicula.AutoSize = true;
+            this.lblPelicula.BackColor = System.Drawing.Color.Transparent;
+            this.lblPelicula.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPelicula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPelicula.Location = new System.Drawing.Point(239, 63);
+            this.lblPelicula.Name = "lblPelicula";
+            this.lblPelicula.Size = new System.Drawing.Size(71, 14);
+            this.lblPelicula.TabIndex = 15;
+            this.lblPelicula.Text = "PELICULA";
+            this.lblPelicula.Visible = false;
+            // 
+            // lblFactura
+            // 
+            this.lblFactura.AutoSize = true;
+            this.lblFactura.BackColor = System.Drawing.Color.Transparent;
+            this.lblFactura.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFactura.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblFactura.Location = new System.Drawing.Point(153, 63);
+            this.lblFactura.Name = "lblFactura";
+            this.lblFactura.Size = new System.Drawing.Size(66, 14);
+            this.lblFactura.TabIndex = 14;
+            this.lblFactura.Text = "FACTURA";
+            this.lblFactura.Visible = false;
             // 
             // FrmPrincipal
             // 
@@ -292,7 +250,6 @@
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Imagen1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1362, 741);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlCartelera);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip);
@@ -304,8 +261,7 @@
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,13 +281,10 @@
         private System.Windows.Forms.Panel pnlTecnologia;
         private System.Windows.Forms.Panel pnlEmpleado;
         private System.Windows.Forms.Label lblCartelera;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblEmpleado;
         private System.Windows.Forms.Label lblTecnologia;
         private System.Windows.Forms.Label lblPelicula;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblFactura;
-        private System.Windows.Forms.Label label1;
     }
 }
 
