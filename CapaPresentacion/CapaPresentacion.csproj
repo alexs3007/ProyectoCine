@@ -254,6 +254,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LOGOCINE3.ico" />
+    <None Include="Resources\UsuarioCirculo.png" />
+    <None Include="Resources\pelicula_HorarioCirculo.png" />
+    <None Include="Resources\reporteCirculo.png" />
+    <None Include="Resources\Mostrar_CarteleraCirculo.png" />
     <None Include="Resources\empleadocirculo.png" />
     <None Include="Resources\tecnologia.png" />
     <None Include="Resources\pelicula.png" />

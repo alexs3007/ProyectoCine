@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CapaPresentacion.Formularios
@@ -222,6 +216,71 @@ namespace CapaPresentacion.Formularios
         private void pnlEmpleado_MouseLeave(object sender, EventArgs e)
         {
             lblEmpleado.Visible = false;
+        }
+
+        private void pnlMostrarCartelera_MouseHover(object sender, EventArgs e)
+        {
+            lblMostrarCartelera.Visible = true;
+        }
+
+        private void pnlMostrarCartelera_MouseLeave(object sender, EventArgs e)
+        {
+            lblMostrarCartelera.Visible = false;
+        }
+
+        private void pnlMostrarCartelera_Click(object sender, EventArgs e)
+        {
+            FrmMostrarCartelera frm = new FrmMostrarCartelera();
+            frm.Show();
+        }
+
+        private void pnlReporte_MouseHover(object sender, EventArgs e)
+        {
+            lblReportes.Visible = true;
+        }
+
+        private void pnlReporte_MouseLeave(object sender, EventArgs e)
+        {
+            lblReportes.Visible = false;
+        }
+
+        private void pnlReporte_Click(object sender, EventArgs e)
+        {
+            FrmReportes frm = new FrmReportes();
+            frm.Show();
+            frm.Location = new Point(200, 170);
+        }
+
+        private void pnlPeliculaHorario_Click(object sender, EventArgs e)
+        {
+            FrmPelicula_Horario frm = new FrmPelicula_Horario();
+            frm.Show();
+        }
+
+        private void pnlPeliculaHorario_MouseHover(object sender, EventArgs e)
+        {
+            lblHorario.Visible = true;
+        }
+
+        private void pnlPeliculaHorario_MouseLeave(object sender, EventArgs e)
+        {
+            lblHorario.Visible = false;
+        }
+
+        private void pnlUsuario_Click(object sender, EventArgs e)
+        {
+            FrmUsuario frm = new FrmUsuario();
+            frm.Show();
+        }
+
+        private void pnlUsuario_MouseHover(object sender, EventArgs e)
+        {
+            lblusuario.Visible = true;
+        }
+
+        private void pnlUsuario_MouseLeave(object sender, EventArgs e)
+        {
+            lblusuario.Visible = false;
         }
     }
 }

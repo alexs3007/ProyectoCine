@@ -35,17 +35,25 @@
             this.pnlcerrar = new System.Windows.Forms.Panel();
             this.pnlCambioUsuario = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlUsuario = new System.Windows.Forms.Panel();
+            this.lblHorario = new System.Windows.Forms.Label();
+            this.pnlPeliculaHorario = new System.Windows.Forms.Panel();
+            this.lblReportes = new System.Windows.Forms.Label();
+            this.pnlReporte = new System.Windows.Forms.Panel();
+            this.lblMostrarCartelera = new System.Windows.Forms.Label();
+            this.pnlMostrarCartelera = new System.Windows.Forms.Panel();
+            this.lblTecnologia = new System.Windows.Forms.Label();
+            this.lblPelicula = new System.Windows.Forms.Label();
+            this.lblEmpleado = new System.Windows.Forms.Label();
+            this.lblFactura = new System.Windows.Forms.Label();
             this.pnlEmpleado = new System.Windows.Forms.Panel();
+            this.lblCartelera = new System.Windows.Forms.Label();
             this.pnlTecnologia = new System.Windows.Forms.Panel();
             this.pnlPelicula = new System.Windows.Forms.Panel();
             this.pnlFactura = new System.Windows.Forms.Panel();
             this.pnlCarteleraS = new System.Windows.Forms.Panel();
             this.pnlCartelera = new System.Windows.Forms.Panel();
-            this.lblCartelera = new System.Windows.Forms.Label();
-            this.lblEmpleado = new System.Windows.Forms.Label();
-            this.lblTecnologia = new System.Windows.Forms.Label();
-            this.lblPelicula = new System.Windows.Forms.Label();
-            this.lblFactura = new System.Windows.Forms.Label();
+            this.lblusuario = new System.Windows.Forms.Label();
             this.statusStrip.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -92,6 +100,14 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BackgroundImage = global::CapaPresentacion.Properties.Resources.bordesuperior;
+            this.panel1.Controls.Add(this.lblusuario);
+            this.panel1.Controls.Add(this.pnlUsuario);
+            this.panel1.Controls.Add(this.lblHorario);
+            this.panel1.Controls.Add(this.pnlPeliculaHorario);
+            this.panel1.Controls.Add(this.lblReportes);
+            this.panel1.Controls.Add(this.pnlReporte);
+            this.panel1.Controls.Add(this.lblMostrarCartelera);
+            this.panel1.Controls.Add(this.pnlMostrarCartelera);
             this.panel1.Controls.Add(this.lblTecnologia);
             this.panel1.Controls.Add(this.lblPelicula);
             this.panel1.Controls.Add(this.lblEmpleado);
@@ -109,6 +125,144 @@
             this.panel1.Size = new System.Drawing.Size(1363, 87);
             this.panel1.TabIndex = 7;
             // 
+            // pnlUsuario
+            // 
+            this.pnlUsuario.BackgroundImage = global::CapaPresentacion.Properties.Resources.UsuarioCirculo;
+            this.pnlUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlUsuario.Location = new System.Drawing.Point(771, 8);
+            this.pnlUsuario.Name = "pnlUsuario";
+            this.pnlUsuario.Size = new System.Drawing.Size(50, 50);
+            this.pnlUsuario.TabIndex = 23;
+            this.pnlUsuario.Click += new System.EventHandler(this.pnlUsuario_Click);
+            this.pnlUsuario.MouseLeave += new System.EventHandler(this.pnlUsuario_MouseLeave);
+            this.pnlUsuario.MouseHover += new System.EventHandler(this.pnlUsuario_MouseHover);
+            // 
+            // lblHorario
+            // 
+            this.lblHorario.AutoSize = true;
+            this.lblHorario.BackColor = System.Drawing.Color.Transparent;
+            this.lblHorario.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHorario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblHorario.Location = new System.Drawing.Point(490, 63);
+            this.lblHorario.Name = "lblHorario";
+            this.lblHorario.Size = new System.Drawing.Size(66, 14);
+            this.lblHorario.TabIndex = 22;
+            this.lblHorario.Text = "HORARIO";
+            this.lblHorario.Visible = false;
+            // 
+            // pnlPeliculaHorario
+            // 
+            this.pnlPeliculaHorario.BackgroundImage = global::CapaPresentacion.Properties.Resources.pelicula_HorarioCirculo;
+            this.pnlPeliculaHorario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlPeliculaHorario.Location = new System.Drawing.Point(498, 8);
+            this.pnlPeliculaHorario.Name = "pnlPeliculaHorario";
+            this.pnlPeliculaHorario.Size = new System.Drawing.Size(50, 50);
+            this.pnlPeliculaHorario.TabIndex = 21;
+            this.pnlPeliculaHorario.Click += new System.EventHandler(this.pnlPeliculaHorario_Click);
+            this.pnlPeliculaHorario.MouseLeave += new System.EventHandler(this.pnlPeliculaHorario_MouseLeave);
+            this.pnlPeliculaHorario.MouseHover += new System.EventHandler(this.pnlPeliculaHorario_MouseHover);
+            // 
+            // lblReportes
+            // 
+            this.lblReportes.AutoSize = true;
+            this.lblReportes.BackColor = System.Drawing.Color.Transparent;
+            this.lblReportes.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReportes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblReportes.Location = new System.Drawing.Point(669, 63);
+            this.lblReportes.Name = "lblReportes";
+            this.lblReportes.Size = new System.Drawing.Size(74, 14);
+            this.lblReportes.TabIndex = 20;
+            this.lblReportes.Text = "REPORTES";
+            this.lblReportes.Visible = false;
+            // 
+            // pnlReporte
+            // 
+            this.pnlReporte.BackgroundImage = global::CapaPresentacion.Properties.Resources.reporteCirculo;
+            this.pnlReporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlReporte.Location = new System.Drawing.Point(682, 4);
+            this.pnlReporte.Name = "pnlReporte";
+            this.pnlReporte.Size = new System.Drawing.Size(50, 50);
+            this.pnlReporte.TabIndex = 19;
+            this.pnlReporte.Click += new System.EventHandler(this.pnlReporte_Click);
+            this.pnlReporte.MouseLeave += new System.EventHandler(this.pnlReporte_MouseLeave);
+            this.pnlReporte.MouseHover += new System.EventHandler(this.pnlReporte_MouseHover);
+            // 
+            // lblMostrarCartelera
+            // 
+            this.lblMostrarCartelera.BackColor = System.Drawing.Color.Transparent;
+            this.lblMostrarCartelera.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMostrarCartelera.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblMostrarCartelera.Location = new System.Drawing.Point(3, 53);
+            this.lblMostrarCartelera.Name = "lblMostrarCartelera";
+            this.lblMostrarCartelera.Size = new System.Drawing.Size(87, 29);
+            this.lblMostrarCartelera.TabIndex = 18;
+            this.lblMostrarCartelera.Text = "MOSTRAR CARTELERA";
+            this.lblMostrarCartelera.Visible = false;
+            // 
+            // pnlMostrarCartelera
+            // 
+            this.pnlMostrarCartelera.BackgroundImage = global::CapaPresentacion.Properties.Resources.Mostrar_CarteleraCirculo;
+            this.pnlMostrarCartelera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlMostrarCartelera.Location = new System.Drawing.Point(13, 5);
+            this.pnlMostrarCartelera.Name = "pnlMostrarCartelera";
+            this.pnlMostrarCartelera.Size = new System.Drawing.Size(50, 50);
+            this.pnlMostrarCartelera.TabIndex = 17;
+            this.pnlMostrarCartelera.Click += new System.EventHandler(this.pnlMostrarCartelera_Click);
+            this.pnlMostrarCartelera.MouseLeave += new System.EventHandler(this.pnlMostrarCartelera_MouseLeave);
+            this.pnlMostrarCartelera.MouseHover += new System.EventHandler(this.pnlMostrarCartelera_MouseHover);
+            // 
+            // lblTecnologia
+            // 
+            this.lblTecnologia.AutoSize = true;
+            this.lblTecnologia.BackColor = System.Drawing.Color.Transparent;
+            this.lblTecnologia.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTecnologia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTecnologia.Location = new System.Drawing.Point(314, 63);
+            this.lblTecnologia.Name = "lblTecnologia";
+            this.lblTecnologia.Size = new System.Drawing.Size(87, 14);
+            this.lblTecnologia.TabIndex = 16;
+            this.lblTecnologia.Text = "TECNOLOGIA";
+            this.lblTecnologia.Visible = false;
+            // 
+            // lblPelicula
+            // 
+            this.lblPelicula.AutoSize = true;
+            this.lblPelicula.BackColor = System.Drawing.Color.Transparent;
+            this.lblPelicula.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPelicula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPelicula.Location = new System.Drawing.Point(239, 63);
+            this.lblPelicula.Name = "lblPelicula";
+            this.lblPelicula.Size = new System.Drawing.Size(71, 14);
+            this.lblPelicula.TabIndex = 15;
+            this.lblPelicula.Text = "PELICULA";
+            this.lblPelicula.Visible = false;
+            // 
+            // lblEmpleado
+            // 
+            this.lblEmpleado.AutoSize = true;
+            this.lblEmpleado.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmpleado.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpleado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblEmpleado.Location = new System.Drawing.Point(407, 63);
+            this.lblEmpleado.Name = "lblEmpleado";
+            this.lblEmpleado.Size = new System.Drawing.Size(77, 14);
+            this.lblEmpleado.TabIndex = 16;
+            this.lblEmpleado.Text = "EMPLEADO";
+            this.lblEmpleado.Visible = false;
+            // 
+            // lblFactura
+            // 
+            this.lblFactura.AutoSize = true;
+            this.lblFactura.BackColor = System.Drawing.Color.Transparent;
+            this.lblFactura.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFactura.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblFactura.Location = new System.Drawing.Point(153, 63);
+            this.lblFactura.Name = "lblFactura";
+            this.lblFactura.Size = new System.Drawing.Size(66, 14);
+            this.lblFactura.TabIndex = 14;
+            this.lblFactura.Text = "FACTURA";
+            this.lblFactura.Visible = false;
+            // 
             // pnlEmpleado
             // 
             this.pnlEmpleado.BackgroundImage = global::CapaPresentacion.Properties.Resources.empleadocirculo;
@@ -120,6 +274,19 @@
             this.pnlEmpleado.Click += new System.EventHandler(this.pnlEmpleado_Click);
             this.pnlEmpleado.MouseLeave += new System.EventHandler(this.pnlEmpleado_MouseLeave);
             this.pnlEmpleado.MouseHover += new System.EventHandler(this.pnlEmpleado_MouseHover);
+            // 
+            // lblCartelera
+            // 
+            this.lblCartelera.AutoSize = true;
+            this.lblCartelera.BackColor = System.Drawing.Color.Transparent;
+            this.lblCartelera.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCartelera.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCartelera.Location = new System.Drawing.Point(63, 63);
+            this.lblCartelera.Name = "lblCartelera";
+            this.lblCartelera.Size = new System.Drawing.Size(84, 14);
+            this.lblCartelera.TabIndex = 9;
+            this.lblCartelera.Text = "CARTELERA";
+            this.lblCartelera.Visible = false;
             // 
             // pnlTecnologia
             // 
@@ -177,70 +344,18 @@
             this.pnlCartelera.Size = new System.Drawing.Size(0, 0);
             this.pnlCartelera.TabIndex = 0;
             // 
-            // lblCartelera
+            // lblusuario
             // 
-            this.lblCartelera.AutoSize = true;
-            this.lblCartelera.BackColor = System.Drawing.Color.Transparent;
-            this.lblCartelera.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCartelera.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCartelera.Location = new System.Drawing.Point(63, 63);
-            this.lblCartelera.Name = "lblCartelera";
-            this.lblCartelera.Size = new System.Drawing.Size(84, 14);
-            this.lblCartelera.TabIndex = 9;
-            this.lblCartelera.Text = "CARTELERA";
-            this.lblCartelera.Visible = false;
-            // 
-            // lblEmpleado
-            // 
-            this.lblEmpleado.AutoSize = true;
-            this.lblEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmpleado.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpleado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblEmpleado.Location = new System.Drawing.Point(407, 63);
-            this.lblEmpleado.Name = "lblEmpleado";
-            this.lblEmpleado.Size = new System.Drawing.Size(77, 14);
-            this.lblEmpleado.TabIndex = 16;
-            this.lblEmpleado.Text = "EMPLEADO";
-            this.lblEmpleado.Visible = false;
-            // 
-            // lblTecnologia
-            // 
-            this.lblTecnologia.AutoSize = true;
-            this.lblTecnologia.BackColor = System.Drawing.Color.Transparent;
-            this.lblTecnologia.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTecnologia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTecnologia.Location = new System.Drawing.Point(314, 63);
-            this.lblTecnologia.Name = "lblTecnologia";
-            this.lblTecnologia.Size = new System.Drawing.Size(87, 14);
-            this.lblTecnologia.TabIndex = 16;
-            this.lblTecnologia.Text = "TECNOLOGIA";
-            this.lblTecnologia.Visible = false;
-            // 
-            // lblPelicula
-            // 
-            this.lblPelicula.AutoSize = true;
-            this.lblPelicula.BackColor = System.Drawing.Color.Transparent;
-            this.lblPelicula.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPelicula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPelicula.Location = new System.Drawing.Point(239, 63);
-            this.lblPelicula.Name = "lblPelicula";
-            this.lblPelicula.Size = new System.Drawing.Size(71, 14);
-            this.lblPelicula.TabIndex = 15;
-            this.lblPelicula.Text = "PELICULA";
-            this.lblPelicula.Visible = false;
-            // 
-            // lblFactura
-            // 
-            this.lblFactura.AutoSize = true;
-            this.lblFactura.BackColor = System.Drawing.Color.Transparent;
-            this.lblFactura.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFactura.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblFactura.Location = new System.Drawing.Point(153, 63);
-            this.lblFactura.Name = "lblFactura";
-            this.lblFactura.Size = new System.Drawing.Size(66, 14);
-            this.lblFactura.TabIndex = 14;
-            this.lblFactura.Text = "FACTURA";
-            this.lblFactura.Visible = false;
+            this.lblusuario.AutoSize = true;
+            this.lblusuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblusuario.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblusuario.Location = new System.Drawing.Point(758, 63);
+            this.lblusuario.Name = "lblusuario";
+            this.lblusuario.Size = new System.Drawing.Size(64, 14);
+            this.lblusuario.TabIndex = 24;
+            this.lblusuario.Text = "USUARIO";
+            this.lblusuario.Visible = false;
             // 
             // FrmPrincipal
             // 
@@ -285,6 +400,14 @@
         private System.Windows.Forms.Label lblTecnologia;
         private System.Windows.Forms.Label lblPelicula;
         private System.Windows.Forms.Label lblFactura;
+        private System.Windows.Forms.Panel pnlMostrarCartelera;
+        private System.Windows.Forms.Label lblMostrarCartelera;
+        private System.Windows.Forms.Panel pnlReporte;
+        private System.Windows.Forms.Label lblReportes;
+        private System.Windows.Forms.Panel pnlPeliculaHorario;
+        private System.Windows.Forms.Label lblHorario;
+        private System.Windows.Forms.Panel pnlUsuario;
+        private System.Windows.Forms.Label lblusuario;
     }
 }
 

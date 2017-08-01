@@ -133,9 +133,6 @@
   <data name="nuevoicon23" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nuevoicon23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Loginn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Loginn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="nuevogris" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nuevogris.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,6 +144,9 @@
   </data>
   <data name="actualizargris" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\actualizargris.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reporteCirculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reporteCirculo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="carterleracirculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carterleracirculo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,11 +160,17 @@
   <data name="guardargris" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guardargris.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pelicula_HorarioCirculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pelicula_HorarioCirculo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tecnologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tecnologia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="guardaricon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guardaricon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mostrar_CarteleraCirculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mostrar_CarteleraCirculo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NUEVO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NUEVO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,14 +193,20 @@
   <data name="actualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\actualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cancelaricon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancelaricon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="empleadocirculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\empleadocirculo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="estrella" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\estrella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WhatsApp Image 2017-07-29 at 2.12.11 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2017-07-29 at 2.12.11 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cancelaricon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancelaricon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Loginn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Loginn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="actualizaricon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\actualizaricon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,7 +253,7 @@
   <data name="nuevoicon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nuevoicon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="empleadocirculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\empleadocirculo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UsuarioCirculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UsuarioCirculo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
