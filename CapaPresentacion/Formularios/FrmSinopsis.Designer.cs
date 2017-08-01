@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSinopsis));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pnlcerrar = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +61,17 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "label2";
             // 
+            // pnlcerrar
+            // 
+            this.pnlcerrar.BackColor = System.Drawing.Color.Transparent;
+            this.pnlcerrar.BackgroundImage = global::CapaPresentacion.Properties.Resources.X;
+            this.pnlcerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlcerrar.Location = new System.Drawing.Point(662, 12);
+            this.pnlcerrar.Name = "pnlcerrar";
+            this.pnlcerrar.Size = new System.Drawing.Size(35, 35);
+            this.pnlcerrar.TabIndex = 7;
+            this.pnlcerrar.Click += new System.EventHandler(this.pnlcerrar_Click);
+            // 
             // FrmSinopsis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -66,10 +79,13 @@
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Captura_de_pantalla__69_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(709, 453);
+            this.Controls.Add(this.pnlcerrar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSinopsis";
             this.Text = "FrmSinopsis";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -83,5 +99,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel pnlcerrar;
     }
 }

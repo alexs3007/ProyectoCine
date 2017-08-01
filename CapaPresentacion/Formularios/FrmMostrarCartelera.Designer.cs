@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMostrarCartelera));
             this.pcbPelicula1 = new System.Windows.Forms.PictureBox();
             this.pcbPelicula2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -47,6 +48,7 @@
             this.lblH2P3 = new System.Windows.Forms.Label();
             this.lblH1P3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pnlcerrar = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPelicula1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPelicula2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,7 +57,7 @@
             // 
             // pcbPelicula1
             // 
-            this.pcbPelicula1.Location = new System.Drawing.Point(147, 246);
+            this.pcbPelicula1.Location = new System.Drawing.Point(147, 261);
             this.pcbPelicula1.Name = "pcbPelicula1";
             this.pcbPelicula1.Size = new System.Drawing.Size(184, 245);
             this.pcbPelicula1.TabIndex = 0;
@@ -63,7 +65,7 @@
             // 
             // pcbPelicula2
             // 
-            this.pcbPelicula2.Location = new System.Drawing.Point(592, 246);
+            this.pcbPelicula2.Location = new System.Drawing.Point(592, 261);
             this.pcbPelicula2.Name = "pcbPelicula2";
             this.pcbPelicula2.Size = new System.Drawing.Size(184, 245);
             this.pcbPelicula2.TabIndex = 1;
@@ -71,7 +73,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1008, 246);
+            this.pictureBox1.Location = new System.Drawing.Point(1008, 261);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(184, 245);
             this.pictureBox1.TabIndex = 2;
@@ -81,7 +83,7 @@
             // 
             this.lblPelicula1.AutoSize = true;
             this.lblPelicula1.BackColor = System.Drawing.Color.Transparent;
-            this.lblPelicula1.Location = new System.Drawing.Point(219, 554);
+            this.lblPelicula1.Location = new System.Drawing.Point(219, 569);
             this.lblPelicula1.Name = "lblPelicula1";
             this.lblPelicula1.Size = new System.Drawing.Size(35, 13);
             this.lblPelicula1.TabIndex = 3;
@@ -91,7 +93,7 @@
             // 
             this.lblPelicula2.AutoSize = true;
             this.lblPelicula2.BackColor = System.Drawing.Color.Transparent;
-            this.lblPelicula2.Location = new System.Drawing.Point(655, 550);
+            this.lblPelicula2.Location = new System.Drawing.Point(655, 565);
             this.lblPelicula2.Name = "lblPelicula2";
             this.lblPelicula2.Size = new System.Drawing.Size(35, 13);
             this.lblPelicula2.TabIndex = 4;
@@ -101,7 +103,7 @@
             // 
             this.lblPelicula3.AutoSize = true;
             this.lblPelicula3.BackColor = System.Drawing.Color.Transparent;
-            this.lblPelicula3.Location = new System.Drawing.Point(1085, 553);
+            this.lblPelicula3.Location = new System.Drawing.Point(1085, 568);
             this.lblPelicula3.Name = "lblPelicula3";
             this.lblPelicula3.Size = new System.Drawing.Size(35, 13);
             this.lblPelicula3.TabIndex = 5;
@@ -111,7 +113,7 @@
             // 
             this.lblDuracion1.AutoSize = true;
             this.lblDuracion1.BackColor = System.Drawing.Color.Transparent;
-            this.lblDuracion1.Location = new System.Drawing.Point(220, 599);
+            this.lblDuracion1.Location = new System.Drawing.Point(220, 614);
             this.lblDuracion1.Name = "lblDuracion1";
             this.lblDuracion1.Size = new System.Drawing.Size(35, 13);
             this.lblDuracion1.TabIndex = 6;
@@ -121,7 +123,7 @@
             // 
             this.lblDuracion2.AutoSize = true;
             this.lblDuracion2.BackColor = System.Drawing.Color.Transparent;
-            this.lblDuracion2.Location = new System.Drawing.Point(655, 591);
+            this.lblDuracion2.Location = new System.Drawing.Point(655, 606);
             this.lblDuracion2.Name = "lblDuracion2";
             this.lblDuracion2.Size = new System.Drawing.Size(35, 13);
             this.lblDuracion2.TabIndex = 7;
@@ -131,7 +133,7 @@
             // 
             this.lblDuracion3.AutoSize = true;
             this.lblDuracion3.BackColor = System.Drawing.Color.Transparent;
-            this.lblDuracion3.Location = new System.Drawing.Point(1091, 607);
+            this.lblDuracion3.Location = new System.Drawing.Point(1091, 622);
             this.lblDuracion3.Name = "lblDuracion3";
             this.lblDuracion3.Size = new System.Drawing.Size(35, 13);
             this.lblDuracion3.TabIndex = 8;
@@ -181,7 +183,7 @@
             // 
             this.lblH2P2.AutoSize = true;
             this.lblH2P2.BackColor = System.Drawing.Color.Transparent;
-            this.lblH2P2.Location = new System.Drawing.Point(704, 643);
+            this.lblH2P2.Location = new System.Drawing.Point(704, 658);
             this.lblH2P2.Name = "lblH2P2";
             this.lblH2P2.Size = new System.Drawing.Size(35, 13);
             this.lblH2P2.TabIndex = 13;
@@ -191,7 +193,7 @@
             // 
             this.lblH1P2.AutoSize = true;
             this.lblH1P2.BackColor = System.Drawing.Color.Transparent;
-            this.lblH1P2.Location = new System.Drawing.Point(623, 642);
+            this.lblH1P2.Location = new System.Drawing.Point(623, 657);
             this.lblH1P2.Name = "lblH1P2";
             this.lblH1P2.Size = new System.Drawing.Size(35, 13);
             this.lblH1P2.TabIndex = 12;
@@ -211,7 +213,7 @@
             // 
             this.lblH2P3.AutoSize = true;
             this.lblH2P3.BackColor = System.Drawing.Color.Transparent;
-            this.lblH2P3.Location = new System.Drawing.Point(1134, 642);
+            this.lblH2P3.Location = new System.Drawing.Point(1134, 657);
             this.lblH2P3.Name = "lblH2P3";
             this.lblH2P3.Size = new System.Drawing.Size(35, 13);
             this.lblH2P3.TabIndex = 16;
@@ -221,7 +223,7 @@
             // 
             this.lblH1P3.AutoSize = true;
             this.lblH1P3.BackColor = System.Drawing.Color.Transparent;
-            this.lblH1P3.Location = new System.Drawing.Point(1054, 642);
+            this.lblH1P3.Location = new System.Drawing.Point(1054, 657);
             this.lblH1P3.Name = "lblH1P3";
             this.lblH1P3.Size = new System.Drawing.Size(35, 13);
             this.lblH1P3.TabIndex = 15;
@@ -232,11 +234,22 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::CapaPresentacion.Properties.Resources.LOGOCINE3;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(525, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(520, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(308, 133);
+            this.pictureBox2.Size = new System.Drawing.Size(320, 137);
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
+            // 
+            // pnlcerrar
+            // 
+            this.pnlcerrar.BackColor = System.Drawing.Color.Transparent;
+            this.pnlcerrar.BackgroundImage = global::CapaPresentacion.Properties.Resources.X;
+            this.pnlcerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlcerrar.Location = new System.Drawing.Point(1317, 8);
+            this.pnlcerrar.Name = "pnlcerrar";
+            this.pnlcerrar.Size = new System.Drawing.Size(33, 33);
+            this.pnlcerrar.TabIndex = 7;
+            this.pnlcerrar.Click += new System.EventHandler(this.pnlcerrar_Click);
             // 
             // FrmMostrarCartelera
             // 
@@ -245,6 +258,7 @@
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Captura_de_pantalla__68_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.pnlcerrar);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblH3P3);
             this.Controls.Add(this.lblH2P3);
@@ -265,6 +279,8 @@
             this.Controls.Add(this.pcbPelicula2);
             this.Controls.Add(this.pcbPelicula1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMostrarCartelera";
             this.Text = "FrmMostrarCartelera";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -298,5 +314,6 @@
         private System.Windows.Forms.Label lblH2P3;
         private System.Windows.Forms.Label lblH1P3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel pnlcerrar;
     }
 }

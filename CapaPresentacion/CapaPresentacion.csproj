@@ -35,7 +35,7 @@
     <StartupObject>CapaPresentacion.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>LOGOCINE3.ico</ApplicationIcon>
+    <ApplicationIcon>estrella.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
@@ -253,7 +253,10 @@
     <None Include="Resources\calendarioNuevo.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="estrella.ico" />
     <Content Include="LOGOCINE3.ico" />
+    <None Include="Resources\botoncancelar.png" />
+    <None Include="Resources\boton aceptar.png" />
     <None Include="Resources\reporte tecnologia.png" />
     <None Include="Resources\reporteMensual.png" />
     <None Include="Resources\reporte diario.png" />

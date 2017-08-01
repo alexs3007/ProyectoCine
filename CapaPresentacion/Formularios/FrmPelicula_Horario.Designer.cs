@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPelicula_Horario));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.rdbPelicula = new System.Windows.Forms.RadioButton();
@@ -385,6 +386,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pnlDatos);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPelicula_Horario";
             this.Text = "Gestión de Horario de Película";
             this.Load += new System.EventHandler(this.FrmPelicula_Horario_Load);

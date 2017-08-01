@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCartelera_Pelicula));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.rdbFechaEstreno = new System.Windows.Forms.RadioButton();
@@ -42,6 +43,10 @@
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblNuevo = new System.Windows.Forms.Label();
+            this.lblGuardar = new System.Windows.Forms.Label();
+            this.lblActualizar = new System.Windows.Forms.Label();
+            this.lblCancelar = new System.Windows.Forms.Label();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -53,10 +58,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblNuevo = new System.Windows.Forms.Label();
-            this.lblGuardar = new System.Windows.Forms.Label();
-            this.lblActualizar = new System.Windows.Forms.Label();
-            this.lblCancelar = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.pnlBF.SuspendLayout();
@@ -210,6 +211,54 @@
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             // 
+            // lblNuevo
+            // 
+            this.lblNuevo.AutoSize = true;
+            this.lblNuevo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNuevo.ForeColor = System.Drawing.Color.Black;
+            this.lblNuevo.Location = new System.Drawing.Point(9, 74);
+            this.lblNuevo.Name = "lblNuevo";
+            this.lblNuevo.Size = new System.Drawing.Size(55, 23);
+            this.lblNuevo.TabIndex = 26;
+            this.lblNuevo.Text = "Nuevo";
+            this.lblNuevo.Visible = false;
+            // 
+            // lblGuardar
+            // 
+            this.lblGuardar.AutoSize = true;
+            this.lblGuardar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGuardar.ForeColor = System.Drawing.Color.Black;
+            this.lblGuardar.Location = new System.Drawing.Point(87, 74);
+            this.lblGuardar.Name = "lblGuardar";
+            this.lblGuardar.Size = new System.Drawing.Size(70, 23);
+            this.lblGuardar.TabIndex = 25;
+            this.lblGuardar.Text = "Guardar";
+            this.lblGuardar.Visible = false;
+            // 
+            // lblActualizar
+            // 
+            this.lblActualizar.AutoSize = true;
+            this.lblActualizar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActualizar.ForeColor = System.Drawing.Color.Black;
+            this.lblActualizar.Location = new System.Drawing.Point(159, 72);
+            this.lblActualizar.Name = "lblActualizar";
+            this.lblActualizar.Size = new System.Drawing.Size(88, 23);
+            this.lblActualizar.TabIndex = 24;
+            this.lblActualizar.Text = "Actualizar";
+            this.lblActualizar.Visible = false;
+            // 
+            // lblCancelar
+            // 
+            this.lblCancelar.AutoSize = true;
+            this.lblCancelar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCancelar.ForeColor = System.Drawing.Color.Black;
+            this.lblCancelar.Location = new System.Drawing.Point(252, 74);
+            this.lblCancelar.Name = "lblCancelar";
+            this.lblCancelar.Size = new System.Drawing.Size(73, 23);
+            this.lblCancelar.TabIndex = 23;
+            this.lblCancelar.Text = "Cancelar";
+            this.lblCancelar.Visible = false;
+            // 
             // btnActualizar
             // 
             this.btnActualizar.BackgroundImage = global::CapaPresentacion.Properties.Resources.azul;
@@ -347,54 +396,6 @@
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
-            // lblNuevo
-            // 
-            this.lblNuevo.AutoSize = true;
-            this.lblNuevo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNuevo.ForeColor = System.Drawing.Color.Black;
-            this.lblNuevo.Location = new System.Drawing.Point(9, 74);
-            this.lblNuevo.Name = "lblNuevo";
-            this.lblNuevo.Size = new System.Drawing.Size(55, 23);
-            this.lblNuevo.TabIndex = 26;
-            this.lblNuevo.Text = "Nuevo";
-            this.lblNuevo.Visible = false;
-            // 
-            // lblGuardar
-            // 
-            this.lblGuardar.AutoSize = true;
-            this.lblGuardar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGuardar.ForeColor = System.Drawing.Color.Black;
-            this.lblGuardar.Location = new System.Drawing.Point(87, 74);
-            this.lblGuardar.Name = "lblGuardar";
-            this.lblGuardar.Size = new System.Drawing.Size(70, 23);
-            this.lblGuardar.TabIndex = 25;
-            this.lblGuardar.Text = "Guardar";
-            this.lblGuardar.Visible = false;
-            // 
-            // lblActualizar
-            // 
-            this.lblActualizar.AutoSize = true;
-            this.lblActualizar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActualizar.ForeColor = System.Drawing.Color.Black;
-            this.lblActualizar.Location = new System.Drawing.Point(159, 72);
-            this.lblActualizar.Name = "lblActualizar";
-            this.lblActualizar.Size = new System.Drawing.Size(88, 23);
-            this.lblActualizar.TabIndex = 24;
-            this.lblActualizar.Text = "Actualizar";
-            this.lblActualizar.Visible = false;
-            // 
-            // lblCancelar
-            // 
-            this.lblCancelar.AutoSize = true;
-            this.lblCancelar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCancelar.ForeColor = System.Drawing.Color.Black;
-            this.lblCancelar.Location = new System.Drawing.Point(252, 74);
-            this.lblCancelar.Name = "lblCancelar";
-            this.lblCancelar.Size = new System.Drawing.Size(73, 23);
-            this.lblCancelar.TabIndex = 23;
-            this.lblCancelar.Text = "Cancelar";
-            this.lblCancelar.Visible = false;
-            // 
             // FrmCartelera_Pelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,6 +409,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pnlDatos);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCartelera_Pelicula";
             this.Text = "Gestión de Película en Cartelera";
             this.Load += new System.EventHandler(this.FrmCartelera_Pelicula_Load);

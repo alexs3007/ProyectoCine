@@ -16,5 +16,10 @@ namespace CapaPresentacion.Formularios
         {
             InitializeComponent();
         }
+
+        private void pnlcerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

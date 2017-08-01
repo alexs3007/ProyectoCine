@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReportes));
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlReporteFactura = new System.Windows.Forms.Panel();
@@ -113,6 +114,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmReportes";
             this.Text = "Reportes";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

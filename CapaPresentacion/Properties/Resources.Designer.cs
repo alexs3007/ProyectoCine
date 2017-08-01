@@ -133,9 +133,29 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boton_aceptar {
+            get {
+                object obj = ResourceManager.GetObject("boton aceptar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boton_para_fondo_de_busqueda {
             get {
                 object obj = ResourceManager.GetObject("boton para fondo de busqueda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap botoncancelar {
+            get {
+                object obj = ResourceManager.GetObject("botoncancelar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

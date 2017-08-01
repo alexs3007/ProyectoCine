@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPelicula));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.pnlBT = new System.Windows.Forms.Panel();
@@ -583,6 +584,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pnlDatos);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPelicula";
             this.Text = "Gestión de Película";
             this.Load += new System.EventHandler(this.FrmPelicula_Load);

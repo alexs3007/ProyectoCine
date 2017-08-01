@@ -33,3 +33,8 @@ C:\Users\Johan Chevez\Desktop\cinenevo\ProyectoCine\CapaEntidades\bin\Debug\Capa
 C:\Users\Johan Chevez\Desktop\cinenevo\ProyectoCine\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
 C:\Users\Johan Chevez\Desktop\cinenevo\ProyectoCine\CapaEntidades\obj\Debug\CapaEntidades.dll
 C:\Users\Johan Chevez\Desktop\cinenevo\ProyectoCine\CapaEntidades\obj\Debug\CapaEntidades.pdb
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaEntidades\obj\Debug\CapaEntidades.pdb

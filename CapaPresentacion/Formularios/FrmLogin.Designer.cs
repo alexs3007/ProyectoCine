@@ -35,12 +35,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlcerrar = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(363, 138);
+            this.txtUsuario.Location = new System.Drawing.Point(362, 139);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(140, 23);
             this.txtUsuario.TabIndex = 0;
@@ -48,29 +50,41 @@
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.Location = new System.Drawing.Point(363, 187);
+            this.txtContraseña.Location = new System.Drawing.Point(362, 188);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(140, 23);
             this.txtContraseña.TabIndex = 1;
             // 
             // btnAceptar
             // 
+            this.btnAceptar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAceptar.BackgroundImage = global::CapaPresentacion.Properties.Resources.boton_aceptar;
             this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAceptar.Location = new System.Drawing.Point(297, 259);
+            this.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAceptar.FlatAppearance.BorderSize = 0;
+            this.btnAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptar.Location = new System.Drawing.Point(298, 238);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(97, 29);
+            this.btnAceptar.Size = new System.Drawing.Size(122, 59);
             this.btnAceptar.TabIndex = 2;
-            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.BackgroundImage = global::CapaPresentacion.Properties.Resources.botoncancelar;
+            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelar.Location = new System.Drawing.Point(443, 259);
+            this.btnCancelar.Location = new System.Drawing.Point(433, 238);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(91, 29);
+            this.btnCancelar.Size = new System.Drawing.Size(122, 59);
             this.btnCancelar.TabIndex = 3;
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label1
@@ -96,32 +110,42 @@
             this.pnlcerrar.BackColor = System.Drawing.Color.Transparent;
             this.pnlcerrar.BackgroundImage = global::CapaPresentacion.Properties.Resources.X;
             this.pnlcerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlcerrar.Location = new System.Drawing.Point(572, 12);
+            this.pnlcerrar.Location = new System.Drawing.Point(573, 11);
             this.pnlcerrar.Name = "pnlcerrar";
             this.pnlcerrar.Size = new System.Drawing.Size(25, 22);
             this.pnlcerrar.TabIndex = 6;
             this.pnlcerrar.Click += new System.EventHandler(this.pnlcerrar_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::CapaPresentacion.Properties.Resources.Loginn;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.pnlcerrar);
+            this.panel1.Controls.Add(this.btnAceptar);
+            this.panel1.Controls.Add(this.btnCancelar);
+            this.panel1.Location = new System.Drawing.Point(-1, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(610, 335);
+            this.panel1.TabIndex = 7;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Loginn;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(609, 334);
-            this.Controls.Add(this.pnlcerrar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,5 +160,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel pnlcerrar;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.pnlcerrar = new System.Windows.Forms.Panel();
             this.pnlCambioUsuario = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblusuario = new System.Windows.Forms.Label();
             this.pnlUsuario = new System.Windows.Forms.Panel();
             this.lblHorario = new System.Windows.Forms.Label();
             this.pnlPeliculaHorario = new System.Windows.Forms.Panel();
@@ -53,7 +55,6 @@
             this.pnlFactura = new System.Windows.Forms.Panel();
             this.pnlCarteleraS = new System.Windows.Forms.Panel();
             this.pnlCartelera = new System.Windows.Forms.Panel();
-            this.lblusuario = new System.Windows.Forms.Label();
             this.statusStrip.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -124,6 +125,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1363, 87);
             this.panel1.TabIndex = 7;
+            // 
+            // lblusuario
+            // 
+            this.lblusuario.AutoSize = true;
+            this.lblusuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblusuario.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblusuario.Location = new System.Drawing.Point(758, 63);
+            this.lblusuario.Name = "lblusuario";
+            this.lblusuario.Size = new System.Drawing.Size(64, 14);
+            this.lblusuario.TabIndex = 24;
+            this.lblusuario.Text = "USUARIO";
+            this.lblusuario.Visible = false;
             // 
             // pnlUsuario
             // 
@@ -344,19 +358,6 @@
             this.pnlCartelera.Size = new System.Drawing.Size(0, 0);
             this.pnlCartelera.TabIndex = 0;
             // 
-            // lblusuario
-            // 
-            this.lblusuario.AutoSize = true;
-            this.lblusuario.BackColor = System.Drawing.Color.Transparent;
-            this.lblusuario.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblusuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblusuario.Location = new System.Drawing.Point(758, 63);
-            this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(64, 14);
-            this.lblusuario.TabIndex = 24;
-            this.lblusuario.Text = "USUARIO";
-            this.lblusuario.Visible = false;
-            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -369,6 +370,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "FrmPrincipal";
             this.Text = "Cinema Evolution";

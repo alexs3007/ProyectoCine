@@ -52,14 +52,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblNuevo = new System.Windows.Forms.Label();
+            this.lblGuardar = new System.Windows.Forms.Label();
+            this.lblActualizar = new System.Windows.Forms.Label();
+            this.lblCancelar = new System.Windows.Forms.Label();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.lblCancelar = new System.Windows.Forms.Label();
-            this.lblActualizar = new System.Windows.Forms.Label();
-            this.lblGuardar = new System.Windows.Forms.Label();
-            this.lblNuevo = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.pnlBF.SuspendLayout();
@@ -304,6 +304,54 @@
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             // 
+            // lblNuevo
+            // 
+            this.lblNuevo.AutoSize = true;
+            this.lblNuevo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNuevo.ForeColor = System.Drawing.Color.Black;
+            this.lblNuevo.Location = new System.Drawing.Point(11, 78);
+            this.lblNuevo.Name = "lblNuevo";
+            this.lblNuevo.Size = new System.Drawing.Size(55, 23);
+            this.lblNuevo.TabIndex = 22;
+            this.lblNuevo.Text = "Nuevo";
+            this.lblNuevo.Visible = false;
+            // 
+            // lblGuardar
+            // 
+            this.lblGuardar.AutoSize = true;
+            this.lblGuardar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGuardar.ForeColor = System.Drawing.Color.Black;
+            this.lblGuardar.Location = new System.Drawing.Point(89, 78);
+            this.lblGuardar.Name = "lblGuardar";
+            this.lblGuardar.Size = new System.Drawing.Size(70, 23);
+            this.lblGuardar.TabIndex = 21;
+            this.lblGuardar.Text = "Guardar";
+            this.lblGuardar.Visible = false;
+            // 
+            // lblActualizar
+            // 
+            this.lblActualizar.AutoSize = true;
+            this.lblActualizar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActualizar.ForeColor = System.Drawing.Color.Black;
+            this.lblActualizar.Location = new System.Drawing.Point(161, 76);
+            this.lblActualizar.Name = "lblActualizar";
+            this.lblActualizar.Size = new System.Drawing.Size(88, 23);
+            this.lblActualizar.TabIndex = 20;
+            this.lblActualizar.Text = "Actualizar";
+            this.lblActualizar.Visible = false;
+            // 
+            // lblCancelar
+            // 
+            this.lblCancelar.AutoSize = true;
+            this.lblCancelar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCancelar.ForeColor = System.Drawing.Color.Black;
+            this.lblCancelar.Location = new System.Drawing.Point(254, 78);
+            this.lblCancelar.Name = "lblCancelar";
+            this.lblCancelar.Size = new System.Drawing.Size(73, 23);
+            this.lblCancelar.TabIndex = 19;
+            this.lblCancelar.Text = "Cancelar";
+            this.lblCancelar.Visible = false;
+            // 
             // btnActualizar
             // 
             this.btnActualizar.BackgroundImage = global::CapaPresentacion.Properties.Resources.azul;
@@ -367,54 +415,6 @@
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_3);
             this.btnGuardar.MouseLeave += new System.EventHandler(this.btnGuardar_MouseLeave);
             this.btnGuardar.MouseHover += new System.EventHandler(this.btnGuardar_MouseHover);
-            // 
-            // lblCancelar
-            // 
-            this.lblCancelar.AutoSize = true;
-            this.lblCancelar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCancelar.ForeColor = System.Drawing.Color.Black;
-            this.lblCancelar.Location = new System.Drawing.Point(254, 78);
-            this.lblCancelar.Name = "lblCancelar";
-            this.lblCancelar.Size = new System.Drawing.Size(73, 23);
-            this.lblCancelar.TabIndex = 19;
-            this.lblCancelar.Text = "Cancelar";
-            this.lblCancelar.Visible = false;
-            // 
-            // lblActualizar
-            // 
-            this.lblActualizar.AutoSize = true;
-            this.lblActualizar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActualizar.ForeColor = System.Drawing.Color.Black;
-            this.lblActualizar.Location = new System.Drawing.Point(161, 76);
-            this.lblActualizar.Name = "lblActualizar";
-            this.lblActualizar.Size = new System.Drawing.Size(88, 23);
-            this.lblActualizar.TabIndex = 20;
-            this.lblActualizar.Text = "Actualizar";
-            this.lblActualizar.Visible = false;
-            // 
-            // lblGuardar
-            // 
-            this.lblGuardar.AutoSize = true;
-            this.lblGuardar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGuardar.ForeColor = System.Drawing.Color.Black;
-            this.lblGuardar.Location = new System.Drawing.Point(89, 78);
-            this.lblGuardar.Name = "lblGuardar";
-            this.lblGuardar.Size = new System.Drawing.Size(70, 23);
-            this.lblGuardar.TabIndex = 21;
-            this.lblGuardar.Text = "Guardar";
-            this.lblGuardar.Visible = false;
-            // 
-            // lblNuevo
-            // 
-            this.lblNuevo.AutoSize = true;
-            this.lblNuevo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNuevo.ForeColor = System.Drawing.Color.Black;
-            this.lblNuevo.Location = new System.Drawing.Point(11, 78);
-            this.lblNuevo.Name = "lblNuevo";
-            this.lblNuevo.Size = new System.Drawing.Size(55, 23);
-            this.lblNuevo.TabIndex = 22;
-            this.lblNuevo.Text = "Nuevo";
-            this.lblNuevo.Visible = false;
             // 
             // FrmCartelera
             // 
