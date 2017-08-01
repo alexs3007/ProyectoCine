@@ -53,6 +53,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblNuevo = new System.Windows.Forms.Label();
+            this.lblGuardar = new System.Windows.Forms.Label();
+            this.lblActualizar = new System.Windows.Forms.Label();
+            this.lblCancelar = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.pnlBF.SuspendLayout();
@@ -192,6 +196,10 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.lblNuevo);
+            this.groupBox2.Controls.Add(this.lblGuardar);
+            this.groupBox2.Controls.Add(this.lblActualizar);
+            this.groupBox2.Controls.Add(this.lblCancelar);
             this.groupBox2.Controls.Add(this.btnActualizar);
             this.groupBox2.Controls.Add(this.btnNuevo);
             this.groupBox2.Controls.Add(this.btnCancelar);
@@ -209,12 +217,14 @@
             this.btnActualizar.FlatAppearance.BorderSize = 0;
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Image = global::CapaPresentacion.Properties.Resources.actualizaricon;
-            this.btnActualizar.Location = new System.Drawing.Point(168, 27);
+            this.btnActualizar.Location = new System.Drawing.Point(168, 18);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(75, 53);
             this.btnActualizar.TabIndex = 18;
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            this.btnActualizar.MouseLeave += new System.EventHandler(this.btnActualizar_MouseLeave);
+            this.btnActualizar.MouseHover += new System.EventHandler(this.btnActualizar_MouseHover);
             // 
             // btnNuevo
             // 
@@ -223,12 +233,14 @@
             this.btnNuevo.FlatAppearance.BorderSize = 0;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Image = global::CapaPresentacion.Properties.Resources.nuevoicon23;
-            this.btnNuevo.Location = new System.Drawing.Point(6, 27);
+            this.btnNuevo.Location = new System.Drawing.Point(6, 18);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 53);
             this.btnNuevo.TabIndex = 14;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            this.btnNuevo.MouseLeave += new System.EventHandler(this.btnNuevo_MouseLeave);
+            this.btnNuevo.MouseHover += new System.EventHandler(this.btnNuevo_MouseHover);
             // 
             // btnCancelar
             // 
@@ -237,12 +249,14 @@
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Image = global::CapaPresentacion.Properties.Resources.cancelaricon;
-            this.btnCancelar.Location = new System.Drawing.Point(249, 27);
+            this.btnCancelar.Location = new System.Drawing.Point(249, 18);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 53);
             this.btnCancelar.TabIndex = 17;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.btnCancelar.MouseLeave += new System.EventHandler(this.btnCancelar_MouseLeave);
+            this.btnCancelar.MouseHover += new System.EventHandler(this.btnCancelar_MouseHover);
             // 
             // btnGuardar
             // 
@@ -251,12 +265,14 @@
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Image = global::CapaPresentacion.Properties.Resources.guardaricon23;
-            this.btnGuardar.Location = new System.Drawing.Point(87, 27);
+            this.btnGuardar.Location = new System.Drawing.Point(87, 18);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 53);
             this.btnGuardar.TabIndex = 16;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.btnGuardar.MouseLeave += new System.EventHandler(this.btnGuardar_MouseLeave);
+            this.btnGuardar.MouseHover += new System.EventHandler(this.btnGuardar_MouseHover);
             // 
             // pnlDatos
             // 
@@ -331,6 +347,54 @@
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
+            // lblNuevo
+            // 
+            this.lblNuevo.AutoSize = true;
+            this.lblNuevo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNuevo.ForeColor = System.Drawing.Color.Black;
+            this.lblNuevo.Location = new System.Drawing.Point(9, 74);
+            this.lblNuevo.Name = "lblNuevo";
+            this.lblNuevo.Size = new System.Drawing.Size(55, 23);
+            this.lblNuevo.TabIndex = 26;
+            this.lblNuevo.Text = "Nuevo";
+            this.lblNuevo.Visible = false;
+            // 
+            // lblGuardar
+            // 
+            this.lblGuardar.AutoSize = true;
+            this.lblGuardar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGuardar.ForeColor = System.Drawing.Color.Black;
+            this.lblGuardar.Location = new System.Drawing.Point(87, 74);
+            this.lblGuardar.Name = "lblGuardar";
+            this.lblGuardar.Size = new System.Drawing.Size(70, 23);
+            this.lblGuardar.TabIndex = 25;
+            this.lblGuardar.Text = "Guardar";
+            this.lblGuardar.Visible = false;
+            // 
+            // lblActualizar
+            // 
+            this.lblActualizar.AutoSize = true;
+            this.lblActualizar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActualizar.ForeColor = System.Drawing.Color.Black;
+            this.lblActualizar.Location = new System.Drawing.Point(159, 72);
+            this.lblActualizar.Name = "lblActualizar";
+            this.lblActualizar.Size = new System.Drawing.Size(88, 23);
+            this.lblActualizar.TabIndex = 24;
+            this.lblActualizar.Text = "Actualizar";
+            this.lblActualizar.Visible = false;
+            // 
+            // lblCancelar
+            // 
+            this.lblCancelar.AutoSize = true;
+            this.lblCancelar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCancelar.ForeColor = System.Drawing.Color.Black;
+            this.lblCancelar.Location = new System.Drawing.Point(252, 74);
+            this.lblCancelar.Name = "lblCancelar";
+            this.lblCancelar.Size = new System.Drawing.Size(73, 23);
+            this.lblCancelar.TabIndex = 23;
+            this.lblCancelar.Text = "Cancelar";
+            this.lblCancelar.Visible = false;
+            // 
             // FrmCartelera_Pelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,6 +420,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.cmsOpciones.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -389,5 +454,9 @@
         private System.Windows.Forms.Panel pnlBT;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblNuevo;
+        private System.Windows.Forms.Label lblGuardar;
+        private System.Windows.Forms.Label lblActualizar;
+        private System.Windows.Forms.Label lblCancelar;
     }
 }

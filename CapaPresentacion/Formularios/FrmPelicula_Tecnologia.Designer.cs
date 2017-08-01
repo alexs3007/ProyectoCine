@@ -50,6 +50,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblNuevo = new System.Windows.Forms.Label();
+            this.lblGuardar = new System.Windows.Forms.Label();
+            this.lblActualizar = new System.Windows.Forms.Label();
+            this.lblCancelar = new System.Windows.Forms.Label();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -262,15 +266,67 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.lblNuevo);
+            this.groupBox2.Controls.Add(this.lblGuardar);
+            this.groupBox2.Controls.Add(this.lblActualizar);
+            this.groupBox2.Controls.Add(this.lblCancelar);
             this.groupBox2.Controls.Add(this.btnActualizar);
             this.groupBox2.Controls.Add(this.btnNuevo);
             this.groupBox2.Controls.Add(this.btnCancelar);
             this.groupBox2.Controls.Add(this.btnGuardar);
             this.groupBox2.Location = new System.Drawing.Point(9, 274);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(355, 83);
+            this.groupBox2.Size = new System.Drawing.Size(355, 102);
             this.groupBox2.TabIndex = 32;
             this.groupBox2.TabStop = false;
+            // 
+            // lblNuevo
+            // 
+            this.lblNuevo.AutoSize = true;
+            this.lblNuevo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNuevo.ForeColor = System.Drawing.Color.Black;
+            this.lblNuevo.Location = new System.Drawing.Point(14, 76);
+            this.lblNuevo.Name = "lblNuevo";
+            this.lblNuevo.Size = new System.Drawing.Size(55, 23);
+            this.lblNuevo.TabIndex = 26;
+            this.lblNuevo.Text = "Nuevo";
+            this.lblNuevo.Visible = false;
+            // 
+            // lblGuardar
+            // 
+            this.lblGuardar.AutoSize = true;
+            this.lblGuardar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGuardar.ForeColor = System.Drawing.Color.Black;
+            this.lblGuardar.Location = new System.Drawing.Point(92, 75);
+            this.lblGuardar.Name = "lblGuardar";
+            this.lblGuardar.Size = new System.Drawing.Size(70, 23);
+            this.lblGuardar.TabIndex = 25;
+            this.lblGuardar.Text = "Guardar";
+            this.lblGuardar.Visible = false;
+            // 
+            // lblActualizar
+            // 
+            this.lblActualizar.AutoSize = true;
+            this.lblActualizar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActualizar.ForeColor = System.Drawing.Color.Black;
+            this.lblActualizar.Location = new System.Drawing.Point(164, 75);
+            this.lblActualizar.Name = "lblActualizar";
+            this.lblActualizar.Size = new System.Drawing.Size(88, 23);
+            this.lblActualizar.TabIndex = 24;
+            this.lblActualizar.Text = "Actualizar";
+            this.lblActualizar.Visible = false;
+            // 
+            // lblCancelar
+            // 
+            this.lblCancelar.AutoSize = true;
+            this.lblCancelar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCancelar.ForeColor = System.Drawing.Color.Black;
+            this.lblCancelar.Location = new System.Drawing.Point(255, 76);
+            this.lblCancelar.Name = "lblCancelar";
+            this.lblCancelar.Size = new System.Drawing.Size(73, 23);
+            this.lblCancelar.TabIndex = 23;
+            this.lblCancelar.Text = "Cancelar";
+            this.lblCancelar.Visible = false;
             // 
             // btnActualizar
             // 
@@ -285,6 +341,8 @@
             this.btnActualizar.TabIndex = 18;
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click_1);
+            this.btnActualizar.MouseLeave += new System.EventHandler(this.btnActualizar_MouseLeave);
+            this.btnActualizar.MouseHover += new System.EventHandler(this.btnActualizar_MouseHover);
             // 
             // btnNuevo
             // 
@@ -299,6 +357,8 @@
             this.btnNuevo.TabIndex = 14;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click_1);
+            this.btnNuevo.MouseLeave += new System.EventHandler(this.btnNuevo_MouseLeave);
+            this.btnNuevo.MouseHover += new System.EventHandler(this.btnNuevo_MouseHover);
             // 
             // btnCancelar
             // 
@@ -313,6 +373,8 @@
             this.btnCancelar.TabIndex = 17;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
+            this.btnCancelar.MouseLeave += new System.EventHandler(this.btnCancelar_MouseLeave);
+            this.btnCancelar.MouseHover += new System.EventHandler(this.btnCancelar_MouseHover);
             // 
             // btnGuardar
             // 
@@ -327,6 +389,8 @@
             this.btnGuardar.TabIndex = 16;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
+            this.btnGuardar.MouseLeave += new System.EventHandler(this.btnGuardar_MouseLeave);
+            this.btnGuardar.MouseHover += new System.EventHandler(this.btnGuardar_MouseHover);
             // 
             // FrmPelicula_Tecnologia
             // 
@@ -356,6 +420,7 @@
             this.pnlDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -386,5 +451,9 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Label lblNuevo;
+        private System.Windows.Forms.Label lblGuardar;
+        private System.Windows.Forms.Label lblActualizar;
+        private System.Windows.Forms.Label lblCancelar;
     }
 }

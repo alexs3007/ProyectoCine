@@ -275,5 +275,46 @@ namespace CapaPresentacion.Formularios
             Limpiar();
             HabilitarControles(false, true, false, false, false);
         }
+
+        private void btnNuevo_MouseHover(object sender, EventArgs e)
+        {
+            lblNuevo.Visible = true;
+        }
+
+        private void btnNuevo_MouseLeave(object sender, EventArgs e)
+        {
+            lblNuevo.Visible = false;
+        }
+
+        private void btnGuardar_MouseHover(object sender, EventArgs e)
+        {
+            lblGuardar.Visible = true;
+        }
+
+        private void btnGuardar_MouseLeave(object sender, EventArgs e)
+        {
+            lblGuardar.Visible = false;
+
+        }
+
+        private void btnActualizar_MouseHover(object sender, EventArgs e)
+        {
+            lblActualizar.Visible = true;
+        }
+
+        private void btnActualizar_MouseLeave(object sender, EventArgs e)
+        {
+            lblActualizar.Visible = false;
+        }
+
+        private void btnCancelar_MouseHover(object sender, EventArgs e)
+        {
+            lblCancelar.Visible = true;
+        }
+
+        private void btnCancelar_MouseLeave(object sender, EventArgs e)
+        {
+            lblCancelar.Visible = false;
+        }
     }
 }
