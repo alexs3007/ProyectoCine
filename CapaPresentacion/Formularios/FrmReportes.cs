@@ -16,5 +16,45 @@ namespace CapaPresentacion.Formularios
         {
             InitializeComponent();
         }
+
+        private void pnlReporteFactura_MouseHover(object sender, EventArgs e)
+        {
+            lblFacturaTICKET.Visible = true;
+        }
+
+        private void pnlReporteFactura_MouseLeave(object sender, EventArgs e)
+        {
+            lblFacturaTICKET.Visible = false;
+        }
+
+        private void pnlReporteDiario_MouseHover(object sender, EventArgs e)
+        {
+            lblMensual.Visible = true;
+        }
+
+        private void pnlReporteDiario_MouseLeave(object sender, EventArgs e)
+        {
+            lblMensual.Visible = false;
+        }
+
+        private void pnlReporteMensual_MouseHover(object sender, EventArgs e)
+        {
+            lblDiario.Visible = true;
+        }
+
+        private void pnlReporteMensual_MouseLeave(object sender, EventArgs e)
+        {
+            lblDiario.Visible = false;
+        }
+
+        private void pnlReporteTecnologia_MouseHover(object sender, EventArgs e)
+        {
+            lblReporteTecnologia.Visible = true;
+        }
+
+        private void pnlReporteTecnologia_MouseLeave(object sender, EventArgs e)
+        {
+            lblReporteTecnologia.Visible = false;
+        }
     }
 }

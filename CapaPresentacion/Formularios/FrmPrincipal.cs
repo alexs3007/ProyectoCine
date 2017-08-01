@@ -148,7 +148,7 @@ namespace CapaPresentacion.Formularios
             FrmPelicula frm = new FrmPelicula();
             frm.MdiParent = this;
             frm.Show();
-            frm.Location = new Point(100, 100);
+            frm.Location = new Point(100, 125);
         }
 
         private void pnlTecnologia_Click(object sender, EventArgs e)
@@ -248,13 +248,15 @@ namespace CapaPresentacion.Formularios
         {
             FrmReportes frm = new FrmReportes();
             frm.Show();
-            frm.Location = new Point(200, 170);
+            frm.Location = new Point(300, 170);
         }
 
         private void pnlPeliculaHorario_Click(object sender, EventArgs e)
         {
             FrmPelicula_Horario frm = new FrmPelicula_Horario();
+            frm.MdiParent = this;
             frm.Show();
+            frm.Location = new Point(200, 200);
         }
 
         private void pnlPeliculaHorario_MouseHover(object sender, EventArgs e)
@@ -270,7 +272,9 @@ namespace CapaPresentacion.Formularios
         private void pnlUsuario_Click(object sender, EventArgs e)
         {
             FrmUsuario frm = new FrmUsuario();
+            frm.MdiParent = this;
             frm.Show();
+            frm.Location = new Point(200, 200);
         }
 
         private void pnlUsuario_MouseHover(object sender, EventArgs e)
@@ -281,6 +285,52 @@ namespace CapaPresentacion.Formularios
         private void pnlUsuario_MouseLeave(object sender, EventArgs e)
         {
             lblusuario.Visible = false;
+        }
+
+        private void pnlCartelera_Pelicula_Click(object sender, EventArgs e)
+        {
+            FrmCartelera_Pelicula frm = new FrmCartelera_Pelicula();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Location = new Point(200, 200);
+        }
+
+        private void pnlCartelera_Pelicula_MouseHover(object sender, EventArgs e)
+        {
+            lblPeliculaCartelera.Visible = true;
+        }
+
+        private void pnlCartelera_Pelicula_MouseLeave(object sender, EventArgs e)
+        {
+            lblPeliculaCartelera.Visible = false;
+        }
+
+        private void pnlLogAuditoria_Click(object sender, EventArgs e)
+        {
+            FrmLogAuditoria frm = new FrmLogAuditoria();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Location = new Point(300, 200);
+        }
+
+        private void pnlLogAuditoria_MouseHover(object sender, EventArgs e)
+        {
+            lblLogAuditoria.Visible = true;
+        }
+
+        private void pnlLogAuditoria_MouseLeave(object sender, EventArgs e)
+        {
+            lblLogAuditoria.Visible = false;
+        }
+
+        private void pnlCambioUsuario_MouseHover(object sender, EventArgs e)
+        {
+            lblCambioUsuario.Visible = true;
+        }
+
+        private void pnlCambioUsuario_MouseLeave(object sender, EventArgs e)
+        {
+            lblCambioUsuario.Visible = false;
         }
     }
 }

@@ -449,6 +449,8 @@
             this.Controls.Add(this.pnlDatos);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmUsuario";
             this.Text = "Gestión de Usuario";
             this.Load += new System.EventHandler(this.FrmUsuario_Load);

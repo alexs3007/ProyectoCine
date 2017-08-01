@@ -387,6 +387,8 @@
             this.Controls.Add(this.pnlDatos);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmPelicula_Horario";
             this.Text = "Gestión de Horario de Película";
             this.Load += new System.EventHandler(this.FrmPelicula_Horario_Load);

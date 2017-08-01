@@ -156,6 +156,8 @@
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmLogAuditoria";
             this.Text = "Registro de Cambios";
             this.Load += new System.EventHandler(this.FrmLogAuditoria_Load);

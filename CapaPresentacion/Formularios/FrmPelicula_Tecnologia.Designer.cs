@@ -406,6 +406,8 @@
             this.Controls.Add(this.pnlDatos);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmPelicula_Tecnologia";
             this.Text = "Gestión de Tecnología de Película";
             this.Load += new System.EventHandler(this.FrmPelicula_Tecnologia_Load);

@@ -534,6 +534,8 @@
             this.ClientSize = new System.Drawing.Size(676, 428);
             this.Controls.Add(this.tbcFactura);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmFactura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion de Factura";

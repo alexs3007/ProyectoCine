@@ -130,6 +130,7 @@ namespace CapaPresentacion.Formularios
             CNUsuario objP = new CNUsuario();
             dgvLista.DataSource = objP.ListadoUsuario().Tables["Usuario"];
             dgvLista.Columns[0].Visible = false;
+            dgvLista.Columns[2].Visible = false;
         }
 
 

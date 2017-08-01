@@ -255,6 +255,14 @@
   <ItemGroup>
     <Content Include="estrella.ico" />
     <Content Include="LOGOCINE3.ico" />
+    <None Include="Resources\cambiodeusuariocirculo.png" />
+    <None Include="Resources\logauditoriaCirculo.gif" />
+    <None Include="Resources\pelicula_CarteleraCirculo.png" />
+    <None Include="Resources\bordeinferior2.png" />
+    <None Include="Resources\bordeinferior1.png" />
+    <None Include="Resources\bordeinferior.png" />
+    <None Include="Resources\reporte tecnologia1.png" />
+    <None Include="Resources\reporte factura1.png" />
     <None Include="Resources\botoncancelar.png" />
     <None Include="Resources\boton aceptar.png" />
     <None Include="Resources\reporte tecnologia.png" />

@@ -410,6 +410,8 @@
             this.Controls.Add(this.pnlDatos);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmCartelera_Pelicula";
             this.Text = "Gestión de Película en Cartelera";
             this.Load += new System.EventHandler(this.FrmCartelera_Pelicula_Load);
