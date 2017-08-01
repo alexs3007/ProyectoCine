@@ -254,6 +254,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LOGOCINE3.ico" />
+    <None Include="Resources\reporte tecnologia.png" />
+    <None Include="Resources\reporteMensual.png" />
+    <None Include="Resources\reporte diario.png" />
+    <None Include="Resources\reporte factura.png" />
+    <None Include="Resources\cancelarboton.png" />
+    <None Include="Resources\aceptarboton1.png" />
+    <None Include="Resources\aceptarboton.png" />
+    <None Include="Resources\fondoReporte.png" />
     <None Include="Resources\UsuarioCirculo.png" />
     <None Include="Resources\pelicula_HorarioCirculo.png" />
     <None Include="Resources\reporteCirculo.png" />

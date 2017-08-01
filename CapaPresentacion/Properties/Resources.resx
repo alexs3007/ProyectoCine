@@ -154,14 +154,26 @@
   <data name="cartelera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cartelera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton para fondo de busqueda" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton para fondo de busqueda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LOGOCINE3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOGOCINE3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="guardargris" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guardargris.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="aceptarboton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aceptarboton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pelicula_HorarioCirculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pelicula_HorarioCirculo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aceptarboton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aceptarboton1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reporte factura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reporte factura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancelarboton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancelarboton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tecnologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tecnologia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,17 +187,26 @@
   <data name="NUEVO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NUEVO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="UsuarioCirculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UsuarioCirculo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="image_add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image_add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bordesuperior" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bordesuperior.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reporte diario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reporte diario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de pantalla (68)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla (68).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reporteMensual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reporteMensual.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="X" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -195,9 +216,6 @@
   </data>
   <data name="cancelaricon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancelaricon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="empleadocirculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\empleadocirculo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="estrella" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\estrella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,16 +262,22 @@
   <data name="pelicula" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pelicula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LOGOCINE3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LOGOCINE3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="empleadocirculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\empleadocirculo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton para fondo de busqueda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton para fondo de busqueda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de pantalla (69)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla (69).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fondoReporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoReporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="nuevoicon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nuevoicon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UsuarioCirculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UsuarioCirculo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reporte tecnologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reporte tecnologia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
