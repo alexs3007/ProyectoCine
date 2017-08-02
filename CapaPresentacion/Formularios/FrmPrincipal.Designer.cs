@@ -39,6 +39,7 @@
             this.pnlLogAuditoria = new System.Windows.Forms.Panel();
             this.pnlCartelera_Pelicula = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblCambioUsuario = new System.Windows.Forms.Label();
             this.lblLogAuditoria = new System.Windows.Forms.Label();
             this.lblPeliculaCartelera = new System.Windows.Forms.Label();
             this.lblMostrarCartelera = new System.Windows.Forms.Label();
@@ -60,7 +61,6 @@
             this.pnlFactura = new System.Windows.Forms.Panel();
             this.pnlCarteleraS = new System.Windows.Forms.Panel();
             this.pnlCartelera = new System.Windows.Forms.Panel();
-            this.lblCambioUsuario = new System.Windows.Forms.Label();
             this.statusStrip.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -175,13 +175,26 @@
             this.panel2.Size = new System.Drawing.Size(1412, 39);
             this.panel2.TabIndex = 9;
             // 
+            // lblCambioUsuario
+            // 
+            this.lblCambioUsuario.AutoSize = true;
+            this.lblCambioUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblCambioUsuario.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCambioUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCambioUsuario.Location = new System.Drawing.Point(1231, 10);
+            this.lblCambioUsuario.Name = "lblCambioUsuario";
+            this.lblCambioUsuario.Size = new System.Drawing.Size(135, 16);
+            this.lblCambioUsuario.TabIndex = 26;
+            this.lblCambioUsuario.Text = "CAMBIO DE USUARIO";
+            this.lblCambioUsuario.Visible = false;
+            // 
             // lblLogAuditoria
             // 
             this.lblLogAuditoria.AutoSize = true;
             this.lblLogAuditoria.BackColor = System.Drawing.Color.Transparent;
             this.lblLogAuditoria.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogAuditoria.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblLogAuditoria.Location = new System.Drawing.Point(809, 10);
+            this.lblLogAuditoria.Location = new System.Drawing.Point(803, 10);
             this.lblLogAuditoria.Name = "lblLogAuditoria";
             this.lblLogAuditoria.Size = new System.Drawing.Size(103, 16);
             this.lblLogAuditoria.TabIndex = 26;
@@ -208,7 +221,7 @@
             this.lblMostrarCartelera.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblMostrarCartelera.Location = new System.Drawing.Point(31, 10);
             this.lblMostrarCartelera.Name = "lblMostrarCartelera";
-            this.lblMostrarCartelera.Size = new System.Drawing.Size(162, 29);
+            this.lblMostrarCartelera.Size = new System.Drawing.Size(139, 29);
             this.lblMostrarCartelera.TabIndex = 18;
             this.lblMostrarCartelera.Text = "MOSTRAR CARTELERA";
             this.lblMostrarCartelera.Visible = false;
@@ -232,7 +245,7 @@
             this.lblCartelera.BackColor = System.Drawing.Color.Transparent;
             this.lblCartelera.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCartelera.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCartelera.Location = new System.Drawing.Point(118, 10);
+            this.lblCartelera.Location = new System.Drawing.Point(123, 10);
             this.lblCartelera.Name = "lblCartelera";
             this.lblCartelera.Size = new System.Drawing.Size(73, 16);
             this.lblCartelera.TabIndex = 9;
@@ -245,7 +258,7 @@
             this.lblFactura.BackColor = System.Drawing.Color.Transparent;
             this.lblFactura.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFactura.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblFactura.Location = new System.Drawing.Point(208, 10);
+            this.lblFactura.Location = new System.Drawing.Point(217, 10);
             this.lblFactura.Name = "lblFactura";
             this.lblFactura.Size = new System.Drawing.Size(61, 16);
             this.lblFactura.TabIndex = 14;
@@ -258,7 +271,7 @@
             this.lblHorario.BackColor = System.Drawing.Color.Transparent;
             this.lblHorario.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHorario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblHorario.Location = new System.Drawing.Point(556, 10);
+            this.lblHorario.Location = new System.Drawing.Point(561, 10);
             this.lblHorario.Name = "lblHorario";
             this.lblHorario.Size = new System.Drawing.Size(62, 16);
             this.lblHorario.TabIndex = 22;
@@ -271,7 +284,7 @@
             this.lblReportes.BackColor = System.Drawing.Color.Transparent;
             this.lblReportes.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReportes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblReportes.Location = new System.Drawing.Point(899, 10);
+            this.lblReportes.Location = new System.Drawing.Point(906, 10);
             this.lblReportes.Name = "lblReportes";
             this.lblReportes.Size = new System.Drawing.Size(67, 16);
             this.lblReportes.TabIndex = 20;
@@ -284,7 +297,7 @@
             this.lblPelicula.BackColor = System.Drawing.Color.Transparent;
             this.lblPelicula.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPelicula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPelicula.Location = new System.Drawing.Point(291, 10);
+            this.lblPelicula.Location = new System.Drawing.Point(301, 10);
             this.lblPelicula.Name = "lblPelicula";
             this.lblPelicula.Size = new System.Drawing.Size(62, 16);
             this.lblPelicula.TabIndex = 15;
@@ -310,7 +323,7 @@
             this.lblEmpleado.BackColor = System.Drawing.Color.Transparent;
             this.lblEmpleado.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmpleado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblEmpleado.Location = new System.Drawing.Point(462, 10);
+            this.lblEmpleado.Location = new System.Drawing.Point(470, 10);
             this.lblEmpleado.Name = "lblEmpleado";
             this.lblEmpleado.Size = new System.Drawing.Size(70, 16);
             this.lblEmpleado.TabIndex = 16;
@@ -432,19 +445,6 @@
             this.pnlCartelera.Name = "pnlCartelera";
             this.pnlCartelera.Size = new System.Drawing.Size(0, 0);
             this.pnlCartelera.TabIndex = 0;
-            // 
-            // lblCambioUsuario
-            // 
-            this.lblCambioUsuario.AutoSize = true;
-            this.lblCambioUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.lblCambioUsuario.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCambioUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCambioUsuario.Location = new System.Drawing.Point(1231, 10);
-            this.lblCambioUsuario.Name = "lblCambioUsuario";
-            this.lblCambioUsuario.Size = new System.Drawing.Size(135, 16);
-            this.lblCambioUsuario.TabIndex = 26;
-            this.lblCambioUsuario.Text = "CAMBIO DE USUARIO";
-            this.lblCambioUsuario.Visible = false;
             // 
             // FrmPrincipal
             // 
