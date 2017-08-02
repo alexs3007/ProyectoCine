@@ -101,14 +101,13 @@ namespace CapaPresentacion.Formularios
             {
                 pbPelicula.Image = Properties.Resources.Movie;
                 pbPelicula.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+             
+            }
+              objPelicula.Imagen = ms.GetBuffer();
+              objPelicula.URL = txtURL.Text.Trim();
+              objPelicula.IdUsuario = Convert.ToInt32(txtUsuario.Text);
 
-                objPelicula.Imagen = ms.GetBuffer();
-                objPelicula.URL = txtURL.Text.Trim();
-                objPelicula.IdUsuario = Convert.ToInt32(txtUsuario.Text);
-
-
-
-                if (objInsertarPelicula.NuevaFactura(objPelicula) > 0)
+            if (objInsertarPelicula.NuevaFactura(objPelicula) > 0)
                 {
                     MessageBox.Show(null, "Registro almacenado satisfactoriamente", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -116,7 +115,7 @@ namespace CapaPresentacion.Formularios
                 {
                     MessageBox.Show(null, "Error al almacenar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }
+            
         }
 
         private void ActualizarPelicula()

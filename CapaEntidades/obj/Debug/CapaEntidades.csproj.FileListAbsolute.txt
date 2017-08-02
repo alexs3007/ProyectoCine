@@ -38,3 +38,8 @@ C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaEntidades
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaEntidades\obj\Debug\CapaEntidades.dll
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaEntidades\obj\Debug\CapaEntidades.pdb
+C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaEntidades\obj\Debug\CapaEntidades.pdb
