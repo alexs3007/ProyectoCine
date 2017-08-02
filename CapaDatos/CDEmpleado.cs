@@ -45,7 +45,7 @@ namespace CapaDatos
             int resultado;
             try
             {
-                SqlCommand cmd = new SqlCommand("Sp_ActualizarEmpleado", cn);
+                SqlCommand cmd = new SqlCommand("Sp_AcutalizarEmpleado", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@CodEmpleado", SqlDbType.NVarChar, 15).Value = objE.CodEmpleado;
                 cmd.Parameters.Add("@NombreEmpleado", SqlDbType.NVarChar, 50).Value = objE.NombreEmpleado;

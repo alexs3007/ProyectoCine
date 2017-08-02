@@ -32,11 +32,11 @@ namespace CapaPresentacion.Formularios
 
         private void Limpiar()
         {
-            txtCodEmpleado.Clear();
+            txtCodEmpleado2.Clear();
             txtNombre.Clear();
             txtApellido.Clear();
             txtDireccion.Clear();
-            txtTelefono.Clear();
+            txtTelefono2.Clear();
             txtCorreo.Clear();
         }
 
@@ -58,11 +58,11 @@ namespace CapaPresentacion.Formularios
 
         private void FilaSelccionada()
         {
-            txtCodEmpleado.Text = dgvLista.SelectedRows[0].Cells[0].Value.ToString();
+            txtCodEmpleado2.Text = dgvLista.SelectedRows[0].Cells[0].Value.ToString();
             txtNombre.Text = dgvLista.SelectedRows[0].Cells[1].Value.ToString();
             txtApellido.Text = dgvLista.SelectedRows[0].Cells[2].Value.ToString();
             txtDireccion.Text = dgvLista.SelectedRows[0].Cells[3].Value.ToString();
-            txtTelefono.Text = dgvLista.SelectedRows[0].Cells[4].Value.ToString();
+            txtTelefono2.Text = dgvLista.SelectedRows[0].Cells[4].Value.ToString();
             txtCorreo.Text = dgvLista.SelectedRows[0].Cells[5].Value.ToString();
         }
 
@@ -70,11 +70,11 @@ namespace CapaPresentacion.Formularios
         {
             CNEmpledos CNE = new CNEmpledos();
             CEEmpleado CEE = new CEEmpleado();
-            CEE.CodEmpleado = txtCodEmpleado.Text.Trim();
+            CEE.CodEmpleado = txtCodEmpleado2.Text.Trim();
             CEE.NombreEmpleado = txtNombre.Text.Trim();
             CEE.ApellidosEmpleado = txtApellido.Text.Trim();
             CEE.Direccion = txtDireccion.Text.Trim();
-            CEE.Telefono = txtTelefono.Text.Trim();
+            CEE.Telefono = txtTelefono2.Text.Trim();
             CEE.Correo = txtCorreo.Text.Trim();
 
             if (CNE.InsertarEmpleado(CEE) > 0)
@@ -91,14 +91,14 @@ namespace CapaPresentacion.Formularios
         {
             CNEmpledos CNE = new CNEmpledos();
             CEEmpleado CEE = new CEEmpleado();
-            CEE.CodEmpleado = txtCodEmpleado.Text.Trim();
+            CEE.CodEmpleado = txtCodEmpleado2.Text.Trim();
             CEE.NombreEmpleado = txtNombre.Text.Trim();
             CEE.ApellidosEmpleado = txtApellido.Text.Trim();
             CEE.Direccion = txtDireccion.Text.Trim();
-            CEE.Telefono = txtTelefono.Text.Trim();
+            CEE.Telefono = txtTelefono2.Text.Trim();
             CEE.Correo = txtCorreo.Text.Trim();
 
-            if (CNE.InsertarEmpleado(CEE) > 0)
+            if (CNE.ActualizarEmpleado(CEE) > 0)
             {
                 MessageBox.Show(null, "Registro actualizado satisfactoriamente", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -148,19 +148,11 @@ namespace CapaPresentacion.Formularios
                 return false;
             }
         }
-
-        
-
-       
-
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FilaSelccionada();
             HabilitarControles(true, false, false, true, true);
         }
-
-       
-
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string CodiEmpleado;
@@ -200,7 +192,7 @@ namespace CapaPresentacion.Formularios
 
         private void btnActualizar_Click_1(object sender, EventArgs e)
         {
-            if (txtCodEmpleado.Text.Equals(""))
+            if (txtCodEmpleado2.MaskFull==false)
             {
                 MessageBox.Show(null, "Ingrese el Código del Empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -239,12 +231,12 @@ namespace CapaPresentacion.Formularios
         private void btnNuevo_Click_1(object sender, EventArgs e)
         {
             HabilitarControles(true, false, true, false, true);
-            txtCodEmpleado.Focus();
+            txtCodEmpleado2.Focus();
         }
 
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
-            if (txtCodEmpleado.Text.Equals(""))
+            if (txtCodEmpleado2.MaskFull == false)
             {
                 MessageBox.Show(null, "Ingrese el Código del Empleado", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

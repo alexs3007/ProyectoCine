@@ -42,11 +42,9 @@
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlDatos = new System.Windows.Forms.GroupBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtCodEmpleado = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -64,6 +62,8 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.txtCodEmpleado2 = new System.Windows.Forms.MaskedTextBox();
+            this.txtTelefono2 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.pnlBT.SuspendLayout();
@@ -180,12 +180,11 @@
             // pnlDatos
             // 
             this.pnlDatos.BackColor = System.Drawing.Color.Transparent;
+            this.pnlDatos.Controls.Add(this.txtTelefono2);
             this.pnlDatos.Controls.Add(this.txtCorreo);
-            this.pnlDatos.Controls.Add(this.txtTelefono);
             this.pnlDatos.Controls.Add(this.txtDireccion);
             this.pnlDatos.Controls.Add(this.txtApellido);
             this.pnlDatos.Controls.Add(this.txtNombre);
-            this.pnlDatos.Controls.Add(this.txtCodEmpleado);
             this.pnlDatos.Controls.Add(this.label6);
             this.pnlDatos.Controls.Add(this.label5);
             this.pnlDatos.Controls.Add(this.label4);
@@ -204,13 +203,6 @@
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(157, 20);
             this.txtCorreo.TabIndex = 17;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Location = new System.Drawing.Point(136, 159);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(157, 20);
-            this.txtTelefono.TabIndex = 16;
             // 
             // txtDireccion
             // 
@@ -233,13 +225,6 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(157, 20);
             this.txtNombre.TabIndex = 13;
-            // 
-            // txtCodEmpleado
-            // 
-            this.txtCodEmpleado.Location = new System.Drawing.Point(136, 15);
-            this.txtCodEmpleado.Name = "txtCodEmpleado";
-            this.txtCodEmpleado.Size = new System.Drawing.Size(157, 20);
-            this.txtCodEmpleado.TabIndex = 12;
             // 
             // label6
             // 
@@ -453,6 +438,24 @@
             this.btnGuardar.MouseLeave += new System.EventHandler(this.btnGuardar_MouseLeave);
             this.btnGuardar.MouseHover += new System.EventHandler(this.btnGuardar_MouseHover);
             // 
+            // txtCodEmpleado2
+            // 
+            this.txtCodEmpleado2.Location = new System.Drawing.Point(148, 102);
+            this.txtCodEmpleado2.Mask = "9999-9999-99999";
+            this.txtCodEmpleado2.Name = "txtCodEmpleado2";
+            this.txtCodEmpleado2.PromptChar = ' ';
+            this.txtCodEmpleado2.Size = new System.Drawing.Size(158, 20);
+            this.txtCodEmpleado2.TabIndex = 32;
+            // 
+            // txtTelefono2
+            // 
+            this.txtTelefono2.Location = new System.Drawing.Point(135, 157);
+            this.txtTelefono2.Mask = "9999-9999";
+            this.txtTelefono2.Name = "txtTelefono2";
+            this.txtTelefono2.PromptChar = ' ';
+            this.txtTelefono2.Size = new System.Drawing.Size(158, 20);
+            this.txtTelefono2.TabIndex = 33;
+            // 
             // FrmEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -460,6 +463,7 @@
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Captura_de_pantalla__69_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(993, 410);
+            this.Controls.Add(this.txtCodEmpleado2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
@@ -501,11 +505,9 @@
         private System.Windows.Forms.DataGridView dgvLista;
         private System.Windows.Forms.GroupBox pnlDatos;
         private System.Windows.Forms.TextBox txtCorreo;
-        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtCodEmpleado;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -527,5 +529,7 @@
         private System.Windows.Forms.Label lblGuardar;
         private System.Windows.Forms.Label lblActualizar;
         private System.Windows.Forms.Label lblCancelar;
+        private System.Windows.Forms.MaskedTextBox txtTelefono2;
+        private System.Windows.Forms.MaskedTextBox txtCodEmpleado2;
     }
 }
