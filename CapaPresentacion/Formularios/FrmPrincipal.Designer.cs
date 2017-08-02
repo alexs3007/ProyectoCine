@@ -194,7 +194,7 @@
             this.lblLogAuditoria.BackColor = System.Drawing.Color.Transparent;
             this.lblLogAuditoria.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogAuditoria.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblLogAuditoria.Location = new System.Drawing.Point(803, 10);
+            this.lblLogAuditoria.Location = new System.Drawing.Point(807, 10);
             this.lblLogAuditoria.Name = "lblLogAuditoria";
             this.lblLogAuditoria.Size = new System.Drawing.Size(103, 16);
             this.lblLogAuditoria.TabIndex = 26;
@@ -207,7 +207,7 @@
             this.lblPeliculaCartelera.BackColor = System.Drawing.Color.Transparent;
             this.lblPeliculaCartelera.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPeliculaCartelera.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPeliculaCartelera.Location = new System.Drawing.Point(688, 10);
+            this.lblPeliculaCartelera.Location = new System.Drawing.Point(690, 10);
             this.lblPeliculaCartelera.Name = "lblPeliculaCartelera";
             this.lblPeliculaCartelera.Size = new System.Drawing.Size(161, 16);
             this.lblPeliculaCartelera.TabIndex = 25;
@@ -232,7 +232,7 @@
             this.lblusuario.BackColor = System.Drawing.Color.Transparent;
             this.lblusuario.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblusuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblusuario.Location = new System.Drawing.Point(645, 10);
+            this.lblusuario.Location = new System.Drawing.Point(652, 10);
             this.lblusuario.Name = "lblusuario";
             this.lblusuario.Size = new System.Drawing.Size(62, 16);
             this.lblusuario.TabIndex = 24;
@@ -245,7 +245,7 @@
             this.lblCartelera.BackColor = System.Drawing.Color.Transparent;
             this.lblCartelera.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCartelera.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCartelera.Location = new System.Drawing.Point(123, 10);
+            this.lblCartelera.Location = new System.Drawing.Point(131, 10);
             this.lblCartelera.Name = "lblCartelera";
             this.lblCartelera.Size = new System.Drawing.Size(73, 16);
             this.lblCartelera.TabIndex = 9;
@@ -258,7 +258,7 @@
             this.lblFactura.BackColor = System.Drawing.Color.Transparent;
             this.lblFactura.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFactura.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblFactura.Location = new System.Drawing.Point(217, 10);
+            this.lblFactura.Location = new System.Drawing.Point(222, 10);
             this.lblFactura.Name = "lblFactura";
             this.lblFactura.Size = new System.Drawing.Size(61, 16);
             this.lblFactura.TabIndex = 14;
@@ -271,7 +271,7 @@
             this.lblHorario.BackColor = System.Drawing.Color.Transparent;
             this.lblHorario.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHorario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblHorario.Location = new System.Drawing.Point(561, 10);
+            this.lblHorario.Location = new System.Drawing.Point(565, 10);
             this.lblHorario.Name = "lblHorario";
             this.lblHorario.Size = new System.Drawing.Size(62, 16);
             this.lblHorario.TabIndex = 22;
@@ -284,7 +284,7 @@
             this.lblReportes.BackColor = System.Drawing.Color.Transparent;
             this.lblReportes.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReportes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblReportes.Location = new System.Drawing.Point(906, 10);
+            this.lblReportes.Location = new System.Drawing.Point(910, 10);
             this.lblReportes.Name = "lblReportes";
             this.lblReportes.Size = new System.Drawing.Size(67, 16);
             this.lblReportes.TabIndex = 20;
@@ -297,7 +297,7 @@
             this.lblPelicula.BackColor = System.Drawing.Color.Transparent;
             this.lblPelicula.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPelicula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPelicula.Location = new System.Drawing.Point(301, 10);
+            this.lblPelicula.Location = new System.Drawing.Point(304, 10);
             this.lblPelicula.Name = "lblPelicula";
             this.lblPelicula.Size = new System.Drawing.Size(62, 16);
             this.lblPelicula.TabIndex = 15;
@@ -310,7 +310,7 @@
             this.lblTecnologia.BackColor = System.Drawing.Color.Transparent;
             this.lblTecnologia.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTecnologia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTecnologia.Location = new System.Drawing.Point(376, 10);
+            this.lblTecnologia.Location = new System.Drawing.Point(380, 10);
             this.lblTecnologia.Name = "lblTecnologia";
             this.lblTecnologia.Size = new System.Drawing.Size(84, 16);
             this.lblTecnologia.TabIndex = 16;
@@ -323,7 +323,7 @@
             this.lblEmpleado.BackColor = System.Drawing.Color.Transparent;
             this.lblEmpleado.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmpleado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblEmpleado.Location = new System.Drawing.Point(470, 10);
+            this.lblEmpleado.Location = new System.Drawing.Point(474, 10);
             this.lblEmpleado.Name = "lblEmpleado";
             this.lblEmpleado.Size = new System.Drawing.Size(70, 16);
             this.lblEmpleado.TabIndex = 16;
