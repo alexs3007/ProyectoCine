@@ -50,6 +50,7 @@
             this.ClientSize = new System.Drawing.Size(690, 332);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "FrmRptTecnologia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRptTecnologia";
             this.Load += new System.EventHandler(this.FrmRptTecnologia_Load);
             this.ResumeLayout(false);
