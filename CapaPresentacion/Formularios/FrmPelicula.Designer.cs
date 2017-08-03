@@ -41,8 +41,6 @@
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlDatos = new System.Windows.Forms.GroupBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.txtLanzamiento = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pbPelicula = new System.Windows.Forms.PictureBox();
@@ -191,8 +189,6 @@
             // pnlDatos
             // 
             this.pnlDatos.BackColor = System.Drawing.Color.Transparent;
-            this.pnlDatos.Controls.Add(this.txtUsuario);
-            this.pnlDatos.Controls.Add(this.label9);
             this.pnlDatos.Controls.Add(this.txtLanzamiento);
             this.pnlDatos.Controls.Add(this.label8);
             this.pnlDatos.Controls.Add(this.pbPelicula);
@@ -213,26 +209,9 @@
             this.pnlDatos.Controls.Add(this.label3);
             this.pnlDatos.Location = new System.Drawing.Point(5, 82);
             this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(503, 390);
+            this.pnlDatos.Size = new System.Drawing.Size(503, 363);
             this.pnlDatos.TabIndex = 23;
             this.pnlDatos.TabStop = false;
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(135, 352);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(220, 20);
-            this.txtUsuario.TabIndex = 53;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(8, 349);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 23);
-            this.label9.TabIndex = 52;
-            this.label9.Text = "Usuario";
             // 
             // txtLanzamiento
             // 
@@ -453,7 +432,7 @@
             this.groupBox2.Controls.Add(this.btnNuevo);
             this.groupBox2.Controls.Add(this.btnCancelar);
             this.groupBox2.Controls.Add(this.btnGuardar);
-            this.groupBox2.Location = new System.Drawing.Point(5, 474);
+            this.groupBox2.Location = new System.Drawing.Point(5, 451);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(502, 98);
             this.groupBox2.TabIndex = 32;
@@ -641,8 +620,6 @@
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.TextBox txtLanzamiento;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel pnlBT;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;

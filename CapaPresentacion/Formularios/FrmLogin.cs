@@ -36,8 +36,12 @@ namespace CapaPresentacion.Formularios
 
                 if (objAccesoUsuario.AccesoUsuario(objLogin)[0] != "")
                 {
-                    label1.Text = objAccesoUsuario.AccesoUsuario(objLogin)[0];
-                    label2.Text = objAccesoUsuario.AccesoUsuario(objLogin)[1];
+                    FrmPrincipal.id = objAccesoUsuario.AccesoUsuario(objLogin)[0];
+                    FrmPrincipal.tipoUsuario = objAccesoUsuario.AccesoUsuario(objLogin)[1];
+                    FrmPrincipal.nombreUsuario = objAccesoUsuario.AccesoUsuario(objLogin)[2];
+                    FrmPrincipal frm = new FrmPrincipal();
+                    frm.Show();
+                    Hide();
                 }
                 else
                 {
@@ -59,6 +63,19 @@ namespace CapaPresentacion.Formularios
         private void pnlcerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtContraseña_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                btnAceptar.PerformClick();
+            }
         }
     }
 }

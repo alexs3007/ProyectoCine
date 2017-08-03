@@ -12,6 +12,7 @@ namespace CapaPresentacion.Formularios
         {
             InitializeComponent();
         }
+        public static string id, tipoUsuario, nombreUsuario;
 
         private void ShowNewForm(object sender, EventArgs e)
         {
@@ -92,7 +93,7 @@ namespace CapaPresentacion.Formularios
 
         private void pnlcerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void pnlCambioUsuario_Click(object sender, EventArgs e)
@@ -100,7 +101,7 @@ namespace CapaPresentacion.Formularios
             
             FrmLogin frm = new FrmLogin();
             frm.Show();
-            this.Hide();
+            Close();
         }
 
         //private void pnlCartelera_MouseHover(object sender, EventArgs e)
@@ -328,9 +329,29 @@ namespace CapaPresentacion.Formularios
             lblCambioUsuario.Visible = true;
         }
 
+        private void statusStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void pnlcerrar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlCambioUsuario_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void pnlCambioUsuario_MouseLeave(object sender, EventArgs e)
         {
             lblCambioUsuario.Visible = false;
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            txtNombreUsuario.Text = nombreUsuario;
         }
     }
 }

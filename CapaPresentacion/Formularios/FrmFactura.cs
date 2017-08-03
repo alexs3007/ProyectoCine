@@ -77,7 +77,7 @@ namespace CapaPresentacion.Formularios
             objFactura.IdTecnologia = Convert.ToInt32(cboTecnologia.SelectedValue);
             objFactura.CantidadBoleto = int.Parse(txtCantidad.Text);
             objFactura.PrecioBoleto = double.Parse(txtPrecio.Text);
-            objFactura.IdUsuario = int.Parse(txtIdUsuario.Text);
+            objFactura.IdUsuario = int.Parse(FrmPrincipal.id);
 
             if(objInsertarFactura.NuevaFactura(objFactura) > 0)
             {
@@ -98,7 +98,7 @@ namespace CapaPresentacion.Formularios
             objFactura.IdTecnologia = Convert.ToInt32(cboTecnologia.SelectedValue);
             objFactura.CantidadBoleto = int.Parse(txtCantidad.Text);
             objFactura.PrecioBoleto = double.Parse(txtPrecio.Text);
-            objFactura.IdUsuario = int.Parse(txtIdUsuario.Text);
+            objFactura.IdUsuario = int.Parse(FrmPrincipal.id);
 
             if (objActualizarFactura.ActualizarFactura(objFactura) > 0)
             {

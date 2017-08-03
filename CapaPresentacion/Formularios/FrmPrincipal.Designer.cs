@@ -31,7 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.txtNombreUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.pnlcerrar = new System.Windows.Forms.Panel();
             this.pnlCambioUsuario = new System.Windows.Forms.Panel();
@@ -69,18 +70,27 @@
             // statusStrip
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
+            this.toolStripStatusLabel1,
+            this.txtNombreUsuario});
             this.statusStrip.Location = new System.Drawing.Point(0, 719);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(1362, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
+            this.statusStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip_ItemClicked);
             // 
-            // toolStripStatusLabel
+            // toolStripStatusLabel1
             // 
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
-            this.toolStripStatusLabel.Text = "Status";
+            this.toolStripStatusLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(90, 17);
+            this.toolStripStatusLabel1.Text = "Usuario Actual: ";
+            // 
+            // txtNombreUsuario
+            // 
+            this.txtNombreUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.txtNombreUsuario.Name = "txtNombreUsuario";
+            this.txtNombreUsuario.Size = new System.Drawing.Size(0, 17);
             // 
             // pnlcerrar
             // 
@@ -92,6 +102,7 @@
             this.pnlcerrar.Size = new System.Drawing.Size(30, 30);
             this.pnlcerrar.TabIndex = 4;
             this.pnlcerrar.Click += new System.EventHandler(this.pnlcerrar_Click);
+            this.pnlcerrar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlcerrar_Paint);
             // 
             // pnlCambioUsuario
             // 
@@ -103,6 +114,7 @@
             this.pnlCambioUsuario.Size = new System.Drawing.Size(80, 80);
             this.pnlCambioUsuario.TabIndex = 5;
             this.pnlCambioUsuario.Click += new System.EventHandler(this.pnlCambioUsuario_Click);
+            this.pnlCambioUsuario.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCambioUsuario_Paint);
             this.pnlCambioUsuario.MouseLeave += new System.EventHandler(this.pnlCambioUsuario_MouseLeave);
             this.pnlCambioUsuario.MouseHover += new System.EventHandler(this.pnlCambioUsuario_MouseHover);
             // 
@@ -463,6 +475,7 @@
             this.Name = "FrmPrincipal";
             this.Text = "Cinema Evolution";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -475,7 +488,6 @@
         #endregion
 
         private System.Windows.Forms.StatusStrip statusStrip;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.Panel pnlcerrar;
         private System.Windows.Forms.Panel pnlCambioUsuario;
@@ -505,6 +517,8 @@
         private System.Windows.Forms.Panel pnlLogAuditoria;
         private System.Windows.Forms.Label lblLogAuditoria;
         private System.Windows.Forms.Label lblCambioUsuario;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel txtNombreUsuario;
     }
 }
 

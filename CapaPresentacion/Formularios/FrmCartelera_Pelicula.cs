@@ -19,6 +19,7 @@ namespace CapaPresentacion.Formularios
         {
             InitializeComponent();
         }
+        bool a;
         private void CargarComboBoxPelicula()
         {
             CNCarteleraPelicula objCP = new CNCarteleraPelicula();
@@ -70,10 +71,12 @@ namespace CapaPresentacion.Formularios
 
             if (objNCarteleraPelicula.NuevaCarteleraPelicula(objCarteleraPelicula) > 0)
             {
+                a = true;
                 MessageBox.Show(null, "Registro almacenado satisfactoriamente", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
+                a = false;
                 MessageBox.Show(null, "Error al almacenar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -86,11 +89,13 @@ namespace CapaPresentacion.Formularios
 
             if (objNCarteleraPelicula.ActualizarCarteleraPelicula(objCarteleraPelicula) > 0)
             {
+                a = true;
                 MessageBox.Show(null, "Registro actualizado satisfactoriamente", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show(null, "Error al actualizar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                a = false;
+                MessageBox.Show(null, "Error al actualizar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);        
             }
         }
         private void EliminarCarteleraPelicula(int idCartelera)
@@ -122,9 +127,13 @@ namespace CapaPresentacion.Formularios
                 return;
             }
             GuardarCarteleraPelicula();
-            HabilitarControles(false, true, false, false, false);
-            LimpiarControles();
-            ListadoCarteleraPelicula();
+            if (a == true)
+            {
+                HabilitarControles(false, true, false, false, false);
+                LimpiarControles();
+                ListadoCarteleraPelicula();
+            }
+         
 
         }
         private void LimpiarControles()

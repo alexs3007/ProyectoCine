@@ -26,12 +26,12 @@ namespace CapaDatos
                 dr = cmd.ExecuteReader();
                 if(dr.Read())
                 {
-                    string[] resultado = {dr.GetInt32(0).ToString(),dr.GetString(1)};
+                    string[] resultado = {dr.GetInt32(0).ToString(),dr.GetString(1),dr.GetString(2)};
                     return resultado;
                 }
                 else
                 {
-                    string[] resultado = {"", ""};
+                    string[] resultado = {""};
                     return resultado;
                 }
                 

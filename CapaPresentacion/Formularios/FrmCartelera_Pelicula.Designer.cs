@@ -339,6 +339,7 @@
             // cboCartelera
             // 
             this.cboCartelera.BackColor = System.Drawing.Color.White;
+            this.cboCartelera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCartelera.FormattingEnabled = true;
             this.cboCartelera.Location = new System.Drawing.Point(102, 37);
             this.cboCartelera.Name = "cboCartelera";
@@ -348,6 +349,7 @@
             // cboPelicula
             // 
             this.cboPelicula.BackColor = System.Drawing.Color.White;
+            this.cboPelicula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPelicula.FormattingEnabled = true;
             this.cboPelicula.Location = new System.Drawing.Point(102, 78);
             this.cboPelicula.Name = "cboPelicula";

@@ -16,10 +16,21 @@ namespace CapaPresentacion.Formularios
         {
             InitializeComponent();
         }
+        public  string url;
 
         private void pnlcerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmSinopsis_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void link_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(url);
         }
     }
 }

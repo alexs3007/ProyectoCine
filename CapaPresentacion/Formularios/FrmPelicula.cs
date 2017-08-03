@@ -37,7 +37,7 @@ namespace CapaPresentacion.Formularios
             cboClasificacion.DataSource = null;
             txtURL.Clear();
             pbPelicula.Image = null;
-            txtUsuario.Clear();
+        
             
         }
 
@@ -63,7 +63,7 @@ namespace CapaPresentacion.Formularios
             MemoryStream ms = new MemoryStream((byte[])dgvLista.CurrentRow.Cells[7].Value);
             pbPelicula.Image = Image.FromStream(ms);      
             txtURL.Text = dgvLista.SelectedRows[0].Cells[8].Value.ToString();
-            txtUsuario.Text = dgvLista.SelectedRows[0].Cells[9].Value.ToString();
+           
          }
 
         private void CargarComboBoxGenero()
@@ -105,7 +105,7 @@ namespace CapaPresentacion.Formularios
             }
               objPelicula.Imagen = ms.GetBuffer();
               objPelicula.URL = txtURL.Text.Trim();
-              objPelicula.IdUsuario = Convert.ToInt32(txtUsuario.Text);
+              objPelicula.IdUsuario = Convert.ToInt32(FrmPrincipal.id);
 
             if (objInsertarPelicula.NuevaFactura(objPelicula) > 0)
                 {
@@ -142,7 +142,7 @@ namespace CapaPresentacion.Formularios
             }
             objPelicula.Imagen = ms.GetBuffer();
             objPelicula.URL = txtURL.Text.Trim();
-            objPelicula.IdUsuario = Convert.ToInt32(txtUsuario.Text);
+            objPelicula.IdUsuario = Convert.ToInt32(FrmPrincipal.id);
             if (objActualizarPelicula.ActualizarPelicula(objPelicula) > 0)
             {
                 MessageBox.Show(null, "Registro actualizado satisfactoriamente", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Information);
