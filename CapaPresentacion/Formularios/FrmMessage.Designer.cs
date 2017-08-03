@@ -51,9 +51,10 @@
             "Octubre",
             "Noviembre",
             "Diciembre"});
-            this.cboMes.Location = new System.Drawing.Point(53, 53);
+            this.cboMes.Location = new System.Drawing.Point(71, 65);
+            this.cboMes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboMes.Name = "cboMes";
-            this.cboMes.Size = new System.Drawing.Size(230, 21);
+            this.cboMes.Size = new System.Drawing.Size(305, 24);
             this.cboMes.TabIndex = 0;
             // 
             // label1
@@ -61,9 +62,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(98, 27);
+            this.label1.Location = new System.Drawing.Point(131, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 23);
+            this.label1.Size = new System.Drawing.Size(182, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Seleccione un Mes";
             // 
@@ -74,9 +76,10 @@
             this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAceptar.FlatAppearance.BorderSize = 0;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptar.Location = new System.Drawing.Point(53, 95);
+            this.btnAceptar.Location = new System.Drawing.Point(71, 117);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(94, 43);
+            this.btnAceptar.Size = new System.Drawing.Size(125, 53);
             this.btnAceptar.TabIndex = 2;
             this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -88,31 +91,34 @@
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Location = new System.Drawing.Point(189, 95);
+            this.btnCancelar.Location = new System.Drawing.Point(252, 117);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(94, 43);
+            this.btnCancelar.Size = new System.Drawing.Size(125, 53);
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // FrmMessage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Captura_de_pantalla__69_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(338, 150);
+            this.ClientSize = new System.Drawing.Size(451, 185);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboMes);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmMessage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CINEMA EVOLUTION";
+            this.Load += new System.EventHandler(this.FrmMessage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

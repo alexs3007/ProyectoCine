@@ -80,5 +80,16 @@ namespace CapaPresentacion.Formularios
             frm.Show();
             
         }
+
+        private void pnlReporteDiario_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlReporteDiario_Click(object sender, EventArgs e)
+        {
+            FrmMessage2 frm = new FrmMessage2();
+            frm.Show();
+        }
     }
 }

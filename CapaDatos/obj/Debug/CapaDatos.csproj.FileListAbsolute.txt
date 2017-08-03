@@ -61,3 +61,10 @@ C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaDatos\bin\Debug\CapaEntidade
 C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Nixon Sanchez\Desktop\Cinema\ProyectoCine\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Nixon Sanchez\Desktop\Cinema\ProyectoCine\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Nixon Sanchez\Desktop\Cinema\ProyectoCine\CapaDatos\bin\Debug\CapaEntidades.dll
+C:\Users\Nixon Sanchez\Desktop\Cinema\ProyectoCine\CapaDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\Nixon Sanchez\Desktop\Cinema\ProyectoCine\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Nixon Sanchez\Desktop\Cinema\ProyectoCine\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Nixon Sanchez\Desktop\Cinema\ProyectoCine\CapaDatos\obj\Debug\CapaDatos.pdb

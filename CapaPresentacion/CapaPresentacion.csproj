@@ -105,6 +105,12 @@
     <Compile Include="Formularios\FrmMessage.Designer.cs">
       <DependentUpon>FrmMessage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmMessage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmMessage2.Designer.cs">
+      <DependentUpon>FrmMessage2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmMostrarCartelera.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,12 @@
     </Compile>
     <Compile Include="Formularios\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmrptDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmrptDiario.Designer.cs">
+      <DependentUpon>FrmrptDiario.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmRptFactura.cs">
       <SubType>Form</SubType>
@@ -185,6 +197,12 @@
       <DependentUpon>rptIngresoMensual.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptReporteDiario.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptReporteDiario.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="Formularios\FrmCartelera.resx">
       <DependentUpon>FrmCartelera.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +224,9 @@
     <EmbeddedResource Include="Formularios\FrmMessage.resx">
       <DependentUpon>FrmMessage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmMessage2.resx">
+      <DependentUpon>FrmMessage2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmMostrarCartelera.resx">
       <DependentUpon>FrmMostrarCartelera.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmrptDiario.resx">
+      <DependentUpon>FrmrptDiario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmRptFactura.resx">
       <DependentUpon>FrmRptFactura.cs</DependentUpon>
@@ -256,6 +280,10 @@
     <EmbeddedResource Include="rptIngresoMensual.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptIngresoMensual1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptReporteDiario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptReporteDiario.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

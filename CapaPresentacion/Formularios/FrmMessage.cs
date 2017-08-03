@@ -32,5 +32,10 @@ namespace CapaPresentacion.Formularios
         {
             this.Close();
         }
+
+        private void FrmMessage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
