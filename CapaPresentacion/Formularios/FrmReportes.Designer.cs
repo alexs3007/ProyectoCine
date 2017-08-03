@@ -78,6 +78,8 @@
             this.pnlReporteFactura.Name = "pnlReporteFactura";
             this.pnlReporteFactura.Size = new System.Drawing.Size(140, 140);
             this.pnlReporteFactura.TabIndex = 32;
+            this.pnlReporteFactura.Click += new System.EventHandler(this.pnlReporteFactura_Click);
+            this.pnlReporteFactura.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlReporteFactura_Paint);
             this.pnlReporteFactura.MouseLeave += new System.EventHandler(this.pnlReporteFactura_MouseLeave);
             this.pnlReporteFactura.MouseHover += new System.EventHandler(this.pnlReporteFactura_MouseHover);
             // 
