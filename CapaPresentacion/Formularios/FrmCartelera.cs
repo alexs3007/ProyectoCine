@@ -87,8 +87,6 @@ namespace CapaPresentacion
             }
         }
 
-        
-
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FilaSeleccionada();
@@ -124,12 +122,15 @@ namespace CapaPresentacion
         }
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int idCartelera;
-            idCartelera = int.Parse(dgvLista.SelectedRows[0].Cells[0].Value.ToString());
-            EliminarCartelera(idCartelera);
-            ListadoCartelera();
-            LimpiarControles();
-            HabilitarControles(false, true, false, false, false);
+            if (MessageBox.Show("¿Estas seguro que desea eliminar?", "Cinema Evolution", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int idCartelera;
+                idCartelera = int.Parse(dgvLista.SelectedRows[0].Cells[0].Value.ToString());
+                EliminarCartelera(idCartelera);
+                ListadoCartelera();
+                LimpiarControles();
+                HabilitarControles(false, true, false, false, false);
+            }
         }
 
         private void rdbFechaEstreno_CheckedChanged(object sender, EventArgs e)

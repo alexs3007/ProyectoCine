@@ -34,7 +34,6 @@ namespace CapaPresentacion.Formularios
             btnActualizar.Enabled = actualizar;
             btnCancelar.Enabled = cancelar;
         }
-
         private void Limpiar()
         {
             txtBusqueda.Clear();
@@ -45,7 +44,6 @@ namespace CapaPresentacion.Formularios
             cboTipoUsuario.DataSource=null;
 
         }
-
         private void CargarComboBoxTipoUsuario()
         {
             CNUsuario objUsuario = new CNUsuario();
@@ -53,7 +51,6 @@ namespace CapaPresentacion.Formularios
             cboTipoUsuario.DisplayMember = "TipoUsuario";
             cboTipoUsuario.ValueMember = "IdTipoUsuario";
         }
-
         private void CargarComboBoxEmpleado()
         {
             CNUsuario objUsuario = new CNUsuario();
@@ -61,7 +58,6 @@ namespace CapaPresentacion.Formularios
             cboEmpleado.DisplayMember = "Empleado";
             cboEmpleado.ValueMember = "CodEmpleado";
         }
-
         private void InsertarUsuario()
         {
             CNUsuario objInsertarUsuario = new CNUsuario();
@@ -83,7 +79,6 @@ namespace CapaPresentacion.Formularios
             }
 
         }
-
         private void ActualizarUsuario()
         {
             CNUsuario objActualizarUsuario = new CNUsuario();
@@ -105,7 +100,6 @@ namespace CapaPresentacion.Formularios
                 MessageBox.Show(null, "Error al almacenar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void EliminarUsuario(int idUsuario)
         {
             CNUsuario objEliminarUsuario = new CNUsuario();
@@ -124,7 +118,6 @@ namespace CapaPresentacion.Formularios
 
 
         }
-
         private void ListadoUsuario()
         {
             CNUsuario objP = new CNUsuario();
@@ -160,12 +153,15 @@ namespace CapaPresentacion.Formularios
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int idUsuario;
-            idUsuario = int.Parse(dgvLista.SelectedRows[0].Cells[0].Value.ToString());
-            EliminarUsuario(idUsuario);
-            ListadoUsuario();
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
+            if (MessageBox.Show("¿Estas seguro que desea eliminar?", "Cinema Evolution", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int idUsuario;
+                idUsuario = int.Parse(dgvLista.SelectedRows[0].Cells[0].Value.ToString());
+                EliminarUsuario(idUsuario);
+                ListadoUsuario();
+                Limpiar();
+                HabilitarControles(false, true, false, false, false);
+            }
         }
 
         private void FilaSeleccionada()

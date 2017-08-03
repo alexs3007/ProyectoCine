@@ -174,7 +174,6 @@ namespace CapaPresentacion.Formularios
             dgvLista.Columns[7].Visible = false;
             dgvLista.Columns[9].Visible = false;
         }
-
         private void ListadoPeliculaPorCodigo(int idPelicula)
         {
             CNPelicula objP = new CNPelicula();
@@ -184,7 +183,6 @@ namespace CapaPresentacion.Formularios
             dgvLista.Columns[7].Visible = false;
             dgvLista.Columns[9].Visible = false;
         }
-
         private void ListadoPeliculaPorNombrePelicula(string nombrePelicula)
         {
             CNPelicula objP = new CNPelicula();
@@ -194,7 +192,6 @@ namespace CapaPresentacion.Formularios
             dgvLista.Columns[7].Visible = false;
             dgvLista.Columns[9].Visible = false;
         }
-
         private void BtnAgregarImagen_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
@@ -206,29 +203,27 @@ namespace CapaPresentacion.Formularios
                 pbPelicula.Image = Image.FromFile(dialog.FileName);
             }
         }
-
         private void BtnEliminarImagen_Click(object sender, EventArgs e)
         {
             pbPelicula.Image = null;
         }
-
-      
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FilaSeleccionada();
             HabilitarControles(true, false, false, true, true);
         }
-
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int idPelicula;
-            idPelicula = int.Parse(dgvLista.SelectedRows[0].Cells[0].Value.ToString());
-            EliminarPelicula(idPelicula);
-            ListadoPelicula();
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
+            if (MessageBox.Show("¿Estas seguro que desea eliminar?", "Cinema Evolution", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int idPelicula;
+                idPelicula = int.Parse(dgvLista.SelectedRows[0].Cells[0].Value.ToString());
+                EliminarPelicula(idPelicula);
+                ListadoPelicula();
+                Limpiar();
+                HabilitarControles(false, true, false, false, false);
+            }
         }
-
         private void txtBusqueda_TextChanged(object sender, EventArgs e)
         {
             if (!txtBusqueda.Text.Equals(""))

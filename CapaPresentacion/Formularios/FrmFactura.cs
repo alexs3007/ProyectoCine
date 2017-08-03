@@ -25,7 +25,6 @@ namespace CapaPresentacion.Formularios
             HabilitarControles(false, true, false, false, false);
             ListadoFactura();
         }
-
         private void Limpiar()
         {
             txtIdFactura.Clear();
@@ -35,7 +34,6 @@ namespace CapaPresentacion.Formularios
             txtCantidad.Clear();
             txtPrecio.Clear();
         }
-
         private void HabilitarControles(bool panel, bool nuevo, bool guardar, bool actualizar, bool cancelar)
         {
             pnlDatos.Enabled = panel;
@@ -56,7 +54,6 @@ namespace CapaPresentacion.Formularios
             txtPrecio.Text = dgvLista.SelectedRows[0].Cells[5].Value.ToString();
             
         }
-
         private void CargarComboBoxPelicula()
         {
             CNFactura objFactura = new CNFactura();
@@ -71,7 +68,6 @@ namespace CapaPresentacion.Formularios
             cboTecnologia.DisplayMember = "TipoTecnologia";
             cboTecnologia.ValueMember = "IdTecnologia";
         }
-
         private void InsertarFactura()
         {
             CNFactura objInsertarFactura = new CNFactura();
@@ -92,7 +88,6 @@ namespace CapaPresentacion.Formularios
                 MessageBox.Show(null, "Error al almacenar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void ActualizarFactura()
         {
             CNFactura objActualizarFactura = new CNFactura();
@@ -135,7 +130,7 @@ namespace CapaPresentacion.Formularios
             CNFactura objF = new CNFactura();
             dgvLista.DataSource = objF.ListadoFactura().Tables["Factura"];
         }
-        
+       
         private void ListadoFacturaPorCodigo(int idFactura)
         {
             CNFactura objF = new CNFactura();
@@ -143,7 +138,6 @@ namespace CapaPresentacion.Formularios
             objFactura.IdFactura = idFactura;
             dgvLista.DataSource = objF.ListadoFacturaPorCodido(objFactura).Tables["Factura"];
         }
-
         private void ListadoFacturaPorPelicula(string Pelicula)
         {
             CNFactura objF = new CNFactura();
@@ -162,12 +156,15 @@ namespace CapaPresentacion.Formularios
 
         private void elliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int idFactura;
-            idFactura =int.Parse( dgvLista.SelectedRows[0].Cells[0].Value.ToString());
-            EliminarFactura(idFactura);
-            ListadoFactura();
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
+            if (MessageBox.Show("¿Estas seguro que desea eliminar?", "Cinema Evolution", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int idFactura;
+                idFactura = int.Parse(dgvLista.SelectedRows[0].Cells[0].Value.ToString());
+                EliminarFactura(idFactura);
+                ListadoFactura();
+                Limpiar();
+                HabilitarControles(false, true, false, false, false);
+            }
         }
 
         private void txtBusqueda_TextChanged(object sender, EventArgs e)

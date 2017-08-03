@@ -19,8 +19,6 @@ namespace CapaPresentacion.Formularios
         {
             InitializeComponent();
         }
-
-
         private void CargarComboBoxPelicula()
         {
             CNCarteleraPelicula objCP = new CNCarteleraPelicula();
@@ -28,7 +26,6 @@ namespace CapaPresentacion.Formularios
             cboPelicula.DisplayMember = "NombrePelicula";
             cboPelicula.ValueMember = "IdPelicula";
         }
-
         private void CargarComboBoxCartelera()
         {
             CNCarteleraPelicula objCP = new CNCarteleraPelicula();
@@ -64,7 +61,6 @@ namespace CapaPresentacion.Formularios
             CargarComboBoxCartelera();
             CargarComboBoxPelicula();
         }
-
         private void GuardarCarteleraPelicula()
         {
             CNCarteleraPelicula objNCarteleraPelicula = new CNCarteleraPelicula();
@@ -81,7 +77,6 @@ namespace CapaPresentacion.Formularios
                 MessageBox.Show(null, "Error al almacenar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void ActualizarCarteleraPelicula()
         {
             CNCarteleraPelicula objNCarteleraPelicula = new CNCarteleraPelicula();
@@ -98,7 +93,6 @@ namespace CapaPresentacion.Formularios
                 MessageBox.Show(null, "Error al actualizar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void EliminarCarteleraPelicula(int idCartelera)
         {
             CNCarteleraPelicula objNCarteleraPelicula = new CNCarteleraPelicula();
@@ -115,7 +109,6 @@ namespace CapaPresentacion.Formularios
                 MessageBox.Show(null, "Error al eliminar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             if (cboCartelera.Text == null)
@@ -139,13 +132,11 @@ namespace CapaPresentacion.Formularios
             cboCartelera.DataSource = null;
             cboPelicula.DataSource=null;
         }
-
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FilaSeleccionada();
             HabilitarControles(true, false, false, true, true);
         }
-
         private void FilaSeleccionada()
         {
             CargarComboBoxCartelera();
@@ -156,12 +147,15 @@ namespace CapaPresentacion.Formularios
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int idCP;
-            idCP = int.Parse(dgvLista.SelectedRows[0].Cells[0].Value.ToString());
-            EliminarCarteleraPelicula(idCP);
-            ListadoCarteleraPelicula();
-            LimpiarControles();
-            HabilitarControles(false, true, false, false, false);
+            if (MessageBox.Show("¿Estas seguro que desea eliminar?", "Cinema Evolution", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int idCP;
+                idCP = int.Parse(dgvLista.SelectedRows[0].Cells[0].Value.ToString());
+                EliminarCarteleraPelicula(idCP);
+                ListadoCarteleraPelicula();
+                LimpiarControles();
+                HabilitarControles(false, true, false, false, false);
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

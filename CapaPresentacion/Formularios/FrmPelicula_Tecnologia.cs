@@ -20,7 +20,6 @@ namespace CapaPresentacion.Formularios
         {
             InitializeComponent();
         }
-
         private void HabilitarControles(bool panel, bool nuevo, bool guardar, bool actualizar, bool cancelar)
         {
             pnlDatos.Enabled = panel;
@@ -28,9 +27,7 @@ namespace CapaPresentacion.Formularios
             btnGuardar.Enabled = guardar;
             btnActualizar.Enabled = actualizar;
             btnCancelar.Enabled = cancelar;
-        }
-
-       
+        }    
         private void FrmPelicula_Tecnologia_Load(object sender, EventArgs e)
         {
             HabilitarControles(false, true, false, false, false);
@@ -43,7 +40,6 @@ namespace CapaPresentacion.Formularios
             dgvLista.Columns[0].Visible = false;
             dgvLista.Columns[1].Visible = false;
         }
-
         private void CargarComboBoxPelicula()
         {
             CNPeliculaTecnologia objPT = new CNPeliculaTecnologia();
@@ -58,9 +54,6 @@ namespace CapaPresentacion.Formularios
             cboTecnología.DisplayMember = "TipoTecnologia";
             cboTecnología.ValueMember = "IdTecnologia";
         }
-
-       
-
         private void GuardarCarteleraPelicula()
         {
             CNPeliculaTecnologia objPT = new CNPeliculaTecnologia();
@@ -78,22 +71,17 @@ namespace CapaPresentacion.Formularios
                 MessageBox.Show(null, "Error al almacenar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-       
-
         private void LimpiarControles()
         {
             txtPrecio.Clear();
             cboPelicula.DataSource = null;
             cboTecnología.DataSource = null;
         }
-
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SelecionarFila();
             HabilitarControles(true, false, false, true, true);
         }
-
         private void SelecionarFila()
         {
             CargarComboBoxPelicula();
@@ -102,9 +90,6 @@ namespace CapaPresentacion.Formularios
             cboTecnología.Text = dgvLista.SelectedRows[0].Cells[3].Value.ToString();
             txtPrecio.Text = dgvLista.SelectedRows[0].Cells[4].Value.ToString();
         }
-
-     
-
         private void ActualizarPeliculaTecnologia()
         {
             CNPeliculaTecnologia objPT = new CNPeliculaTecnologia();
@@ -122,7 +107,6 @@ namespace CapaPresentacion.Formularios
                 MessageBox.Show(null, "Error al actualizar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void EliminarPeliculaTecnologia(int idPelicula,int IdTecnologia)
         {
             CNPeliculaTecnologia objEPT = new CNPeliculaTecnologia();
@@ -140,18 +124,19 @@ namespace CapaPresentacion.Formularios
                 MessageBox.Show(null, "Error al eliminar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int idPelicula,idTecnologia;
-            idPelicula = int.Parse(dgvLista.SelectedRows[0].Cells[0].Value.ToString());
-            idTecnologia = int.Parse(dgvLista.SelectedRows[0].Cells[1].Value.ToString());
-            EliminarPeliculaTecnologia(idPelicula,idTecnologia);
-            ListadoPeliculaTecnologia();
-            LimpiarControles();
-            HabilitarControles(false, true, false, false, false);
+            if (MessageBox.Show("¿Estas seguro que desea eliminar?", "Cinema Evolution", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int idPelicula, idTecnologia;
+                idPelicula = int.Parse(dgvLista.SelectedRows[0].Cells[0].Value.ToString());
+                idTecnologia = int.Parse(dgvLista.SelectedRows[0].Cells[1].Value.ToString());
+                EliminarPeliculaTecnologia(idPelicula, idTecnologia);
+                ListadoPeliculaTecnologia();
+                LimpiarControles();
+                HabilitarControles(false, true, false, false, false);
+            }
         }
-
         private void txtBusqueda_TextChanged(object sender, EventArgs e)
         {
             if(txtBusqueda.Text.Equals(""))
@@ -170,7 +155,6 @@ namespace CapaPresentacion.Formularios
                 }
             }
         }
-
         private void ListadoPeliculaTecnologiaPorPelicula(string Pelicula)
         {
             CNPeliculaTecnologia objPT = new CNPeliculaTecnologia();

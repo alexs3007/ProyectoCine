@@ -46,7 +46,6 @@ namespace CapaPresentacion.Formularios
             cboHorario.DataSource = null;
             cboPelicula.DataSource = null;
         }
-
         private void CargarComboBoxPelicula()
         {
             CNPeliculaHorario objPH = new CNPeliculaHorario();
@@ -54,7 +53,6 @@ namespace CapaPresentacion.Formularios
             cboPelicula.DisplayMember = "NombrePelicula";
             cboPelicula.ValueMember = "IdPelicula";
         }
-
         private void CargarComboBoxHorario()
         {
             CNPeliculaHorario objPH = new CNPeliculaHorario();
@@ -78,7 +76,6 @@ namespace CapaPresentacion.Formularios
                 MessageBox.Show(null, "Error al almacenar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void ActualizarPeliculaHorario()
         {
             CNPeliculaHorario CNPH = new CNPeliculaHorario();
@@ -95,7 +92,6 @@ namespace CapaPresentacion.Formularios
                 MessageBox.Show(null, "Error al actualizar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void EliminarPeliculaHorario(int idPelicula, int IdHorario)
         {
             CNPeliculaHorario CNPH = new CNPeliculaHorario();
@@ -111,7 +107,6 @@ namespace CapaPresentacion.Formularios
                 MessageBox.Show(null, "Error al eliminar el registro", "Cinema Evolution", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void ListadoPeliculaPorNombrePelicula(string Pelicula)
         {
             CNPeliculaHorario CNPH = new CNPeliculaHorario();
@@ -121,7 +116,6 @@ namespace CapaPresentacion.Formularios
             dgvLista.Columns[0].Visible = false;
             dgvLista.Columns[1].Visible = false;
         }
-
         private void ListadoPeliculaHorarioPorHorario(string Horario)
         {
             CNPeliculaHorario CNPH = new CNPeliculaHorario();
@@ -131,32 +125,29 @@ namespace CapaPresentacion.Formularios
             dgvLista.Columns[0].Visible = false;
             dgvLista.Columns[1].Visible = false;
         }
-
         private void FrmPelicula_Horario_Load(object sender, EventArgs e)
         {
             HabilitarControles(false, true, false, false, false);
             ListadoPeliculaHorario();
 
         }
-
-       
-
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FilaSelecionada();
             HabilitarControles(true, false, false, true, true);
         }
-
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int idPelicula, IdHorario;
-            idPelicula = int.Parse(dgvLista.SelectedRows[0].Cells[0].Value.ToString());
-            IdHorario = int.Parse(dgvLista.SelectedRows[0].Cells[1].Value.ToString());
-            EliminarPeliculaHorario(idPelicula, IdHorario);
-            ListadoPeliculaHorario();
-            LimpiarControles();
-            HabilitarControles(false, true, false, false, false);
-
+            if (MessageBox.Show("¿Estas seguro que desea eliminar?", "Cinema Evolution", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int idPelicula, IdHorario;
+                idPelicula = int.Parse(dgvLista.SelectedRows[0].Cells[0].Value.ToString());
+                IdHorario = int.Parse(dgvLista.SelectedRows[0].Cells[1].Value.ToString());
+                EliminarPeliculaHorario(idPelicula, IdHorario);
+                ListadoPeliculaHorario();
+                LimpiarControles();
+                HabilitarControles(false, true, false, false, false);
+            }
         }
 
         private void txtBusqueda_TextChanged(object sender, EventArgs e)
