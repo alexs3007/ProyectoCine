@@ -41,6 +41,7 @@
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlDatos = new System.Windows.Forms.GroupBox();
+            this.txtTelefono2 = new System.Windows.Forms.MaskedTextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
@@ -63,7 +64,6 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.txtCodEmpleado2 = new System.Windows.Forms.MaskedTextBox();
-            this.txtTelefono2 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.pnlBT.SuspendLayout();
@@ -114,7 +114,7 @@
             this.txtBusqueda.Location = new System.Drawing.Point(50, 12);
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(260, 20);
-            this.txtBusqueda.TabIndex = 16;
+            this.txtBusqueda.TabIndex = 11;
             this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
             // 
             // rdbNombre
@@ -153,7 +153,7 @@
             this.dgvLista.RowHeadersVisible = false;
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLista.Size = new System.Drawing.Size(566, 275);
-            this.dgvLista.TabIndex = 13;
+            this.dgvLista.TabIndex = 12;
             // 
             // cmsOpciones
             // 
@@ -197,12 +197,21 @@
             this.pnlDatos.TabIndex = 26;
             this.pnlDatos.TabStop = false;
             // 
+            // txtTelefono2
+            // 
+            this.txtTelefono2.Location = new System.Drawing.Point(135, 157);
+            this.txtTelefono2.Mask = "9999-9999";
+            this.txtTelefono2.Name = "txtTelefono2";
+            this.txtTelefono2.PromptChar = ' ';
+            this.txtTelefono2.Size = new System.Drawing.Size(158, 20);
+            this.txtTelefono2.TabIndex = 5;
+            // 
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(136, 191);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(157, 20);
-            this.txtCorreo.TabIndex = 17;
+            this.txtCorreo.TabIndex = 6;
             // 
             // txtDireccion
             // 
@@ -210,21 +219,21 @@
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(212, 43);
-            this.txtDireccion.TabIndex = 15;
+            this.txtDireccion.TabIndex = 4;
             // 
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(136, 73);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(157, 20);
-            this.txtApellido.TabIndex = 14;
+            this.txtApellido.TabIndex = 3;
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(136, 43);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(157, 20);
-            this.txtNombre.TabIndex = 13;
+            this.txtNombre.TabIndex = 2;
             // 
             // label6
             // 
@@ -384,7 +393,7 @@
             this.btnActualizar.Location = new System.Drawing.Point(172, 9);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(75, 53);
-            this.btnActualizar.TabIndex = 18;
+            this.btnActualizar.TabIndex = 9;
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click_1);
             this.btnActualizar.MouseLeave += new System.EventHandler(this.btnActualizar_MouseLeave);
@@ -400,7 +409,7 @@
             this.btnNuevo.Location = new System.Drawing.Point(10, 9);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 53);
-            this.btnNuevo.TabIndex = 14;
+            this.btnNuevo.TabIndex = 7;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click_1);
             this.btnNuevo.MouseLeave += new System.EventHandler(this.btnNuevo_MouseLeave);
@@ -416,7 +425,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(253, 9);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 53);
-            this.btnCancelar.TabIndex = 17;
+            this.btnCancelar.TabIndex = 10;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             this.btnCancelar.MouseLeave += new System.EventHandler(this.btnCancelar_MouseLeave);
@@ -432,7 +441,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(91, 9);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 53);
-            this.btnGuardar.TabIndex = 16;
+            this.btnGuardar.TabIndex = 8;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             this.btnGuardar.MouseLeave += new System.EventHandler(this.btnGuardar_MouseLeave);
@@ -445,16 +454,7 @@
             this.txtCodEmpleado2.Name = "txtCodEmpleado2";
             this.txtCodEmpleado2.PromptChar = ' ';
             this.txtCodEmpleado2.Size = new System.Drawing.Size(158, 20);
-            this.txtCodEmpleado2.TabIndex = 32;
-            // 
-            // txtTelefono2
-            // 
-            this.txtTelefono2.Location = new System.Drawing.Point(135, 157);
-            this.txtTelefono2.Mask = "9999-9999";
-            this.txtTelefono2.Name = "txtTelefono2";
-            this.txtTelefono2.PromptChar = ' ';
-            this.txtTelefono2.Size = new System.Drawing.Size(158, 20);
-            this.txtTelefono2.TabIndex = 33;
+            this.txtCodEmpleado2.TabIndex = 1;
             // 
             // FrmEmpleado
             // 

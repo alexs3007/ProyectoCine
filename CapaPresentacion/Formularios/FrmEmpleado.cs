@@ -155,12 +155,17 @@ namespace CapaPresentacion.Formularios
         }
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string CodiEmpleado;
-            CodiEmpleado = (dgvLista.SelectedRows[0].Cells[0].Value.ToString());
-            EliminarEmpleado(CodiEmpleado);
-            ListadoEmpleado();
-            Limpiar();
-            HabilitarControles(false, true, false, false, false);
+           
+            if(MessageBox.Show("¿Estas seguro que desea eliminar?", "Cinema Evolution", MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes)
+            {
+                string CodiEmpleado;
+                CodiEmpleado = (dgvLista.SelectedRows[0].Cells[0].Value.ToString());
+                EliminarEmpleado(CodiEmpleado);
+                ListadoEmpleado();
+                Limpiar();
+                HabilitarControles(false, true, false, false, false);
+            }
+            
         }
     
         private void txtBusqueda_TextChanged(object sender, EventArgs e)
