@@ -158,6 +158,7 @@
             this.pnlReporteMensual.Name = "pnlReporteMensual";
             this.pnlReporteMensual.Size = new System.Drawing.Size(140, 140);
             this.pnlReporteMensual.TabIndex = 34;
+            this.pnlReporteMensual.Click += new System.EventHandler(this.pnlReporteMensual_Click);
             this.pnlReporteMensual.MouseLeave += new System.EventHandler(this.pnlReporteMensual_MouseLeave);
             this.pnlReporteMensual.MouseHover += new System.EventHandler(this.pnlReporteMensual_MouseHover);
             // 

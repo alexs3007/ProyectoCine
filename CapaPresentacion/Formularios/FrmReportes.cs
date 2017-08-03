@@ -73,5 +73,12 @@ namespace CapaPresentacion.Formularios
             }
 
         }
+
+        private void pnlReporteMensual_Click(object sender, EventArgs e)
+        {
+            FrmMessage frm = new FrmMessage();
+            frm.Show();
+            
+        }
     }
 }
