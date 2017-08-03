@@ -513,11 +513,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel pnlCartelera_Pelicula;
         private System.Windows.Forms.Label lblPeliculaCartelera;
-        private System.Windows.Forms.Panel pnlLogAuditoria;
         private System.Windows.Forms.Label lblLogAuditoria;
         private System.Windows.Forms.Label lblCambioUsuario;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel txtNombreUsuario;
+        public System.Windows.Forms.Panel pnlLogAuditoria;
     }
 }
 

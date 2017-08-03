@@ -347,6 +347,10 @@ namespace CapaPresentacion.Formularios
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
             txtNombreUsuario.Text = nombreUsuario;
+            if(!tipoUsuario.Equals("Administrador"))
+            {
+                pnlLogAuditoria.Visible = false;
+            }
         }
     }
 }
