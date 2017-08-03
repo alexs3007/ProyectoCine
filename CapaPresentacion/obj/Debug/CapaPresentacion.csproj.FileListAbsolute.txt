@@ -374,3 +374,8 @@ C:\Users\Nixon Sanchez\Desktop\Cinema\ProyectoCine\CapaPresentacion\obj\Debug\Ca
 C:\Users\Nixon Sanchez\Desktop\Cinema\ProyectoCine\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
 C:\Users\Nixon Sanchez\Desktop\Cinema\ProyectoCine\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmMessage2.resources
 C:\Users\Nixon Sanchez\Desktop\Cinema\ProyectoCine\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmrptDiario.resources
+C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmMessage.resources
+C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmMessage2.resources
+C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmrptDiario.resources
+C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaPresentacion\obj\Debug\CapaPresentacion.FrmRptIngresoMensual.resources
+C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmRptTecnologia.resources

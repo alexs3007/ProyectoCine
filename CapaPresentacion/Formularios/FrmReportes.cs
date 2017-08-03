@@ -91,5 +91,11 @@ namespace CapaPresentacion.Formularios
             FrmMessage2 frm = new FrmMessage2();
             frm.Show();
         }
+
+        private void pnlReporteTecnologia_Click(object sender, EventArgs e)
+        {
+            FrmRptTecnologia frm = new FrmRptTecnologia();
+            frm.ShowDialog();
+        }
     }
 }

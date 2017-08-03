@@ -153,6 +153,12 @@
     <Compile Include="Formularios\FrmRptFactura.Designer.cs">
       <DependentUpon>FrmRptFactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmRptTecnologia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRptTecnologia.Designer.cs">
+      <DependentUpon>FrmRptTecnologia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmSinopsis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,12 @@
       <DependentUpon>rptReporteDiario.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptTecnologia.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTecnologia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="Formularios\FrmCartelera.resx">
       <DependentUpon>FrmCartelera.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,6 +263,9 @@
     <EmbeddedResource Include="Formularios\FrmRptIngresoMensual.resx">
       <DependentUpon>FrmRptIngresoMensual.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmRptTecnologia.resx">
+      <DependentUpon>FrmRptTecnologia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmSinopsis.resx">
       <DependentUpon>FrmSinopsis.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,6 +299,10 @@
     <EmbeddedResource Include="rptReporteDiario.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptReporteDiario.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptTecnologia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTecnologia.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
