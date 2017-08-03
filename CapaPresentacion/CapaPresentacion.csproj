@@ -111,6 +111,12 @@
     <Compile Include="Formularios\FrmMessage2.Designer.cs">
       <DependentUpon>FrmMessage2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmMessage3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmMessage3.Designer.cs">
+      <DependentUpon>FrmMessage3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmMostrarCartelera.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +245,9 @@
     <EmbeddedResource Include="Formularios\FrmMessage2.resx">
       <DependentUpon>FrmMessage2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmMessage3.resx">
+      <DependentUpon>FrmMessage3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmMostrarCartelera.resx">
       <DependentUpon>FrmMostrarCartelera.cs</DependentUpon>
     </EmbeddedResource>
@@ -358,6 +367,8 @@
   <ItemGroup>
     <Content Include="estrella.ico" />
     <Content Include="LOGOCINE3.ico" />
+    <None Include="Resources\splah.png" />
+    <None Include="Resources\Captura de pantalla %2876%29.png" />
     <None Include="Resources\cambiodeusuariocirculo.png" />
     <None Include="Resources\logauditoriaCirculo.gif" />
     <None Include="Resources\pelicula_CarteleraCirculo.png" />

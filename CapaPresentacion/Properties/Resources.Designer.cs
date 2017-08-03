@@ -273,6 +273,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla__76_ {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla (76)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cartelera {
             get {
                 object obj = ResourceManager.GetObject("cartelera", resourceCulture);
@@ -656,6 +666,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap reporteMensual {
             get {
                 object obj = ResourceManager.GetObject("reporteMensual", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap splah {
+            get {
+                object obj = ResourceManager.GetObject("splah", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

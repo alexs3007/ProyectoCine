@@ -16,5 +16,10 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void FrmSplah_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

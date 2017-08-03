@@ -64,13 +64,10 @@ namespace CapaPresentacion.Formularios
 
         private void pnlReporteFactura_Click(object sender, EventArgs e)
         {
+            FrmMessage3 frm = new FrmMessage3();
+            frm.ShowDialog();
             string input = Microsoft.VisualBasic.Interaction.InputBox("Código de Factura", "Ingrese el código de la factura", "2", 500, 350);
-            if(!input.Equals(""))
-            {
-                FrmRptFactura frm = new FrmRptFactura();
-                frm.id = input;
-                frm.Show();
-            }
+            
 
         }
 
