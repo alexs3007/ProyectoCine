@@ -93,7 +93,7 @@ namespace CapaPresentacion.Formularios
 
         private void pnlcerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.ExitThread();
         }
 
         private void pnlCambioUsuario_Click(object sender, EventArgs e)
@@ -330,11 +330,6 @@ namespace CapaPresentacion.Formularios
         }
 
         private void statusStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void pnlcerrar_Paint(object sender, PaintEventArgs e)
         {
 
         }

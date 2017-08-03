@@ -379,3 +379,7 @@ C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaPresentacion\obj\Debug\CapaP
 C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmrptDiario.resources
 C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaPresentacion\obj\Debug\CapaPresentacion.FrmRptIngresoMensual.resources
 C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmRptTecnologia.resources
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmMessage2.resources
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmMessage3.resources
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmrptDiario.resources
+C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmRptTecnologia.resources

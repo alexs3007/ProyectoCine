@@ -102,7 +102,6 @@
             this.pnlcerrar.Size = new System.Drawing.Size(30, 30);
             this.pnlcerrar.TabIndex = 4;
             this.pnlcerrar.Click += new System.EventHandler(this.pnlcerrar_Click);
-            this.pnlcerrar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlcerrar_Paint);
             // 
             // pnlCambioUsuario
             // 

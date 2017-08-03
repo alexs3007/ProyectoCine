@@ -57,12 +57,12 @@ namespace CapaPresentacion.Formularios
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.ExitThread();
         }
 
         private void pnlcerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.ExitThread();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
