@@ -52,6 +52,7 @@
             this.Name = "FrmRptFactura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte de Factura";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmRptFactura_Load);
             this.ResumeLayout(false);
 

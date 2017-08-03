@@ -24,13 +24,18 @@ namespace CapaPresentacion.Formularios
                 FrmRptFactura frm = new FrmRptFactura();
                 frm.id = txtFactura.Text;
                 Close();
-                frm.Show();
+                frm.ShowDialog();
             }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void FrmMessage3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

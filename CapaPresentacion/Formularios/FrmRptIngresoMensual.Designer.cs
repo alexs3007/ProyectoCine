@@ -52,6 +52,7 @@
             this.Name = "FrmRptIngresoMensual";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRptIngresoMensual";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmRptIngresoMensual_Load);
             this.ResumeLayout(false);
 

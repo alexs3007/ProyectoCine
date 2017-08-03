@@ -99,6 +99,7 @@
             this.Name = "FrmMessage3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CINEMA EVOLUTION";
+            this.Load += new System.EventHandler(this.FrmMessage3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -54,6 +54,7 @@
             this.Name = "FrmrptDiario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmrptDiario";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmrptDiario_Load);
             this.ResumeLayout(false);
 

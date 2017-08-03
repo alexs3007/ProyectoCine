@@ -383,3 +383,4 @@ C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaPresentac
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmMessage3.resources
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmrptDiario.resources
 C:\Users\Owner User\Desktop\Proyecto Cientifica Capas\ProyectoCine\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmRptTecnologia.resources
+C:\Users\usuario\Documents\GitHub\ProyectoCine3\CapaPresentacion\obj\Debug\CapaPresentacion.Formularios.FrmMessage3.resources
