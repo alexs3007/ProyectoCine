@@ -88,8 +88,9 @@ namespace CapaPresentacion.Formularios
 
         private void pnlReporteTecnologia_Click(object sender, EventArgs e)
         {
-            FrmRptTecnologia frm = new FrmRptTecnologia();
-            frm.ShowDialog();
+            FrmRptTecnologiaTipo frmTipo = new FrmRptTecnologiaTipo();
+            frmTipo.ShowDialog();
+            frmTipo.Location = new Point(500,350);
         }
     }
 }

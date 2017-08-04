@@ -144,7 +144,7 @@
             // 
             this.pnlLogAuditoria.BackgroundImage = global::CapaPresentacion.Properties.Resources.logauditoriaCirculo;
             this.pnlLogAuditoria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlLogAuditoria.Location = new System.Drawing.Point(781, 5);
+            this.pnlLogAuditoria.Location = new System.Drawing.Point(869, 4);
             this.pnlLogAuditoria.Name = "pnlLogAuditoria";
             this.pnlLogAuditoria.Size = new System.Drawing.Size(80, 80);
             this.pnlLogAuditoria.TabIndex = 25;
@@ -205,7 +205,7 @@
             this.lblLogAuditoria.BackColor = System.Drawing.Color.Transparent;
             this.lblLogAuditoria.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogAuditoria.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblLogAuditoria.Location = new System.Drawing.Point(807, 10);
+            this.lblLogAuditoria.Location = new System.Drawing.Point(885, 10);
             this.lblLogAuditoria.Name = "lblLogAuditoria";
             this.lblLogAuditoria.Size = new System.Drawing.Size(103, 16);
             this.lblLogAuditoria.TabIndex = 26;
@@ -295,7 +295,7 @@
             this.lblReportes.BackColor = System.Drawing.Color.Transparent;
             this.lblReportes.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReportes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblReportes.Location = new System.Drawing.Point(910, 10);
+            this.lblReportes.Location = new System.Drawing.Point(823, 10);
             this.lblReportes.Name = "lblReportes";
             this.lblReportes.Size = new System.Drawing.Size(67, 16);
             this.lblReportes.TabIndex = 20;
@@ -369,7 +369,7 @@
             // 
             this.pnlReporte.BackgroundImage = global::CapaPresentacion.Properties.Resources.reporteCirculo;
             this.pnlReporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlReporte.Location = new System.Drawing.Point(867, 5);
+            this.pnlReporte.Location = new System.Drawing.Point(782, 5);
             this.pnlReporte.Name = "pnlReporte";
             this.pnlReporte.Size = new System.Drawing.Size(80, 80);
             this.pnlReporte.TabIndex = 19;

@@ -19,7 +19,7 @@ namespace CapaPresentacion
         public string Mes; 
         private void FrmRptIngresoMensual_Load(object sender, EventArgs e)
         {
-            rptIngresoMensual rpt = new rptIngresoMensual ();
+            Reportes.rptIngresoMensual rpt = new Reportes.rptIngresoMensual ();
             rpt.SetParameterValue("@Mes",Mes );
             crystalReportViewer1.ReportSource = rpt;
         }

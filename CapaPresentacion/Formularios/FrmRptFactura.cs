@@ -20,7 +20,7 @@ namespace CapaPresentacion.Formularios
 
         private void FrmRptFactura_Load(object sender, EventArgs e)
         {
-            rptFactura rpt = new rptFactura();
+            Reportes.rptFactura rpt = new Reportes.rptFactura();
             rpt.SetParameterValue("@IdFactura", id);
             crystalReportViewer1.ReportSource = rpt;
         }

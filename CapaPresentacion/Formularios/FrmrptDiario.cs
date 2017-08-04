@@ -20,7 +20,7 @@ namespace CapaPresentacion.Formularios
 
         private void FrmrptDiario_Load(object sender, EventArgs e)
         {
-            rptReporteDiario rpt = new rptReporteDiario();
+            Reportes.rptReporteDiario rpt = new Reportes.rptReporteDiario();
             rpt.SetParameterValue("@Fecha", Fecha);
             crystalReportViewer1.ReportSource = rpt;
         }

@@ -159,12 +159,6 @@
     <Compile Include="Formularios\FrmRptFactura.Designer.cs">
       <DependentUpon>FrmRptFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmRptTecnologia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\FrmRptTecnologia.Designer.cs">
-      <DependentUpon>FrmRptTecnologia.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\FrmSinopsis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +170,12 @@
     </Compile>
     <Compile Include="Formularios\FrmSplah.Designer.cs">
       <DependentUpon>FrmSplah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmRptTecnologiaTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRptTecnologiaTipo.Designer.cs">
+      <DependentUpon>FrmRptTecnologiaTipo.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmUsuario.cs">
       <SubType>Form</SubType>
@@ -195,30 +195,30 @@
     <Compile Include="Formularios\FrmRptIngresoMensual.Designer.cs">
       <DependentUpon>FrmRptIngresoMensual.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\RptTecnologiaTipo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptTecnologiaTipo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="rptFactura.cs">
+    <Compile Include="Reportes\rptFactura.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptFactura.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="rptIngresoMensual1.cs">
+    <Compile Include="Reportes\rptIngresoMensual1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptIngresoMensual.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="rptReporteDiario.cs">
+    <Compile Include="Reportes\rptReporteDiario.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptReporteDiario.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="rptTecnologia.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rptTecnologia.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <EmbeddedResource Include="Formularios\FrmCartelera.resx">
@@ -272,20 +272,24 @@
     <EmbeddedResource Include="Formularios\FrmRptIngresoMensual.resx">
       <DependentUpon>FrmRptIngresoMensual.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmRptTecnologia.resx">
-      <DependentUpon>FrmRptTecnologia.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmSinopsis.resx">
       <DependentUpon>FrmSinopsis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmSplah.resx">
       <DependentUpon>FrmSplah.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmRptTecnologiaTipo.resx">
+      <DependentUpon>FrmRptTecnologiaTipo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmUsuario.resx">
       <DependentUpon>FrmUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmReportes.resx">
       <DependentUpon>FrmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RptTecnologiaTipo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptTecnologiaTipo.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -297,21 +301,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="rptFactura.rpt">
+    <EmbeddedResource Include="Reportes\rptFactura.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptFactura.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="rptIngresoMensual.rpt">
+    <EmbeddedResource Include="Reportes\rptIngresoMensual.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptIngresoMensual1.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="rptReporteDiario.rpt">
+    <EmbeddedResource Include="Reportes\rptReporteDiario.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptReporteDiario.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="rptTecnologia.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptTecnologia.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
